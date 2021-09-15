@@ -32,11 +32,12 @@ const Button = styled("button")<ButtonProps>`
   box-shadow: ${props => props.boxShadow || undefined};
   cursor: pointer;
   transform: ${props => props.transform || undefined};
+  transition: transform 1s ease-in-out;
   ${props =>
     !!props.mouseEvents &&
     props.mouseEvents.length > 0 &&
     props.mouseEvents.map(e => {
-      return `&:${e.name}:${e.definition};`;
+      return `&:${e.name} ${e.definition}`;
     })}
 `;
 

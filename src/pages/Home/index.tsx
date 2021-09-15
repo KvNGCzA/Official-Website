@@ -1,15 +1,44 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Button, Image, Text, CustomDiv } from "../../components";
 import imgUrl from "../../assets/img/image_8.png";
 import imgUrl2 from "../../assets/img/mask_group.png";
 import imgUrl3 from "../../assets/img/mask_group2.png";
+import imgUrl4 from "../../assets/img/image_4.png";
+
+const kfRotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const kfGlow = keyframes`
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
 
 const ColumnFlex = styled(CustomDiv)`
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+`;
+
+const RotatingImage = styled(Image)`
+  animation: ${kfRotate} 3s linear infinite;
+`;
+
+const GlowingImage = styled(Image)`
+  animation: ${kfGlow} 1s ease-in-out infinite;
 `;
 
 const Home = () => (
@@ -34,6 +63,9 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, -0.4, 1, -20, 0)"
+      mouseEvents={[
+        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
+      ]}
     >
       Play n'Earn
     </Button>
@@ -48,6 +80,9 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, -0.4, 1, -20, 0)"
+      mouseEvents={[
+        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
+      ]}
     >
       Private Arena
     </Button>
@@ -62,6 +97,9 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, -0.4, 1, -20, 0)"
+      mouseEvents={[
+        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
+      ]}
     >
       Instant Watch
     </Button>
@@ -76,6 +114,9 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, 0.4, 1, 20, 0)"
+      mouseEvents={[
+        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
+      ]}
     >
       About
     </Button>
@@ -90,6 +131,9 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, 0.4, 1, 20, 0)"
+      mouseEvents={[
+        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
+      ]}
     >
       Staking
     </Button>
@@ -104,6 +148,9 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, 0.4, 1, 20, 0)"
+      mouseEvents={[
+        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
+      ]}
     >
       Contact
     </Button>
@@ -244,7 +291,7 @@ const Home = () => (
         projects with investments
       </Text>
     </ColumnFlex>
-    <Image
+    <RotatingImage
       position="absolute"
       src={imgUrl2}
       width={249}
@@ -312,6 +359,46 @@ const Home = () => (
       color="#fff"
       fontSize={18}
       lineHeight={26}
+    >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+      galley of type and scrambled it to make a type specimen book. It has survived not only five
+      centuries,Lorem Ipsum is simply dumm
+    </Text>
+    <GlowingImage
+      position="absolute"
+      src={imgUrl4}
+      width={437}
+      height={328}
+      left={358}
+      right={357}
+      top={2471}
+      alt="Image_8"
+    />
+    <Text
+      position="absolute"
+      width={305}
+      height={70}
+      left={434}
+      top={2773}
+      color="#fff"
+      fontSize={48}
+      lineHeight={70}
+      fontWeight="bold"
+    >
+      Play n'Earn
+    </Text>
+    <Text
+      position="absolute"
+      width={625}
+      height={142}
+      left={263}
+      right={264}
+      top={2861}
+      color="#fff"
+      fontSize={18}
+      lineHeight={26}
+      textAlign="center"
     >
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
       been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
