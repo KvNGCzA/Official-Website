@@ -14,6 +14,7 @@ interface ButtonProps {
   backgroundColor: string;
   color: string;
   transform?: string;
+  mouseEvents?: Array<{ name: string; definition: any }>;
 }
 
 const Button = styled("button")<ButtonProps>`
@@ -31,6 +32,12 @@ const Button = styled("button")<ButtonProps>`
   box-shadow: ${props => props.boxShadow || undefined};
   cursor: pointer;
   transform: ${props => props.transform || undefined};
+  ${props =>
+    !!props.mouseEvents &&
+    props.mouseEvents.length > 0 &&
+    props.mouseEvents.map(e => {
+      return `&:${e.name}:${e.definition};`;
+    })}
 `;
 
 export default Button;

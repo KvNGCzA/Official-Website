@@ -31,8 +31,7 @@ const Text = styled("span")<TextProps>`
   font-style: ${props => props.fontStyle || "normal"};
   font-weight: ${props => props.fontWeight || "normal"};
   font-family: ${props => props.fontFamily || "sans-serif"};
-  line-height: ${props =>
-    !!props.lineHeight ? props.lineHeight + "px" : "43px"};
+  line-height: ${props => (!!props.lineHeight ? props.lineHeight + "px" : "43px")};
   color: ${props => props.color};
   margin: ${props => props.margin || undefined};
   text-align: ${props => props.textAlign || "left"};
