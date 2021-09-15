@@ -3,5 +3,5 @@ body {
   padding: 0;
   position: relative;
   background-color: #000;
-  overflow: hidden;
+  overflow-x: hidden;
 }
