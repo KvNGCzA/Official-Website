@@ -5,6 +5,10 @@ import imgUrl from "../../assets/img/image_8.png";
 import imgUrl2 from "../../assets/img/mask_group.png";
 import imgUrl3 from "../../assets/img/mask_group2.png";
 import imgUrl4 from "../../assets/img/image_4.png";
+import imgUrl5 from "../../assets/img/image_13.png";
+import imgUrl6 from "../../assets/img/frame.png";
+import imgUrl7 from "../../assets/img/group_14.png";
+import imgUrl8 from "../../assets/img/group_3.png";
 
 const kfRotate = keyframes`
   from {
@@ -43,15 +47,21 @@ const GlowingImage = styled(Image)`
 
 const Home = () => (
   <div>
-    <Image
+    <Image position="absolute" src={imgUrl} width={1230} height={922} left={-19} top={62} alt="Image_8" />
+    <Image position="absolute" src={imgUrl8} width={44.54} height={36} left={323} top={74} alt="Image_8" />
+    <Text
       position="absolute"
-      src={imgUrl}
-      width={1230}
-      height={922}
-      left={1}
-      top={1}
-      alt="Image_8"
-    />
+      width={123}
+      height={25}
+      left={377}
+      top={83}
+      color="#fff"
+      fontSize={24}
+      lineHeight={29}
+      fontWeight="bold"
+    >
+      DEFTIFY
+    </Text>
     <Button
       position="absolute"
       width={178}
@@ -63,9 +73,7 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, -0.4, 1, -20, 0)"
-      mouseEvents={[
-        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
-      ]}
+      mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
     >
       Play n'Earn
     </Button>
@@ -80,9 +88,7 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, -0.4, 1, -20, 0)"
-      mouseEvents={[
-        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
-      ]}
+      mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
     >
       Private Arena
     </Button>
@@ -97,9 +103,7 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, -0.4, 1, -20, 0)"
-      mouseEvents={[
-        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
-      ]}
+      mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
     >
       Instant Watch
     </Button>
@@ -114,9 +118,7 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, 0.4, 1, 20, 0)"
-      mouseEvents={[
-        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
-      ]}
+      mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
     >
       About
     </Button>
@@ -131,9 +133,7 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, 0.4, 1, 20, 0)"
-      mouseEvents={[
-        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
-      ]}
+      mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
     >
       Staking
     </Button>
@@ -148,41 +148,20 @@ const Home = () => (
       backgroundColor="transparent"
       color="#fff"
       transform="matrix(1, 0, 0.4, 1, 20, 0)"
-      mouseEvents={[
-        { name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }
-      ]}
+      mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
     >
       Contact
     </Button>
-    <Text
-      position="absolute"
-      width={149}
-      height={43}
-      left={74}
-      top={778}
-      color="#fff"
-      fontSize={36}
-      lineHeight={43}
-    >
+    <Text position="absolute" width={149} height={43} left={74} top={778} color="#fff" fontSize={36} lineHeight={43}>
       ABOUT
     </Text>
-    <Text
-      position="absolute"
-      width={451}
-      height={373}
-      left={74}
-      top={847}
-      color="#fff"
-      fontSize={18}
-      lineHeight={26}
-    >
-      Deftify is a Decentralised DeFi and NFT platform that focuses on private funding, mentorship
-      of African focused Blockchain projects and founders with the aim of attracting all forms of
-      social, financial and technical value to the continent of Africa. The platform also focused on
-      building a DeFi and NFT market data aggregator for better cryptocurrency market insights for
-      traders, investors, companies and crypto enthusiasts in general. Deftify is also positioning
-      itself in the play-to-earn gaming model leveraging a multichain model built on Solana,
-      Avalanche, and Fantom Blockchains.
+    <Text position="absolute" width={451} height={373} left={74} top={847} color="#fff" fontSize={18} lineHeight={26}>
+      Deftify is a Decentralised DeFi and NFT platform that focuses on private funding, mentorship of African focused
+      Blockchain projects and founders with the aim of attracting all forms of social, financial and technical value to
+      the continent of Africa. The platform also focused on building a DeFi and NFT market data aggregator for better
+      cryptocurrency market insights for traders, investors, companies and crypto enthusiasts in general. Deftify is
+      also positioning itself in the play-to-earn gaming model leveraging a multichain model built on Solana, Avalanche,
+      and Fantom Blockchains.
     </Text>
     <ColumnFlex
       position="absolute"
@@ -291,15 +270,7 @@ const Home = () => (
         projects with investments
       </Text>
     </ColumnFlex>
-    <RotatingImage
-      position="absolute"
-      src={imgUrl2}
-      width={249}
-      height={249}
-      left={107}
-      top={1328}
-      alt="Image_8"
-    />
+    <RotatingImage position="absolute" src={imgUrl2} width={249} height={249} left={107} top={1328} alt="Image_8" />
     <Text
       position="absolute"
       width={375}
@@ -313,30 +284,12 @@ const Home = () => (
     >
       Private Arena
     </Text>
-    <Text
-      position="absolute"
-      width={451}
-      height={373}
-      left={74}
-      top={1683}
-      color="#fff"
-      fontSize={18}
-      lineHeight={26}
-    >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-      galley of type and scrambled it to make a type specimen book. It has survived not only five
-      centuries,Lorem Ipsum is simply dumm
+    <Text position="absolute" width={451} height={373} left={74} top={1683} color="#fff" fontSize={18} lineHeight={26}>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dumm
     </Text>
-    <Image
-      position="absolute"
-      src={imgUrl3}
-      width={248}
-      height={248}
-      right={159}
-      top={1782}
-      alt="Image_8"
-    />
+    <Image position="absolute" src={imgUrl3} width={248} height={248} right={159} top={1782} alt="Image_8" />
     <Text
       position="absolute"
       width={376}
@@ -360,10 +313,9 @@ const Home = () => (
       fontSize={18}
       lineHeight={26}
     >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-      galley of type and scrambled it to make a type specimen book. It has survived not only five
-      centuries,Lorem Ipsum is simply dumm
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dumm
     </Text>
     <GlowingImage
       position="absolute"
@@ -400,10 +352,43 @@ const Home = () => (
       lineHeight={26}
       textAlign="center"
     >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-      galley of type and scrambled it to make a type specimen book. It has survived not only five
-      centuries,Lorem Ipsum is simply dumm
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dumm
+    </Text>
+    <Image position="absolute" src={imgUrl5} width={1064} height={665} right={56} left={32} top={3063} alt="Image_8" />
+    <Image position="absolute" src={imgUrl6} width={137} height={137} right={516} left={499} top={3327} alt="Image_8" />
+    <Text
+      position="absolute"
+      width={142}
+      height={26}
+      left={496}
+      right={514}
+      top={3464}
+      color="#fff"
+      fontSize={18}
+      lineHeight={26}
+      fontWeight="bold"
+      textAlign="center"
+    >
+      WATCH DEMO
+    </Text>
+    <Image position="absolute" src={imgUrl7} width={274.93} height={120.37} left={129.63} top={3888} alt="Image_8" />
+    <Image position="absolute" src={imgUrl7} width={274.93} height={120.37} left={758.63} top={3888} alt="Image_8" />
+    <Text
+      position="absolute"
+      width={114}
+      height={70}
+      left={522}
+      right={516}
+      top={3925}
+      color="#3cfae3"
+      fontSize={48}
+      lineHeight={76}
+      fontWeight="bold"
+      textAlign="center"
+    >
+      FAQ
     </Text>
   </div>
 );
