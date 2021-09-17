@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { CommonDefs } from "../commonDefinitions";
 
 interface AnchorProps {
   position: "absolute" | "relative" | "fixed" | "static";
@@ -17,7 +18,7 @@ interface AnchorProps {
   right?: number;
 }
 
-const Anchor = styled("a")<AnchorProps>`
+const Anchor = styled("a")<AnchorProps & CommonDefs>`
   position ${props => props.position};
   color: ${props => props.color};
   font-size: ${props => (!!props.fontSize ? props.fontSize + "px" : "12px")};
@@ -32,6 +33,13 @@ const Anchor = styled("a")<AnchorProps>`
   left: ${props => (!!props.left ? props.left + "px" : undefined)};
   right: ${props => (!!props.right ? props.right + "px" : undefined)};
   bottom: ${props => (!!props.bottom ? props.bottom + "px" : undefined)};
+
+  ${props =>
+    !!props.mobileScreensDefinitions &&
+    props.mobileScreensDefinitions.length > 0 &&
+    props.mobileScreensDefinitions.map(def => {
+      return `@media screen and (max-width: ${def.screenSize + "px"}) ${def.definition}`;
+    })}
 `;
 
 export default Anchor;

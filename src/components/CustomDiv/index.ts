@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { CommonDefs } from "../commonDefinitions";
 
 interface DivProps {
   position: "absolute" | "fixed" | "static" | "relative";
@@ -13,7 +14,7 @@ interface DivProps {
   borderImage?: string;
 }
 
-const CustomDiv = styled("div")<DivProps>`
+const CustomDiv = styled("div")<DivProps & CommonDefs>`
   position: ${props => props.position};
   width: ${props => props.width};
   height: ${props => props.height};
@@ -24,6 +25,13 @@ const CustomDiv = styled("div")<DivProps>`
   transform: ${props => props.transform || undefined};
   border: ${props => props.border || undefined};
   border-image: ${props => props.borderImage || undefined};
+
+  ${props =>
+    !!props.mobileScreensDefinitions &&
+    props.mobileScreensDefinitions.length > 0 &&
+    props.mobileScreensDefinitions.map(def => {
+      return `@media screen and (max-width: ${def.screenSize + "px"}) ${def.definition}`;
+    })}
 `;
 
 export default CustomDiv;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { CommonDefs } from "../commonDefinitions";
 
 interface TextProps {
   position: "absolute" | "static" | "relative" | "fixed";
@@ -16,10 +17,9 @@ interface TextProps {
   color: string;
   margin?: string;
   textAlign?: "center" | "left" | "right";
-  transform?: string;
 }
 
-const Text = styled("span")<TextProps>`
+const Text = styled("span")<TextProps & CommonDefs>`
   position: ${props => props.position};
   width: ${props => (!!props.width ? props.width + "px" : "14px")};
   height: ${props => (!!props.height ? props.height + "px" : "14px")};
@@ -36,6 +36,13 @@ const Text = styled("span")<TextProps>`
   margin: ${props => props.margin || undefined};
   text-align: ${props => props.textAlign || "left"};
   transform: ${props => props.transform || undefined};
+
+  ${props =>
+    !!props.mobileScreensDefinitions &&
+    props.mobileScreensDefinitions.length > 0 &&
+    props.mobileScreensDefinitions.map(def => {
+      return `@media screen and (max-width: ${def.screenSize + "px"}) ${def.definition}`;
+    })}
 `;
 
 export default Text;
