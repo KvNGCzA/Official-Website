@@ -60,7 +60,7 @@ const Home = () => (
         {
           screenSize: 360,
           definition: `{
-          width: 432.69px;
+          width: 332.69px;
           height: 432.69px;
           left: -18px;
         }`
@@ -434,7 +434,7 @@ const Home = () => (
           screenSize: 360,
           definition: `{
           position: absolute;
-          width: 348px;
+          width: 325px;
           height: 825px;
           left: 1px;
           top: 1704px;
@@ -756,7 +756,7 @@ const Home = () => (
         position: absolute;
         width: 335px;
         height: 209.38px;
-        left: 12px;
+        left: 6px;
         top: 4052px;
       }`
         }
@@ -778,7 +778,7 @@ const Home = () => (
         position: absolute;
         width: 43.13px;
         height: 43.13px;
-        left: 159.03px;
+        left: 151.03px;
         top: 4135.12px;
       }`
         }
@@ -803,7 +803,7 @@ const Home = () => (
           position: absolute;
           width: 111px;
           height: 26px;
-          left: 125px;
+          left: 117px;
           top: 4178px;
           font-style: normal;
           font-weight: bold;
@@ -831,7 +831,7 @@ const Home = () => (
         position: absolute;
         width: 97.63px;
         height: 42.74px;
-        left: 24.78px;
+        left: 16.78px;
         top: 4384px;
       }`
         }
@@ -852,7 +852,7 @@ const Home = () => (
         position: absolute;
         width: 97.63px;
         height: 42.74px;
-        left: 238.78px;
+        left: 230.78px;
         top: 4384px;
       }`
         }
@@ -877,7 +877,7 @@ const Home = () => (
           position: absolute;
           width: 33px;
           height: 70px;
-          left: 166px;
+          left: 158px;
           top: 4375px;
           font-style: normal;
           font-weight: bold;
@@ -1058,11 +1058,11 @@ const Home = () => (
           screenSize: 360,
           definition: `{
           position: absolute;
-          width: 113px;
+          width: 100px;
           height: 24px;
-          left: 2px;
+          left: 0px;
           top: 4673px;
-          font-size: 12px;
+          font-size: 9px;
           line-height: 70px;
         }`
         }
@@ -1086,11 +1086,11 @@ const Home = () => (
           screenSize: 360,
           definition: `{
           position: absolute;
-          width: 72px;
+          width: 60px;
           height: 24px;
-          left: 114px;
+          left: 112px;
           top: 4673px;
-          font-size: 12px;
+          font-size: 9px;
           line-height: 70px;
         }`
         }
@@ -1114,11 +1114,11 @@ const Home = () => (
           screenSize: 360,
           definition: `{
           position: absolute;
-          width: 174px;
+          width: 110px;
           height: 24px;
-          left: 188px;
+          left: 186px;
           top: 4673px;
-          font-size: 12px;
+          font-size: 9px;
           line-height: 70px;
         }`
         }
