@@ -5,3 +5,8 @@ body {
   background-color: #000;
   overflow-x: hidden;
 }
+
+* {
+  text-decoration: none;
+  font-family: 'Goldman', cursive;
+}

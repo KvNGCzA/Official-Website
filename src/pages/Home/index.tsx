@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { Button, Image, Text, CustomDiv } from "../../components";
+import { faTwitter, faTelegram, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { Button, Image, Text, CustomDiv, Anchor, Icon } from "../../components";
 import imgUrl from "../../assets/img/image_8.png";
 import imgUrl2 from "../../assets/img/mask_group.png";
 import imgUrl3 from "../../assets/img/mask_group2.png";
@@ -47,7 +48,7 @@ const GlowingImage = styled(Image)`
 
 const Home = () => (
   <div>
-    <Image position="absolute" src={imgUrl} width={1230} height={922} left={-19} top={62} alt="Image_8" />
+    <Image position="absolute" src={imgUrl} width={1230} height={922} left={1} top={1} alt="Image_8" />
     <Image position="absolute" src={imgUrl8} width={44.54} height={36} left={323} top={74} alt="Image_8" />
     <Text
       position="absolute"
@@ -289,6 +290,21 @@ const Home = () => (
       standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
       type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dumm
     </Text>
+    <Anchor
+      href="#"
+      position="absolute"
+      width={117}
+      height={70}
+      top={1920}
+      left={74}
+      fontSize={24}
+      lineHeight={70}
+      fontWeight="bold"
+      textAlign="center"
+      color="#3cfae3"
+    >
+      LAUNCH
+    </Anchor>
     <Image position="absolute" src={imgUrl3} width={248} height={248} right={159} top={1782} alt="Image_8" />
     <Text
       position="absolute"
@@ -317,6 +333,21 @@ const Home = () => (
       standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
       type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dumm
     </Text>
+    <Anchor
+      href="#"
+      position="absolute"
+      width={74}
+      height={70}
+      top={2383}
+      right={390}
+      fontSize={24}
+      lineHeight={70}
+      fontWeight="bold"
+      textAlign="center"
+      color="#3cfae3"
+    >
+      VIEW
+    </Anchor>
     <GlowingImage
       position="absolute"
       src={imgUrl4}
@@ -390,6 +421,104 @@ const Home = () => (
     >
       FAQ
     </Text>
+    <Image
+      position="absolute"
+      src={imgUrl8}
+      width={44.54}
+      height={36}
+      left={40}
+      top={4618}
+      bottom={104}
+      alt="Image_8"
+    />
+    <Text
+      position="absolute"
+      width={121}
+      height={13}
+      left={92}
+      top={4627}
+      color="#fff"
+      fontSize={24}
+      lineHeight={29}
+      fontWeight="bold"
+    >
+      DEFTIFY
+    </Text>
+    <Text position="absolute" width={185} height={24} left={40} top={4676} color="#fff" fontSize={18} lineHeight={70}>
+      contact@deftify.io
+    </Text>
+    <Icon
+      icon={faTwitter}
+      width={23}
+      height={23}
+      color="#fff"
+      position="absolute"
+      left="20.92%"
+      top="4700px"
+      right="77.08%"
+    />
+    <Icon
+      icon={faTelegram}
+      width={23}
+      height={23}
+      color="#fff"
+      position="absolute"
+      left="24.05%"
+      top="4700px"
+      right="73.96%"
+    />
+    <Icon
+      icon={faDiscord}
+      width={23}
+      height={23}
+      color="#fff"
+      position="absolute"
+      left="27.43%"
+      top="4700px"
+      right="70.57%"
+    />
+    <Anchor
+      href="#"
+      position="absolute"
+      width={115}
+      height={24}
+      top={4676}
+      left={695}
+      fontSize={18}
+      lineHeight={70}
+      textAlign="center"
+      color="#fff"
+    >
+      Whitepaper
+    </Anchor>
+    <Anchor
+      href="#"
+      position="absolute"
+      width={74}
+      height={24}
+      top={4676}
+      left={836}
+      fontSize={18}
+      lineHeight={70}
+      textAlign="center"
+      color="#fff"
+    >
+      Privacy
+    </Anchor>
+    <Anchor
+      href="#"
+      position="absolute"
+      width={176}
+      height={24}
+      top={4676}
+      left={936}
+      fontSize={18}
+      lineHeight={70}
+      textAlign="center"
+      color="#fff"
+    >
+      Terms & Condition
+    </Anchor>
   </div>
 );
 
