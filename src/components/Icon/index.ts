@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { CommonDefs } from "../commonDefinitions";
 
 interface IconProps {
   width: number;
@@ -12,7 +13,7 @@ interface IconProps {
   right?: string;
 }
 
-const Icon = styled(FontAwesomeIcon)<IconProps>`
+const Icon = styled(FontAwesomeIcon)<IconProps & CommonDefs>`
   width: ${props => props.width + "px"};
   height: ${props => props.height + "px"};
   color: ${props => props.color};
@@ -21,6 +22,13 @@ const Icon = styled(FontAwesomeIcon)<IconProps>`
   left: ${props => props.left || undefined};
   bottom: ${props => props.bottom || undefined};
   right: ${props => props.right || undefined};
+
+  ${props =>
+    !!props.mobileScreensDefinitions &&
+    props.mobileScreensDefinitions.length > 0 &&
+    props.mobileScreensDefinitions.map(def => {
+      return `@media screen and (max-width: ${def.screenSize + "px"}) ${def.definition}`;
+    })}
 `;
 
 export default Icon;

@@ -60,7 +60,9 @@ const Home = () => (
         {
           screenSize: 360,
           definition: `{
-          display: none
+          width: 432.69px;
+          height: 432.69px;
+          left: -18px;
         }`
         }
       ]}
@@ -436,7 +438,7 @@ const Home = () => (
           height: 825px;
           left: 27px;
           top: 1704px;
-          transform: translate(8px);
+          transform: translate(3px);
         }`
         }
       ]}
@@ -928,7 +930,7 @@ const Home = () => (
           width: 121px;
           height: 13px;
           left: 56px;
-          top: 4615px;
+          top: 4599px;
           font-style: normal;
           font-weight: bold;
           font-size: 18px;
@@ -939,8 +941,34 @@ const Home = () => (
     >
       DEFTIFY
     </Text>
-    <Text position="absolute" width={185} height={24} left={40} top={4676} color="#fff" fontSize={18} lineHeight={70}>
-      contact@deftify.io
+    <Text
+      position="absolute"
+      width={185}
+      height={24}
+      left={40}
+      top={4676}
+      color="#fff"
+      fontSize={18}
+      lineHeight={70}
+      mobileScreensDefinitions={[
+        {
+          screenSize: 360,
+          definition: `{
+          position: absolute;
+          width: 185px;
+          height: 24px;
+          left: 14px;
+          top: 4626px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 70px;
+          text-align: center;
+        }`
+        }
+      ]}
+    >
+      Contact@deftify.io
     </Text>
     <Icon
       icon={faTwitter}
@@ -951,6 +979,20 @@ const Home = () => (
       left="20.92%"
       top="4700px"
       right="77.08%"
+      mobileScreensDefinitions={[
+        {
+          screenSize: 360,
+          definition: `{
+          position: absolute;
+          width: 23px;
+          height: 23px;
+          left: 48%;
+          top: 4650px;
+          right: 46.67%;
+          bottom: 1.12%;
+        }`
+        }
+      ]}
     />
     <Icon
       icon={faTelegram}
@@ -961,6 +1003,20 @@ const Home = () => (
       left="24.05%"
       top="4700px"
       right="73.96%"
+      mobileScreensDefinitions={[
+        {
+          screenSize: 360,
+          definition: `{
+          position: absolute;
+          width: 23px;
+          height: 23px;
+          left: 58.04%;
+          top: 4650px;
+          right: 36.67%;
+          bottom: 1.12%;
+        }`
+        }
+      ]}
     />
     <Icon
       icon={faDiscord}
@@ -971,6 +1027,20 @@ const Home = () => (
       left="27.43%"
       top="4700px"
       right="70.57%"
+      mobileScreensDefinitions={[
+        {
+          screenSize: 360,
+          definition: `{
+          position: absolute;
+          width: 23px;
+          height: 23px;
+          left: 68.88%;
+          top: 4650px;
+          right: 25.83%;
+          bottom: 1.12%;
+        }`
+        }
+      ]}
     />
     <Anchor
       href="#"
@@ -983,6 +1053,19 @@ const Home = () => (
       lineHeight={70}
       textAlign="center"
       color="#fff"
+      mobileScreensDefinitions={[
+        {
+          screenSize: 360,
+          definition: `{
+          position: absolute;
+          width: 115px;
+          height: 24px;
+          left: 3px;
+          top: 4673px;
+          font-size: 14px;
+        }`
+        }
+      ]}
     >
       Whitepaper
     </Anchor>
@@ -997,6 +1080,20 @@ const Home = () => (
       lineHeight={70}
       textAlign="center"
       color="#fff"
+      mobileScreensDefinitions={[
+        {
+          screenSize: 360,
+          definition: `{
+          position: absolute;
+          width: 74px;
+          height: 24px;
+          left: 116px;
+          top: 4673px;
+          font-size: 14px;
+          line-height: 70px;
+        }`
+        }
+      ]}
     >
       Privacy
     </Anchor>
@@ -1011,6 +1108,20 @@ const Home = () => (
       lineHeight={70}
       textAlign="center"
       color="#fff"
+      mobileScreensDefinitions={[
+        {
+          screenSize: 360,
+          definition: `{
+          position: absolute;
+          width: 176px;
+          height: 24px;
+          left: 190px;
+          top: 4673px;
+          font-size: 14px;
+          line-height: 70px;
+        }`
+        }
+      ]}
     >
       Terms & Condition
     </Anchor>
