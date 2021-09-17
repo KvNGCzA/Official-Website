@@ -436,9 +436,9 @@ const Home = () => (
           position: absolute;
           width: 348px;
           height: 825px;
-          left: 27px;
+          left: 1px;
           top: 1704px;
-          transform: translate(3px);
+          transform: none;
         }`
         }
       ]}
@@ -1058,11 +1058,12 @@ const Home = () => (
           screenSize: 360,
           definition: `{
           position: absolute;
-          width: 115px;
+          width: 113px;
           height: 24px;
-          left: 3px;
+          left: 2px;
           top: 4673px;
-          font-size: 14px;
+          font-size: 12px;
+          line-height: 70px;
         }`
         }
       ]}
@@ -1085,11 +1086,11 @@ const Home = () => (
           screenSize: 360,
           definition: `{
           position: absolute;
-          width: 74px;
+          width: 72px;
           height: 24px;
-          left: 116px;
+          left: 114px;
           top: 4673px;
-          font-size: 14px;
+          font-size: 12px;
           line-height: 70px;
         }`
         }
@@ -1113,11 +1114,11 @@ const Home = () => (
           screenSize: 360,
           definition: `{
           position: absolute;
-          width: 176px;
+          width: 174px;
           height: 24px;
-          left: 190px;
+          left: 188px;
           top: 4673px;
-          font-size: 14px;
+          font-size: 12px;
           line-height: 70px;
         }`
         }
