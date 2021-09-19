@@ -58,7 +58,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           width: 332.69px;
           height: 432.69px;
@@ -77,7 +77,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           display: none
         }`
@@ -96,7 +96,7 @@ const Home = () => (
       fontWeight="bold"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           display: none
         }`
@@ -119,7 +119,7 @@ const Home = () => (
       mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           display: none
         }`
@@ -142,7 +142,7 @@ const Home = () => (
       mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           display: none
         }`
@@ -165,7 +165,7 @@ const Home = () => (
       mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           display: none
         }`
@@ -188,7 +188,7 @@ const Home = () => (
       mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           display: none
         }`
@@ -211,7 +211,7 @@ const Home = () => (
       mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           display: none
         }`
@@ -234,7 +234,7 @@ const Home = () => (
       mouseEvents={[{ name: "hover", definition: "{ transform: matrix(1.5, 0, -0.4, 1.5, -20, 0)}" }]}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           display: none
         }`
@@ -254,7 +254,7 @@ const Home = () => (
       lineHeight={43}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 97px;
@@ -283,7 +283,7 @@ const Home = () => (
       lineHeight={26}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 299px;
@@ -316,7 +316,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
         position: absolute;
         width: 249px;
@@ -339,7 +339,7 @@ const Home = () => (
       fontWeight="bold"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 188px;
@@ -368,7 +368,7 @@ const Home = () => (
       lineHeight={26}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 307px;
@@ -402,7 +402,7 @@ const Home = () => (
       color="#3cfae3"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 88px;
@@ -431,7 +431,7 @@ const Home = () => (
       transform="translateX(8px)"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 325px;
@@ -550,7 +550,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
         position: absolute;
         width: 248px;
@@ -573,7 +573,7 @@ const Home = () => (
       fontWeight="bold"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 188px;
@@ -602,7 +602,7 @@ const Home = () => (
       lineHeight={26}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 307px;
@@ -636,7 +636,7 @@ const Home = () => (
       color="#3cfae3"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 88px;
@@ -665,7 +665,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
         position: absolute;
         width: 248px;
@@ -688,7 +688,7 @@ const Home = () => (
       fontWeight="bold"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 153px;
@@ -719,7 +719,7 @@ const Home = () => (
       textAlign="center"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 307px;
@@ -751,7 +751,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
         position: absolute;
         width: 335px;
@@ -773,7 +773,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
         position: absolute;
         width: 43.13px;
@@ -798,7 +798,7 @@ const Home = () => (
       textAlign="center"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 111px;
@@ -826,7 +826,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
         position: absolute;
         width: 97.63px;
@@ -847,7 +847,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
         position: absolute;
         width: 97.63px;
@@ -872,7 +872,7 @@ const Home = () => (
       textAlign="center"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 33px;
@@ -901,7 +901,7 @@ const Home = () => (
       alt="Image_8"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
         position: absolute;
         width: 30px;
@@ -924,7 +924,7 @@ const Home = () => (
       fontWeight="bold"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 121px;
@@ -952,7 +952,7 @@ const Home = () => (
       lineHeight={70}
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 185px;
@@ -981,7 +981,7 @@ const Home = () => (
       right="77.08%"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 23px;
@@ -1005,7 +1005,7 @@ const Home = () => (
       right="73.96%"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 23px;
@@ -1029,7 +1029,7 @@ const Home = () => (
       right="70.57%"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 23px;
@@ -1055,7 +1055,7 @@ const Home = () => (
       color="#fff"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 100px;
@@ -1083,7 +1083,7 @@ const Home = () => (
       color="#fff"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 60px;
@@ -1111,7 +1111,7 @@ const Home = () => (
       color="#fff"
       mobileScreensDefinitions={[
         {
-          screenSize: 360,
+          screenSize: 480,
           definition: `{
           position: absolute;
           width: 110px;
