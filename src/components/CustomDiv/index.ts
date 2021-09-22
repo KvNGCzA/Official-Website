@@ -3,8 +3,8 @@ import { CommonDefs } from "../commonDefinitions";
 
 interface DivProps {
   position: "absolute" | "fixed" | "static" | "relative";
-  width: number;
-  height: number;
+  width: string;
+  height?: string;
   left?: number;
   top?: number;
   right?: number;
@@ -12,26 +12,34 @@ interface DivProps {
   transform?: string;
   border?: string;
   borderImage?: string;
+  display?: string;
+  flexDirection?: "row" | "column";
+  alignItems?: string;
+  padding?: string;
+  backgroundColor?: string;
 }
 
 const CustomDiv = styled("div")<DivProps & CommonDefs>`
   position: ${props => props.position};
   width: ${props => props.width};
   height: ${props => props.height};
-  left: ${props => (!!props.left ? props.left + "px" : undefined)};
-  right: ${props => (!!props.right ? props.right + "px" : undefined)};
-  bottom: ${props => (!!props.bottom ? props.bottom + "px" : undefined)};
-  top: ${props => (!!props.top ? props.top + "px" : undefined)};
-  transform: ${props => props.transform || undefined};
-  border: ${props => props.border || undefined};
-  border-image: ${props => props.borderImage || undefined};
-
-  ${props =>
-    !!props.mobileScreensDefinitions &&
-    props.mobileScreensDefinitions.length > 0 &&
-    props.mobileScreensDefinitions.map(def => {
-      return `@media screen and (max-width: ${def.screenSize + "px"}) ${def.definition}`;
-    })}
+  left: ${props => (!!props.left ? props.left + "%" : undefined)};
+  right: ${props => (!!props.right ? props.right + "%" : undefined)};
+  bottom: ${props => (!!props.bottom ? props.bottom + "%" : undefined)};
+  top: ${props => (!!props.top ? props.top + "%" : undefined)};
+  transform: ${props => props.transform};
+  border: ${props => props.border};
+  border-image: ${props => props.borderImage};
+  display: ${props => props.display};
+  flex-direction: ${props => props.flexDirection};
+  background-color: ${props => props.backgroundColor};
+  align-items: ${props => props.alignItems}
+    ${props =>
+      !!props.wideScreensDefinitions &&
+      props.wideScreensDefinitions.length > 0 &&
+      props.wideScreensDefinitions.map(def => {
+        return `@media screen and (min-width: ${def.screenSize + "px"}) ${def.definition}`;
+      })};
 `;
 
 export default CustomDiv;

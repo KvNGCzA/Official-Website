@@ -22,13 +22,6 @@ const Icon = styled(FontAwesomeIcon)<IconProps & CommonDefs>`
   left: ${props => props.left || undefined};
   bottom: ${props => props.bottom || undefined};
   right: ${props => props.right || undefined};
-
-  ${props =>
-    !!props.mobileScreensDefinitions &&
-    props.mobileScreensDefinitions.length > 0 &&
-    props.mobileScreensDefinitions.map(def => {
-      return `@media screen and (max-width: ${def.screenSize + "px"}) ${def.definition}`;
-    })}
 `;
 
 export default Icon;

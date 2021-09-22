@@ -12,8 +12,9 @@ interface ButtonProps {
   border: string;
   boxSizing?: string;
   boxShadow?: string;
-  backgroundColor: string;
+  backgroundColor?: string;
   color: string;
+  borderImage?: string;
 }
 
 const Button = styled("button")<ButtonProps & CommonDefs>`
@@ -30,6 +31,7 @@ const Button = styled("button")<ButtonProps & CommonDefs>`
   color: ${props => props.color || "#fff"};
   box-shadow: ${props => props.boxShadow || undefined};
   cursor: pointer;
+  border-image: ${props => props.borderImage};
   transform: ${props => props.transform || undefined};
   transition: transform 1s ease-in-out;
   ${props =>
@@ -37,13 +39,6 @@ const Button = styled("button")<ButtonProps & CommonDefs>`
     props.mouseEvents.length > 0 &&
     props.mouseEvents.map(e => {
       return `&:${e.name} ${e.definition}`;
-    })}
-
-  ${props =>
-    !!props.mobileScreensDefinitions &&
-    props.mobileScreensDefinitions.length > 0 &&
-    props.mobileScreensDefinitions.map(def => {
-      return `@media screen and (max-width: ${def.screenSize + "px"}) ${def.definition}`;
     })}
 `;
 

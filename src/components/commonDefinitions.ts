@@ -3,13 +3,13 @@ interface MouseEventDef {
   definition: any;
 }
 
-interface MobileScreenDef {
+interface WideScreenDef {
   screenSize: number;
   definition: any;
 }
 
 export interface CommonDefs {
   mouseEvents?: Array<MouseEventDef>;
-  mobileScreensDefinitions?: Array<MobileScreenDef>;
+  wideScreensDefinitions?: Array<WideScreenDef>;
   transform?: string;
 }

@@ -33,13 +33,6 @@ const Anchor = styled("a")<AnchorProps & CommonDefs>`
   left: ${props => (!!props.left ? props.left + "px" : undefined)};
   right: ${props => (!!props.right ? props.right + "px" : undefined)};
   bottom: ${props => (!!props.bottom ? props.bottom + "px" : undefined)};
-
-  ${props =>
-    !!props.mobileScreensDefinitions &&
-    props.mobileScreensDefinitions.length > 0 &&
-    props.mobileScreensDefinitions.map(def => {
-      return `@media screen and (max-width: ${def.screenSize + "px"}) ${def.definition}`;
-    })}
 `;
 
 export default Anchor;
