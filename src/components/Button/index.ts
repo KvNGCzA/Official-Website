@@ -39,7 +39,13 @@ const Button = styled("button")<ButtonProps & CommonDefs>`
     props.mouseEvents.length > 0 &&
     props.mouseEvents.map(e => {
       return `&:${e.name} ${e.definition}`;
-    })}
+    })};
+  ${props =>
+    !!props.wideScreensDefinitions &&
+    props.wideScreensDefinitions.length > 0 &&
+    props.wideScreensDefinitions.map(def => {
+      return `@media screen and (min-width: ${def.screenSize + "px"}) ${def.definition}`;
+    })};
 `;
 
 export default Button;

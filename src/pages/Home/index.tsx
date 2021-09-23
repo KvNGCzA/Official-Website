@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { CustomDiv, Text, Button, Image, Icon } from "../../components";
-import image1 from "../../assets/img/frame_2.png";
+import image1 from "../../assets/img/frame_2.svg";
 import binanceImg from "../../assets/img/binance_1.svg";
 import avalancheImg from "../../assets/img/avalanche.svg";
 import ethereumImg from "../../assets/img/ethereum.svg";
@@ -22,8 +22,23 @@ const Home = () => (
       height={60}
       textAlign="center"
       fontWeight="800"
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+            position: absolute;
+            top: 4.65739948674%;
+            left: 21.5625%;
+            width: 78.4375%;
+            height: 60px;
+            font-size: 48px;
+            line-height: 60px;
+            text-align: left;
+          }`
+        }
+      ]}
     >
-      Decentralised DeFi & NFT platform
+      Decentralised DeFi and NFT platform
     </Text>
     <Text
       position="absolute"
@@ -36,6 +51,20 @@ const Home = () => (
       height={115}
       textAlign="center"
       fontWeight="500"
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+            position: absolute;
+            top: 6.26133447391%;
+            left: 21.5625%;
+            width: 56.875%;
+            height: 52px;
+            font-size: 18px;
+            line-height: 26px;
+          }`
+        }
+      ]}
     >
       Deftify is a multipurpose DeFi and NFT platform that focuses on several product areas such as private funding,
       incubation, gaming and market data aggregator.
@@ -49,6 +78,20 @@ const Home = () => (
       left={18.9333333333}
       top={8.09708737864}
       position="absolute"
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            width: 37.6756944444%;
+            height: 53.87px;
+            left: 31.1680555556%;
+            top: 8.11633875107%;
+          }`
+        }
+      ]}
     >
       <Button
         position="absolute"
@@ -59,6 +102,17 @@ const Home = () => (
         left={0}
         backgroundColor="#fcd98d"
         color="#151515"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            width: 44.5615910641%;
+            height: 53.87px;
+            left: 0;
+            top: 0;
+          }`
+          }
+        ]}
       >
         Get Early Access
       </Button>
@@ -72,6 +126,17 @@ const Home = () => (
         backgroundColor="transparent"
         color="#fff"
         borderImage="linear-gradient(#d1fdff, #fddb92) 1"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            width: 44.5615910641%;
+            height: 53.87px;
+            left: 55.4365657199%;
+            top: 0;
+          }`
+          }
+        ]}
       >
         Watch Demo
       </Button>
@@ -83,6 +148,17 @@ const Home = () => (
       left={8.53333333333}
       top={12.0268683676}
       backgroundColor="#151515"
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+            width: 67.7777777778%;
+            height: 717px;
+            left: 16.1111111111%;
+            top: 11.5483319076%;
+          }`
+        }
+      ]}
     >
       <Image src={image1} width="100%" height="100%" alt="Image1" position="absolute" top={0} left={0} />
     </CustomDiv>
@@ -95,6 +171,18 @@ const Home = () => (
       top={18.3111311809}
       backgroundColor="#181a1c"
       margin="16px 0px"
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+            width: 100%;
+            height: 516px;
+            left: 0;
+            top: 26.7964071856%;
+            right: 0;
+          }`
+        }
+      ]}
     >
       <Text
         position="absolute"
@@ -106,6 +194,20 @@ const Home = () => (
         fontSize={24}
         height={30}
         fontWeight="bold"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            position: absolute;
+            top: 14.6996124031%;
+            left: 35.3819444444%;
+            width: 64.6180555556%;
+            height: 59px;
+            font-size: 48px;
+            line-height: 59px;
+          }`
+          }
+        ]}
       >
         Powered by Deftify
       </Text>
@@ -119,6 +221,21 @@ const Home = () => (
         fontSize={16}
         height={115}
         fontWeight="500"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            position: absolute;
+            top: 29.234496124%;
+            left: 24.2458333333%;
+            width: 51.5076388889%;
+            height: 52px;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+          }`
+          }
+        ]}
       >
         Focused on building a DeFi and NFT market data aggregator for better cryptocurrency market insights for traders,
         investors, companies and crypto enthusiasts in general.
@@ -131,6 +248,17 @@ const Home = () => (
         top={30.8781869688}
         border="1px solid"
         borderImage="linear-gradient(#fff, #7986cb, #9fa8da, #13b5ec, #5c6bc0, #8247e5, #c2cbff, #c2f0ff, #e84142, #efe6ff, #ffe6e6, #ffeec2) 0.5"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            width: 91.2375%;
+            height: 190.93px;
+            left: 4.38125%;
+            top: 48.8720930233%;
+          }`
+          }
+        ]}
       >
         <Text
           position="absolute"
@@ -142,6 +270,22 @@ const Home = () => (
           fontSize={18}
           height={48}
           fontWeight="700"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+            position: absolute;
+            top: 21.7671397895%;
+            left: 31.808771369%;
+            width: 68.191228631%;
+            height: 22px;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: left;
+            font-weight: bold;
+          }`
+            }
+          ]}
         >
           Deftify Platform supports all EVM compatible Blockchains
         </Text>
@@ -154,6 +298,19 @@ const Home = () => (
           height="289.73px"
           left={10.9134615385}
           top={24.7963800905}
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+            flex-direction: row;
+            padding: 0px;
+            width: 91.2375%;
+            height: 190.93px;
+            left: 4.38125%;
+            top: 48.8720930233%;
+          }`
+            }
+          ]}
         >
           <CustomDiv
             display="flex"

@@ -36,6 +36,12 @@ const Text = styled("span")<TextProps & CommonDefs>`
   margin: ${props => props.margin || undefined};
   text-align: ${props => props.textAlign || "left"};
   transform: ${props => props.transform || undefined};
+  ${props =>
+    !!props.wideScreensDefinitions &&
+    props.wideScreensDefinitions.length > 0 &&
+    props.wideScreensDefinitions.map(def => {
+      return `@media screen and (min-width: ${def.screenSize + "px"}) ${def.definition}`;
+    })};
 `;
 
 export default Text;
