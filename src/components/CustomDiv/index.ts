@@ -18,6 +18,7 @@ interface DivProps {
   padding?: string;
   backgroundColor?: string;
   margin?: string;
+  borderRadius?: string;
 }
 
 const CustomDiv = styled("div")<DivProps & CommonDefs>`
@@ -36,6 +37,7 @@ const CustomDiv = styled("div")<DivProps & CommonDefs>`
   background-color: ${props => props.backgroundColor};
   align-items: ${props => props.alignItems};
   margin: ${props => props.margin};
+  border-radius: ${props => props.borderRadius};
   ${props =>
     !!props.wideScreensDefinitions &&
     props.wideScreensDefinitions.length > 0 &&

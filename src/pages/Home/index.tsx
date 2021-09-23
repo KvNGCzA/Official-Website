@@ -1,6 +1,13 @@
 import React from "react";
-import { CustomDiv, Text, Button, Image } from "../../components";
+import styled from "styled-components";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { CustomDiv, Text, Button, Image, Icon } from "../../components";
 import image1 from "../../assets/img/frame_2.png";
+import binanceImg from "../../assets/img/binance_1.svg";
+import avalancheImg from "../../assets/img/avalanche.svg";
+import ethereumImg from "../../assets/img/ethereum.svg";
+import polygonImg from "../../assets/img/polygon.svg";
+import fantomImg from "../../assets/img/fantom.svg";
 
 const Home = () => (
   <div>
@@ -134,7 +141,7 @@ const Home = () => (
           lineHeight={24}
           fontSize={18}
           height={48}
-          fontWeight="500"
+          fontWeight="700"
         >
           Deftify Platform supports all EVM compatible Blockchains
         </Text>
@@ -157,6 +164,16 @@ const Home = () => (
             height="24px"
             margin="6.7304041694% 0px"
           >
+            <CustomDiv
+              position="static"
+              width="15.27px"
+              height="15.27px"
+              backgroundColor="#ffeec2"
+              margin="0px 8px"
+              borderRadius="50%"
+            >
+              <Image position="static" src={binanceImg} width="100%" height="100%" alt="Binance" />
+            </CustomDiv>
             <Text
               position="static"
               color="#fff"
@@ -178,6 +195,16 @@ const Home = () => (
             height="24px"
             margin="6.7304041694% 0px"
           >
+            <CustomDiv
+              position="static"
+              width="15.27px"
+              height="15.27px"
+              backgroundColor="#ffe6e6"
+              margin="0px 8px"
+              borderRadius="50%"
+            >
+              <Image position="static" src={avalancheImg} width="100%" height="100%" alt="Avalanche" />
+            </CustomDiv>
             <Text
               position="static"
               color="#fff"
@@ -199,6 +226,16 @@ const Home = () => (
             height="24px"
             margin="6.7304041694% 0px"
           >
+            <CustomDiv
+              position="static"
+              width="15.27px"
+              height="15.27px"
+              backgroundColor="#c2cbff"
+              margin="0px 8px"
+              borderRadius="50%"
+            >
+              <Image position="static" src={ethereumImg} width="100%" height="100%" alt="Ethereum" />
+            </CustomDiv>
             <Text
               position="static"
               color="#fff"
@@ -220,6 +257,16 @@ const Home = () => (
             height="24px"
             margin="6.7304041694% 0px"
           >
+            <CustomDiv
+              position="static"
+              width="15.27px"
+              height="15.27px"
+              backgroundColor="#efe6ff"
+              margin="0px 8px"
+              borderRadius="50%"
+            >
+              <Image position="static" src={polygonImg} width="100%" height="100%" alt="Polygon" />
+            </CustomDiv>
             <Text
               position="static"
               color="#fff"
@@ -241,6 +288,16 @@ const Home = () => (
             height="24px"
             margin="6.7304041694% 0px"
           >
+            <CustomDiv
+              position="static"
+              width="15.27px"
+              height="15.27px"
+              backgroundColor="#c2f0ff"
+              margin="0px 8px"
+              borderRadius="50%"
+            >
+              <Image position="static" src={fantomImg} width="100%" height="100%" alt="Fantom" />
+            </CustomDiv>
             <Text
               position="static"
               color="#fff"
@@ -307,6 +364,15 @@ const Home = () => (
         height="243.78px"
       >
         <CustomDiv position="absolute" backgroundColor="#181a1c" left={0} top={0} width="100%" height="77px">
+          <Icon
+            icon={faCheck}
+            width={15.98}
+            height={15.98}
+            left="3.89180327869%"
+            top="13.8181818182%"
+            position="absolute"
+            color="#fff"
+          />
           <Text
             color="#cacaca"
             position="absolute"
@@ -330,6 +396,15 @@ const Home = () => (
           width="100%"
           height="77px"
         >
+          <Icon
+            icon={faCheck}
+            width={15.98}
+            height={15.98}
+            left="3.89180327869%"
+            top="13.8181818182%"
+            position="absolute"
+            color="#fff"
+          />
           <Text
             color="#cacaca"
             position="absolute"
@@ -352,6 +427,15 @@ const Home = () => (
           width="100%"
           height="77px"
         >
+          <Icon
+            icon={faCheck}
+            width={15.98}
+            height={15.98}
+            left="3.89180327869%"
+            top="13.8181818182%"
+            position="absolute"
+            color="#fff"
+          />
           <Text
             color="#cacaca"
             position="absolute"
