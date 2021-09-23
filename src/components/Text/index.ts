@@ -21,7 +21,7 @@ interface TextProps {
 
 const Text = styled("span")<TextProps & CommonDefs>`
   position: ${props => props.position};
-  width: ${props => (!!props.width ? props.width + "px" : "14px")};
+  width: ${props => (!!props.width ? props.width + "%" : "14px")};
   height: ${props => (!!props.height ? props.height + "px" : "14px")};
   left: ${props => (!!props.left ? props.left + "%" : undefined)};
   top: ${props => (!!props.top ? props.top + "%" : undefined)};

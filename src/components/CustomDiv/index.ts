@@ -17,6 +17,7 @@ interface DivProps {
   alignItems?: string;
   padding?: string;
   backgroundColor?: string;
+  margin?: string;
 }
 
 const CustomDiv = styled("div")<DivProps & CommonDefs>`
@@ -33,13 +34,14 @@ const CustomDiv = styled("div")<DivProps & CommonDefs>`
   display: ${props => props.display};
   flex-direction: ${props => props.flexDirection};
   background-color: ${props => props.backgroundColor};
-  align-items: ${props => props.alignItems}
-    ${props =>
-      !!props.wideScreensDefinitions &&
-      props.wideScreensDefinitions.length > 0 &&
-      props.wideScreensDefinitions.map(def => {
-        return `@media screen and (min-width: ${def.screenSize + "px"}) ${def.definition}`;
-      })};
+  align-items: ${props => props.alignItems};
+  margin: ${props => props.margin};
+  ${props =>
+    !!props.wideScreensDefinitions &&
+    props.wideScreensDefinitions.length > 0 &&
+    props.wideScreensDefinitions.map(def => {
+      return `@media screen and (min-width: ${def.screenSize + "px"}) ${def.definition}`;
+    })};
 `;
 
 export default CustomDiv;

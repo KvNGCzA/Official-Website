@@ -19,12 +19,12 @@ interface ButtonProps {
 
 const Button = styled("button")<ButtonProps & CommonDefs>`
   position: ${props => props.position || "relative"};
-  width: ${props => (!!props.width ? props.width + "px" : "150px")};
+  width: ${props => (!!props.width ? props.width + "%" : "150px")};
   height: ${props => (!!props.height ? props.height + "px" : "40px")};
-  left: ${props => (!!props.left ? props.left + "px" : undefined)};
-  right: ${props => (!!props.right ? props.right + "px" : undefined)};
-  top: ${props => (!!props.top ? props.top + "px" : undefined)};
-  bottom: ${props => (!!props.bottom ? props.bottom + "px" : undefined)};
+  left: ${props => (!!props.left ? props.left + "%" : undefined)};
+  right: ${props => (!!props.right ? props.right + "%" : undefined)};
+  top: ${props => (!!props.top ? props.top + "%" : undefined)};
+  bottom: ${props => (!!props.bottom ? props.bottom + "%" : undefined)};
   border: ${props => props.border || "none"};
   box-sizing: ${props => props.boxSizing || undefined};
   background-color: ${props => props.backgroundColor || "black"};
