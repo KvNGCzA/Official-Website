@@ -15,6 +15,8 @@ interface ButtonProps {
   backgroundColor?: string;
   color: string;
   borderImage?: string;
+  borderRadius?: string;
+  background?: string;
 }
 
 const Button = styled("button")<ButtonProps & CommonDefs>`
@@ -32,8 +34,10 @@ const Button = styled("button")<ButtonProps & CommonDefs>`
   box-shadow: ${props => props.boxShadow || undefined};
   cursor: pointer;
   border-image: ${props => props.borderImage};
+  border-radius: ${props => props.borderRadius};
   transform: ${props => props.transform || undefined};
   transition: transform 1s ease-in-out;
+  background: ${props => props.background};
   ${props =>
     !!props.mouseEvents &&
     props.mouseEvents.length > 0 &&

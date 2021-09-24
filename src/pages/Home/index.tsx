@@ -1,16 +1,36 @@
 import React from "react";
-import styled from "styled-components";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { CustomDiv, Text, Button, Image, Icon } from "../../components";
+import { faCheckCircle, faBars } from "@fortawesome/free-solid-svg-icons";
+import { CustomDiv, Text, Button, Image, Icon, Input, Anchor } from "../../components";
+import logo from "../../assets/img/logo.svg";
 import image1 from "../../assets/img/frame_2.svg";
 import binanceImg from "../../assets/img/binance_1.svg";
 import avalancheImg from "../../assets/img/avalanche.svg";
 import ethereumImg from "../../assets/img/ethereum.svg";
 import polygonImg from "../../assets/img/polygon.svg";
 import fantomImg from "../../assets/img/fantom.svg";
+import papImg from "../../assets/img/pap.gif";
+import instantWatchImg from "../../assets/img/instant_watch.gif";
+import treeImg from "../../assets/img/tree.svg";
 
 const Home = () => (
   <div>
+    <div>
+      <CustomDiv position="absolute" left={8.53333333333} top={1.03289029061} width="12.5333333333%" height="38px">
+        <Image src={logo} width="100%" height="100%" position="static" alt="Logo" />
+      </CustomDiv>
+      <Button
+        position="absolute"
+        border="none"
+        color="#fff"
+        backgroundColor="transparent"
+        width={6.4}
+        height={24}
+        left={85.0666666667}
+        top={1.03289029061}
+      >
+        <Icon icon={faBars} width={24} height={24} position="static" color="#fff" />
+      </Button>
+    </div>
     <Text
       position="absolute"
       color="#fff"
@@ -98,6 +118,7 @@ const Home = () => (
         border="none"
         width={100}
         height={53.87}
+        borderRadius="4px"
         top={0}
         left={0}
         backgroundColor="#fcd98d"
@@ -125,6 +146,7 @@ const Home = () => (
         left={0}
         backgroundColor="transparent"
         color="#fff"
+        borderRadius="4px"
         borderImage="linear-gradient(#d1fdff, #fddb92) 1"
         wideScreensDefinitions={[
           {
@@ -244,10 +266,11 @@ const Home = () => (
         position="absolute"
         width="83.2%"
         height="442px"
+        borderRadius="4px"
         left={8.53333333333}
         top={30.8781869688}
         border="1px solid"
-        borderImage="linear-gradient(#fff, #7986cb, #9fa8da, #13b5ec, #5c6bc0, #8247e5, #c2cbff, #c2f0ff, #e84142, #efe6ff, #ffe6e6, #ffeec2) 0.5"
+        borderImage="linear-gradient(#fddb92, #d1fdff) 1"
         wideScreensDefinitions={[
           {
             screenSize: 768,
@@ -597,6 +620,7 @@ const Home = () => (
         left={8.53333333333}
         backgroundColor="#fcd98d"
         color="#151515"
+        borderRadius="4px"
       >
         Launch App
       </Button>
@@ -612,7 +636,7 @@ const Home = () => (
       >
         <CustomDiv position="absolute" backgroundColor="#181a1c" left={0} top={0} width="100%" height="77px">
           <Icon
-            icon={faCheck}
+            icon={faCheckCircle}
             width={15.98}
             height={15.98}
             left="3.89180327869%"
@@ -644,7 +668,7 @@ const Home = () => (
           height="77px"
         >
           <Icon
-            icon={faCheck}
+            icon={faCheckCircle}
             width={15.98}
             height={15.98}
             left="3.89180327869%"
@@ -675,7 +699,7 @@ const Home = () => (
           height="77px"
         >
           <Icon
-            icon={faCheck}
+            icon={faCheckCircle}
             width={15.98}
             height={15.98}
             left="3.89180327869%"
@@ -699,6 +723,597 @@ const Home = () => (
           </Text>
         </CustomDiv>
       </CustomDiv>
+      <CustomDiv
+        position="absolute"
+        width="83.2453333333%"
+        height="265.96px"
+        border="3.94433px solid #232323"
+        borderRadius="2.2539px"
+        top={65.4066437572}
+        left={8.53333333333}
+        boxSizing="border-box"
+      >
+        <Image
+          position="absolute"
+          width="79.1780119807%"
+          height="70.3263648669%"
+          left={8.66666666667}
+          top={13.3290720409}
+          src={papImg}
+          alt="Private Access Pad"
+        />
+        <Text
+          position="absolute"
+          top={69.7022108588}
+          left={32.1299292052}
+          fontWeight="600"
+          lineHeight={15}
+          color="#cacaca"
+          fontSize={10.1426}
+          width={55.9195310248}
+          height={15.21}
+        >
+          Private Access:
+          <span style={{ color: "#219653", paddingLeft: "4px" }}>Granted</span>
+        </Text>
+      </CustomDiv>
+    </CustomDiv>
+    <CustomDiv
+      position="absolute"
+      width="100%"
+      top={54.5618382519}
+      left={0}
+      height="869px"
+      backgroundColor="#181a1c"
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+            position: absolute;
+            width: 100%;
+            height: 701px;
+            left: 0;
+            top: 38.4088964927%;
+          }`
+        }
+      ]}
+    >
+      <Text
+        position="absolute"
+        color="#fff"
+        width={91.4666666667}
+        height={30}
+        lineHeight={30}
+        fontSize={22}
+        fontWeight="bold"
+        left={8.53333333333}
+        top={2.99541809851}
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            position: absolute;
+            top: 11.4921540656%;
+            left: 4.44444444444%;
+            font-size: 36px;
+            line-height: 45px;
+          }`
+          }
+        ]}
+      >
+        Instant Watch
+      </Text>
+      <Text
+        position="absolute"
+        color="#cacaca"
+        width={82.9333333333}
+        height={30}
+        lineHeight={23}
+        fontSize={16}
+        fontWeight="500"
+        left={8.53333333333}
+        top={7.34822451317}
+      >
+        Deftify' Instant Watch solution aims to solve the problem of insufficient market data resources and high cost of
+        accessing quality market data on the crypto market.
+      </Text>
+      <Button
+        position="absolute"
+        border="none"
+        width={57.9706666667}
+        height={53.87}
+        top={23.4054982818}
+        left={8.53333333333}
+        backgroundColor="#fcd98d"
+        color="#151515"
+        borderRadius="4px"
+      >
+        Launch App
+      </Button>
+      <CustomDiv
+        position="absolute"
+        display="flex"
+        flexDirection="column"
+        alignItems="flex-start"
+        width="81.3333333333%"
+        top={34.2920962199}
+        left={8.53333333333}
+        height="243.78px"
+      >
+        <CustomDiv
+          position="absolute"
+          border="2px solid #232323"
+          backgroundColor="#181a1c"
+          left={0}
+          top={0}
+          width="100%"
+          height="77px"
+        >
+          <Icon
+            icon={faCheckCircle}
+            width={15.98}
+            height={15.98}
+            left="3.89180327869%"
+            top="13.8181818182%"
+            position="absolute"
+            color="#fff"
+          />
+          <Text
+            color="#cacaca"
+            position="absolute"
+            fontWeight="500"
+            width={83.3049180328}
+            height={54}
+            fontSize={12}
+            lineHeight={18}
+            left={11.8229508197}
+            top={13.8181818182}
+          >
+            Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
+            funding deals.
+          </Text>
+        </CustomDiv>
+        <CustomDiv
+          position="absolute"
+          backgroundColor="#181a1c"
+          left={0}
+          top={34.2070719501}
+          width="100%"
+          height="77px"
+          border="2px solid #232323"
+        >
+          <Icon
+            icon={faCheckCircle}
+            width={15.98}
+            height={15.98}
+            left="3.89180327869%"
+            top="13.8181818182%"
+            position="absolute"
+            color="#fff"
+          />
+          <Text
+            color="#cacaca"
+            position="absolute"
+            fontWeight="500"
+            width={83.3049180328}
+            height={54}
+            fontSize={12}
+            lineHeight={18}
+            left={11.8229508197}
+            top={13.8181818182}
+          >
+            Only whitelisted and Deftify token stakers will have access to contribute to project oboarded on PAP.
+          </Text>
+        </CustomDiv>
+        <CustomDiv
+          position="absolute"
+          backgroundColor="#181a1c"
+          left={0}
+          top={68.4141439002}
+          width="100%"
+          height="77px"
+          border="2px solid #232323"
+        >
+          <Icon
+            icon={faCheckCircle}
+            width={15.98}
+            height={15.98}
+            left="3.89180327869%"
+            top="13.8181818182%"
+            position="absolute"
+            color="#fff"
+          />
+          <Text
+            color="#cacaca"
+            position="absolute"
+            fontWeight="500"
+            width={83.3049180328}
+            height={54}
+            fontSize={12}
+            lineHeight={18}
+            left={11.8229508197}
+            top={13.8181818182}
+          >
+            Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
+            funding deals.
+          </Text>
+        </CustomDiv>
+      </CustomDiv>
+      <CustomDiv
+        position="absolute"
+        width="83.2453333333%"
+        height="265.96px"
+        border="3.94433px solid #232323"
+        borderRadius="2.2539px"
+        top={65.4066437572}
+        left={8.53333333333}
+        boxSizing="border-box"
+      >
+        <Image position="static" width="100%" height="100%" src={instantWatchImg} alt="Instant Watch" />
+      </CustomDiv>
+    </CustomDiv>
+    <CustomDiv
+      position="absolute"
+      width="100%"
+      top={74.4987609822}
+      left={0}
+      height="869px"
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+            position: absolute;
+            width: 100%;
+            height: 701px;
+            left: 0;
+            top: 38.4088964927%;
+          }`
+        }
+      ]}
+    >
+      <Text
+        position="absolute"
+        color="#fff"
+        width={91.4666666667}
+        height={30}
+        lineHeight={30}
+        fontSize={22}
+        fontWeight="bold"
+        left={8.53333333333}
+        top={2.99541809851}
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            position: absolute;
+            top: 11.4921540656%;
+            left: 4.44444444444%;
+            font-size: 36px;
+            line-height: 45px;
+          }`
+          }
+        ]}
+      >
+        Play n'Earn
+      </Text>
+      <Text
+        position="absolute"
+        color="#cacaca"
+        width={82.9333333333}
+        height={30}
+        lineHeight={23}
+        fontSize={16}
+        fontWeight="500"
+        left={8.53333333333}
+        top={7.34822451317}
+      >
+        Our play to earn gaming model is unique in that users only need to stake Deftify tokens to be able to create
+        in-game NFT characters that will be used to play against other players, and as they win their opponents, they
+        earn gaming points which can be converted to Deftify tokens and also exchanged for USDT or ETH on supported
+        exchanges.
+      </Text>
+      <Button
+        position="absolute"
+        border="none"
+        width={57.9706666667}
+        height={53.87}
+        top={34.4384349827}
+        left={8.53333333333}
+        background="linear-gradient(0deg, #232323, #232323)"
+        color="#fff"
+        borderRadius="4px"
+      >
+        Coming Soon
+      </Button>
+      <CustomDiv
+        position="absolute"
+        width="83.2453333333%"
+        height="265.72px"
+        border="3.94433px solid #232323"
+        borderRadius="2.2539px"
+        top={43.9597238205}
+        left={8.53333333333}
+        boxSizing="border-box"
+      >
+        <Image position="static" width="100%" height="100%" src={treeImg} alt="Tree" />
+      </CustomDiv>
+    </CustomDiv>
+    <CustomDiv position="absolute" width="100%" height="405px" left={0} top={90.8763234963} backgroundColor="#181a1c">
+      <Text
+        position="absolute"
+        width={90.1333333333}
+        height={30}
+        fontWeight="800"
+        fontSize={24}
+        lineHeight={30}
+        color="#fff"
+        top={12.8395061728}
+        left={9.86666666667}
+      >
+        Get in touch with the team
+      </Text>
+      <form>
+        <CustomDiv
+          position="absolute"
+          display="flex"
+          flexDirection="column"
+          alignItems="flex-start"
+          width="82.1333333333%"
+          height="72.89px"
+          left={8.53333333333}
+          top={25.4518518519}
+        >
+          <Text
+            position="absolute"
+            width={25.974025974}
+            height={17}
+            fontWeight="normal"
+            fontSize={12}
+            lineHeight={17}
+            color="#fff5f5"
+            top={0}
+            left={0}
+          >
+            Email Address
+          </Text>
+          <Input
+            type="email"
+            padding="2px 1.5px"
+            color="#fff"
+            width={100}
+            height={46}
+            placeholder="Enter Email Address"
+            background="linear-gradient(0deg, #232323, #232323)"
+            position="absolute"
+            left={0}
+            top={36.8363287145}
+            borderRadius="2.22143px"
+            border="1px solid transparent"
+            mouseEvents={[
+              {
+                name: "focus",
+                definition: `
+              {
+                border-image: linear-gradient(#fddb92, #d1fdff) 1;
+              }
+              `
+              }
+            ]}
+          />
+        </CustomDiv>
+        <CustomDiv
+          position="absolute"
+          display="flex"
+          flexDirection="column"
+          alignItems="flex-start"
+          width="82.1333333333%"
+          height="72.89px"
+          left={8.53333333333}
+          top={49.3728395062}
+        >
+          <Text
+            position="absolute"
+            width={30.974025974}
+            height={17}
+            fontWeight="normal"
+            fontSize={12}
+            lineHeight={17}
+            color="#fff5f5"
+            top={0}
+            left={0}
+          >
+            Company Name
+          </Text>
+          <Input
+            type="text"
+            padding="2px 1.5px"
+            color="#fff"
+            width={100}
+            height={46}
+            placeholder="Enter Company Name"
+            background="linear-gradient(0deg, #232323, #232323)"
+            position="absolute"
+            left={0}
+            top={36.8363287145}
+            borderRadius="2.22143px"
+            border="1px solid transparent"
+            mouseEvents={[
+              {
+                name: "focus",
+                definition: `
+              {
+                border-image: linear-gradient(#fddb92, #d1fdff) 1;
+              }
+              `
+              }
+            ]}
+          />
+        </CustomDiv>
+        <CustomDiv
+          position="absolute"
+          display="flex"
+          flexDirection="column"
+          alignItems="flex-start"
+          width="82.1333333333%"
+          height="72.89px"
+          left={8.53333333333}
+          top={73.049382716}
+        >
+          <Button
+            position="absolute"
+            border="none"
+            width={100}
+            height={53.87}
+            borderRadius="4px"
+            top={0}
+            left={0}
+            backgroundColor="#fcd98d"
+            color="#000"
+          >
+            Submit
+          </Button>
+        </CustomDiv>
+      </form>
+    </CustomDiv>
+    <CustomDiv
+      display="flex"
+      flexDirection="column"
+      alignItems="flex-start"
+      position="absolute"
+      width="27.7333333333%"
+      height="246px"
+      top={100.720883082}
+      left={8.53333333333}
+    >
+      <Anchor
+        color="#fff"
+        position="absolute"
+        width={100}
+        height={21}
+        fontSize={12}
+        lineHeight={21}
+        href="#"
+        fontWeight="600"
+        top={0}
+        left={0}
+        textAlign="left"
+      >
+        Play n'Earn
+      </Anchor>
+      <Anchor
+        color="#fff"
+        position="absolute"
+        width={100}
+        height={21}
+        fontSize={12}
+        lineHeight={21}
+        href="#"
+        fontWeight="600"
+        left={0}
+        top={18.2926829268}
+        textAlign="left"
+      >
+        Private Arena
+      </Anchor>
+      <Anchor
+        color="#fff"
+        position="absolute"
+        width={100}
+        height={21}
+        fontSize={12}
+        lineHeight={21}
+        href="#"
+        fontWeight="600"
+        left={0}
+        top={36.5853658537}
+        textAlign="left"
+      >
+        Instant Watch
+      </Anchor>
+      <Anchor
+        color="#fff"
+        position="absolute"
+        width={100}
+        height={21}
+        fontSize={12}
+        lineHeight={21}
+        href="#"
+        fontWeight="600"
+        left={0}
+        top={54.8780487805}
+        textAlign="left"
+      >
+        Staking
+      </Anchor>
+      <Anchor
+        color="#fff"
+        position="absolute"
+        width={100}
+        height={21}
+        fontSize={12}
+        lineHeight={21}
+        href="#"
+        fontWeight="600"
+        left={0}
+        top={73.1707317073}
+        textAlign="left"
+      >
+        About
+      </Anchor>
+      <Anchor
+        color="#fff"
+        position="absolute"
+        width={100}
+        height={21}
+        fontSize={12}
+        lineHeight={21}
+        href="#"
+        fontWeight="600"
+        left={0}
+        top={91.4634146341}
+        textAlign="left"
+      >
+        Contact Us
+      </Anchor>
+    </CustomDiv>
+    <CustomDiv
+      display="flex"
+      flexDirection="column"
+      alignItems="flex-start"
+      position="absolute"
+      width="27.7333333333%"
+      height="246px"
+      top={106.848389277}
+      left={8.53333333333}
+    >
+      <Anchor
+        color="#fff"
+        position="absolute"
+        width={100}
+        height={21}
+        fontSize={12}
+        lineHeight={21}
+        href="#"
+        top={0}
+        left={0}
+        textAlign="left"
+      >
+        Terms of Use
+      </Anchor>
+      <Anchor
+        color="#fff"
+        position="absolute"
+        width={100}
+        height={21}
+        fontSize={12}
+        lineHeight={21}
+        href="#"
+        left={0}
+        top={18.2926829268}
+        textAlign="left"
+      >
+        Privacy Policy
+      </Anchor>
     </CustomDiv>
   </div>
 );
