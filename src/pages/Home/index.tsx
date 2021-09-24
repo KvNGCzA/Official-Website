@@ -304,10 +304,10 @@ const Home = () => (
               definition: `{
             flex-direction: row;
             padding: 0px;
-            width: 91.2375%;
-            height: 190.93px;
-            left: 4.38125%;
-            top: 48.8720930233%;
+            width: 86.438020429%;
+            height: 37.73px;
+            left: 6.78098978551%;
+            top: 30.0026187608%;
           }`
             }
           ]}
@@ -320,6 +320,18 @@ const Home = () => (
             width="100%"
             height="24px"
             margin="6.7304041694% 0px"
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+            align-items: center;
+            width: 20.5813462013%;
+            height: 37.73px;
+            left: 0;
+            top: 0;
+          }`
+              }
+            ]}
           >
             <CustomDiv
               position="static"
@@ -351,6 +363,18 @@ const Home = () => (
             width="100%"
             height="24px"
             margin="6.7304041694% 0px"
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+            align-items: center;
+            width: 20.5813462013%;
+            height: 37.73px;
+            left: 0;
+            top: 0;
+          }`
+              }
+            ]}
           >
             <CustomDiv
               position="static"
@@ -382,6 +406,18 @@ const Home = () => (
             width="100%"
             height="24px"
             margin="6.7304041694% 0px"
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+            align-items: center;
+            width: 20.5813462013%;
+            height: 37.73px;
+            left: 0;
+            top: 0;
+          }`
+              }
+            ]}
           >
             <CustomDiv
               position="static"
@@ -413,6 +449,18 @@ const Home = () => (
             width="100%"
             height="24px"
             margin="6.7304041694% 0px"
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+            align-items: center;
+            width: 20.5813462013%;
+            height: 37.73px;
+            left: 0;
+            top: 0;
+          }`
+              }
+            ]}
           >
             <CustomDiv
               position="static"
@@ -444,6 +492,18 @@ const Home = () => (
             width="100%"
             height="24px"
             margin="6.7304041694% 0px"
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+            align-items: center;
+            width: 20.5813462013%;
+            height: 37.73px;
+            left: 0;
+            top: 0;
+          }`
+              }
+            ]}
           >
             <CustomDiv
               position="static"
@@ -470,7 +530,25 @@ const Home = () => (
         </CustomDiv>
       </CustomDiv>
     </CustomDiv>
-    <CustomDiv position="absolute" width="100%" top={34.6127794084} left={0} height="873px">
+    <CustomDiv
+      position="absolute"
+      width="100%"
+      top={34.6127794084}
+      left={0}
+      height="873px"
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+            position: absolute;
+            width: 100%;
+            height: 701px;
+            left: 0;
+            top: 38.4088964927%;
+          }`
+        }
+      ]}
+    >
       <Text
         position="absolute"
         color="#fff"
@@ -481,6 +559,18 @@ const Home = () => (
         fontWeight="bold"
         left={8.53333333333}
         top={2.99541809851}
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            position: absolute;
+            top: 11.4921540656%;
+            left: 4.44444444444%;
+            font-size: 36px;
+            line-height: 45px;
+          }`
+          }
+        ]}
       >
         Private Access Pad (PAP)
       </Text>
