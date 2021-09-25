@@ -17,6 +17,7 @@ interface ButtonProps {
   borderImage?: string;
   borderRadius?: string;
   background?: string;
+  textAlign?: string;
 }
 
 const Button = styled("button")<ButtonProps & CommonDefs>`
@@ -38,6 +39,7 @@ const Button = styled("button")<ButtonProps & CommonDefs>`
   transform: ${props => props.transform || undefined};
   transition: transform 1s ease-in-out;
   background: ${props => props.background};
+  text-align: ${props => props.textAlign};
   ${props =>
     !!props.mouseEvents &&
     props.mouseEvents.length > 0 &&

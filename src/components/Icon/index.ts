@@ -6,11 +6,12 @@ interface IconProps {
   width: number;
   height: number;
   color: string;
-  position: "absolute" | "relative" | "fixed" | "static";
+  position?: "absolute" | "relative" | "fixed" | "static";
   top?: string;
   left?: string;
   bottom?: string;
   right?: string;
+  padding?: string;
 }
 
 const Icon = styled(FontAwesomeIcon)<IconProps & CommonDefs>`
@@ -18,10 +19,18 @@ const Icon = styled(FontAwesomeIcon)<IconProps & CommonDefs>`
   height: ${props => props.height + "px"};
   color: ${props => props.color};
   position: ${props => props.position};
-  top: ${props => props.top || undefined};
-  left: ${props => props.left || undefined};
-  bottom: ${props => props.bottom || undefined};
-  right: ${props => props.right || undefined};
+  top: ${props => props.top};
+  left: ${props => props.left};
+  bottom: ${props => props.bottom};
+  right: ${props => props.right};
+  padding: ${props => props.padding};
+
+  ${props =>
+    !!props.wideScreensDefinitions &&
+    props.wideScreensDefinitions.length > 0 &&
+    props.wideScreensDefinitions.map(def => {
+      return `@media screen and (min-width: ${def.screenSize + "px"}) ${def.definition}`;
+    })};
 `;
 
 export default Icon;

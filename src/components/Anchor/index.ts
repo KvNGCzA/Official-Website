@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { CommonDefs } from "../commonDefinitions";
 
 interface AnchorProps {
-  position: "absolute" | "relative" | "fixed" | "static";
+  position?: "absolute" | "relative" | "fixed" | "static";
   color: string;
   fontSize?: number;
   fontStyle?: "italic" | "normal";
   fontWeight?: string;
   textDecoration?: string;
-  textAlign?: "left" | "center" | "right";
+  textAlign?: "left" | "center" | "right" | "justify";
   lineHeight?: number;
   width: number;
   height: number;
@@ -33,6 +33,13 @@ const Anchor = styled("a")<AnchorProps & CommonDefs>`
   left: ${props => (!!props.left ? props.left + "%" : undefined)};
   right: ${props => (!!props.right ? props.right + "%" : undefined)};
   bottom: ${props => (!!props.bottom ? props.bottom + "%" : undefined)};
+
+  ${props =>
+    !!props.wideScreensDefinitions &&
+    props.wideScreensDefinitions.length > 0 &&
+    props.wideScreensDefinitions.map(def => {
+      return `@media screen and (min-width: ${def.screenSize + "px"}) ${def.definition}`;
+    })};
 `;
 
 export default Anchor;

@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { CommonDefs } from "../commonDefinitions";
 
 interface DivProps {
-  position: "absolute" | "fixed" | "static" | "relative";
-  width: string;
+  position?: "absolute" | "fixed" | "static" | "relative";
+  width?: string;
   height?: string;
   left?: number;
   top?: number;
@@ -12,7 +12,7 @@ interface DivProps {
   transform?: string;
   border?: string;
   borderImage?: string;
-  display?: string;
+  displayAs?: string;
   flexDirection?: "row" | "column";
   alignItems?: string;
   padding?: string;
@@ -33,7 +33,7 @@ const CustomDiv = styled("div")<DivProps & CommonDefs>`
   transform: ${props => props.transform};
   border: ${props => props.border};
   border-image: ${props => props.borderImage};
-  display: ${props => props.display};
+  display: ${props => props.displayAs};
   flex-direction: ${props => props.flexDirection};
   background-color: ${props => props.backgroundColor};
   align-items: ${props => props.alignItems};

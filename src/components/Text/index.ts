@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { CommonDefs } from "../commonDefinitions";
 
 interface TextProps {
-  position: "absolute" | "static" | "relative" | "fixed";
+  position?: "absolute" | "static" | "relative" | "fixed";
   width?: number;
   height?: number;
   left?: number;
@@ -16,7 +16,7 @@ interface TextProps {
   lineHeight?: number;
   color: string;
   margin?: string;
-  textAlign?: "center" | "left" | "right";
+  textAlign?: "center" | "left" | "right" | "justify";
 }
 
 const Text = styled("span")<TextProps & CommonDefs>`

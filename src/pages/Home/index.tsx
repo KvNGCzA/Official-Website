@@ -1,5 +1,5 @@
 import React from "react";
-import { faCheckCircle, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle, faBars, faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 import { CustomDiv, Text, Button, Image, Icon, Input, Anchor } from "../../components";
 import logo from "../../assets/img/logo.svg";
 import image1 from "../../assets/img/frame_2.svg";
@@ -15,8 +15,128 @@ import treeImg from "../../assets/img/tree.svg";
 const Home = () => (
   <div>
     <div>
-      <CustomDiv position="absolute" left={8.53333333333} top={1.03289029061} width="12.5333333333%" height="38px">
+      <CustomDiv
+        position="absolute"
+        left={8.53333333333}
+        top={1.03289029061}
+        width="12.5333333333%"
+        height="38px"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+          width: 7.15277777778%;
+          height: 112px;
+          left: 1.875%;
+          top: 0.74850299401%;
+        }`
+          }
+        ]}
+      >
         <Image src={logo} width="100%" height="100%" position="static" alt="Logo" />
+      </CustomDiv>
+      <CustomDiv
+        displayAs="none"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          position: absolute;
+          top: 1.56971770744%;
+          left: 26.6909722222%;
+          width: 53.8194444444%;
+          height: 24px;
+        }`
+          }
+        ]}
+      >
+        <Anchor
+          color="#fff"
+          width={14.8709677419}
+          height={24}
+          fontSize={13}
+          lineHeight={24}
+          href="#"
+          fontWeight="600"
+          top={0}
+          left={0}
+          textAlign="center"
+        >
+          Play n'Earn
+        </Anchor>
+        <Anchor
+          color="#fff"
+          width={14.8709677419}
+          height={24}
+          fontSize={13}
+          lineHeight={24}
+          href="#"
+          fontWeight="600"
+          top={0}
+          left={18.064516129}
+          textAlign="center"
+        >
+          Private Arena
+        </Anchor>
+        <Anchor
+          color="#fff"
+          width={14.8709677419}
+          height={24}
+          fontSize={13}
+          lineHeight={24}
+          href="#"
+          fontWeight="600"
+          top={0}
+          left={39.3548387097}
+          textAlign="center"
+        >
+          Instant Watch
+        </Anchor>
+        <Anchor
+          color="#fff"
+          width={14.8709677419}
+          height={24}
+          fontSize={13}
+          lineHeight={24}
+          href="#"
+          fontWeight="600"
+          top={0}
+          left={60.6451612903}
+          textAlign="center"
+        >
+          Staking
+        </Anchor>
+        <Anchor
+          color="#fff"
+          width={14.8709677419}
+          height={24}
+          fontSize={13}
+          lineHeight={24}
+          href="#"
+          fontWeight="600"
+          top={0}
+          left={75.0967741935}
+          textAlign="center"
+        >
+          About
+        </Anchor>
+        <Anchor
+          color="#fff"
+          width={14.8709677419}
+          height={24}
+          fontSize={13}
+          lineHeight={24}
+          href="#"
+          fontWeight="600"
+          top={0}
+          left={88}
+          textAlign="center"
+        >
+          Contact Us
+        </Anchor>
       </CustomDiv>
       <Button
         position="absolute"
@@ -27,6 +147,16 @@ const Home = () => (
         height={24}
         left={85.0666666667}
         top={1.03289029061}
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `
+            {
+              display: none;
+            }
+          `
+          }
+        ]}
       >
         <Icon icon={faBars} width={24} height={24} position="static" color="#fff" />
       </Button>
@@ -90,7 +220,7 @@ const Home = () => (
       incubation, gaming and market data aggregator.
     </Text>
     <CustomDiv
-      display="flex"
+      displayAs="flex"
       flexDirection="column"
       alignItems="flex-start"
       width="64.4693333333%"
@@ -148,6 +278,7 @@ const Home = () => (
         color="#fff"
         borderRadius="4px"
         borderImage="linear-gradient(#d1fdff, #fddb92) 1"
+        textAlign="center"
         wideScreensDefinitions={[
           {
             screenSize: 768,
@@ -160,6 +291,7 @@ const Home = () => (
           }
         ]}
       >
+        <Icon icon={faPlayCircle} width={13} height={13} color="#fff" padding="1px" />
         Watch Demo
       </Button>
     </CustomDiv>
@@ -313,7 +445,7 @@ const Home = () => (
           Deftify Platform supports all EVM compatible Blockchains
         </Text>
         <CustomDiv
-          display="flex"
+          displayAs="flex"
           flexDirection="column"
           alignItems="flex-start"
           position="absolute"
@@ -336,7 +468,7 @@ const Home = () => (
           ]}
         >
           <CustomDiv
-            display="flex"
+            displayAs="flex"
             flexDirection="row"
             alignItems="center"
             position="static"
@@ -379,7 +511,7 @@ const Home = () => (
             </Text>
           </CustomDiv>
           <CustomDiv
-            display="flex"
+            displayAs="flex"
             flexDirection="row"
             alignItems="center"
             position="static"
@@ -422,7 +554,7 @@ const Home = () => (
             </Text>
           </CustomDiv>
           <CustomDiv
-            display="flex"
+            displayAs="flex"
             flexDirection="row"
             alignItems="center"
             position="static"
@@ -465,7 +597,7 @@ const Home = () => (
             </Text>
           </CustomDiv>
           <CustomDiv
-            display="flex"
+            displayAs="flex"
             flexDirection="row"
             alignItems="center"
             position="static"
@@ -508,7 +640,7 @@ const Home = () => (
             </Text>
           </CustomDiv>
           <CustomDiv
-            display="flex"
+            displayAs="flex"
             flexDirection="row"
             alignItems="center"
             position="static"
@@ -567,7 +699,7 @@ const Home = () => (
             width: 100%;
             height: 701px;
             left: 0;
-            top: 38.4088964927%;
+            top: 37.8314798973%;
           }`
         }
       ]}
@@ -591,6 +723,7 @@ const Home = () => (
             left: 4.44444444444%;
             font-size: 36px;
             line-height: 45px;
+            height: 45px;
           }`
           }
         ]}
@@ -607,6 +740,16 @@ const Home = () => (
         fontWeight="500"
         left={8.53333333333}
         top={7.34822451317}
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            top: 19.0527817404%;
+            left: 4.44444444444%;
+            width: 44.1416666667%;
+          }`
+          }
+        ]}
       >
         Deftify PAP focuses on incubating and privately raising capital for early stage blockchain startups off Africa,
         allowing stage startup founders to access a variety of resources.
@@ -621,26 +764,63 @@ const Home = () => (
         backgroundColor="#fcd98d"
         color="#151515"
         borderRadius="4px"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            top: 33.6034236805%;
+            height: 54.28px;
+            left: 4.44444444444%;
+            width: 15.0965277778%;
+          }`
+          }
+        ]}
       >
         Launch App
       </Button>
       <CustomDiv
         position="absolute"
-        display="flex"
+        displayAs="flex"
         flexDirection="column"
         alignItems="flex-start"
         width="81.3333333333%"
         top={34.2920962199}
         left={8.53333333333}
         height="243.78px"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            left: 4.44444444444%;
+            top: 43.2387843705%;
+            width: 46.4583333333%;
+            height: 310px;
+          }`
+          }
+        ]}
       >
-        <CustomDiv position="absolute" backgroundColor="#181a1c" left={0} top={0} width="100%" height="77px">
+        <CustomDiv
+          position="absolute"
+          backgroundColor="#181a1c"
+          left={0}
+          top={0}
+          width="100%"
+          height="77px"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              height: 94px;
+            }`
+            }
+          ]}
+        >
           <Icon
             icon={faCheckCircle}
             width={15.98}
             height={15.98}
             left="3.89180327869%"
-            top="13.8181818182%"
+            top="34.8181818182%"
             position="absolute"
             color="#fff"
           />
@@ -654,6 +834,16 @@ const Home = () => (
             lineHeight={18}
             left={11.8229508197}
             top={13.8181818182}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+                width: 83.2047832586%;
+                font-size: 18px;
+                line-height: 27px;
+              }`
+              }
+            ]}
           >
             Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
             funding deals.
@@ -666,13 +856,21 @@ const Home = () => (
           top={34.2070719501}
           width="100%"
           height="77px"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              height: 94px;
+            }`
+            }
+          ]}
         >
           <Icon
             icon={faCheckCircle}
             width={15.98}
             height={15.98}
             left="3.89180327869%"
-            top="13.8181818182%"
+            top="34.8181818182%"
             position="absolute"
             color="#fff"
           />
@@ -686,6 +884,16 @@ const Home = () => (
             lineHeight={18}
             left={11.8229508197}
             top={13.8181818182}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+                width: 83.2047832586%;
+                font-size: 18px;
+                line-height: 27px;
+              }`
+              }
+            ]}
           >
             Only whitelisted and Deftify token stakers will have access to contribute to project oboarded on PAP.
           </Text>
@@ -697,13 +905,21 @@ const Home = () => (
           top={68.4141439002}
           width="100%"
           height="77px"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              height: 94px;
+            }`
+            }
+          ]}
         >
           <Icon
             icon={faCheckCircle}
             width={15.98}
             height={15.98}
             left="3.89180327869%"
-            top="13.8181818182%"
+            top="34.8181818182%"
             position="absolute"
             color="#fff"
           />
@@ -717,6 +933,16 @@ const Home = () => (
             lineHeight={18}
             left={11.8229508197}
             top={13.8181818182}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+                width: 83.2047832586%;
+                font-size: 18px;
+                line-height: 27px;
+              }`
+              }
+            ]}
           >
             Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
             funding deals.
@@ -732,6 +958,17 @@ const Home = () => (
         top={65.4066437572}
         left={8.53333333333}
         boxSizing="border-box"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            left: 57.0833333333%;
+            top: 15.1212553495%;
+            height: 472px;
+            width: 38.4722222222%;
+          }`
+          }
+        ]}
       >
         <Image
           position="absolute"
@@ -741,6 +978,14 @@ const Home = () => (
           top={13.3290720409}
           src={papImg}
           alt="Private Access Pad"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              width: 79.178700361%;
+            }`
+            }
+          ]}
         />
         <Text
           position="absolute"
@@ -752,6 +997,17 @@ const Home = () => (
           fontSize={10.1426}
           width={55.9195310248}
           height={15.21}
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              height: 27px;
+              line-height: 27px;
+              font-size: 18px;
+              left: 32.1299638989%;
+            }`
+            }
+          ]}
         >
           Private Access:
           <span style={{ color: "#219653", paddingLeft: "4px" }}>Granted</span>
@@ -771,9 +1027,9 @@ const Home = () => (
           definition: `{
             position: absolute;
             width: 100%;
-            height: 701px;
+            height: 691px;
             left: 0;
-            top: 38.4088964927%;
+            top: 52.8229255774%;
           }`
         }
       ]}
@@ -793,10 +1049,12 @@ const Home = () => (
             screenSize: 768,
             definition: `{
             position: absolute;
-            top: 11.4921540656%;
+            top: 11.505065123%;
             left: 4.44444444444%;
             font-size: 36px;
             line-height: 45px;
+            height: 45px;
+            width: 95.5555555556%;
           }`
           }
         ]}
@@ -813,6 +1071,18 @@ const Home = () => (
         fontWeight="500"
         left={8.53333333333}
         top={7.34822451317}
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `
+          {
+            top: 19.1751085384%;
+            left: 4.44444444444%;
+            width: 44.1416666667%;
+          }
+          `
+          }
+        ]}
       >
         Deftify' Instant Watch solution aims to solve the problem of insufficient market data resources and high cost of
         accessing quality market data on the crypto market.
@@ -827,18 +1097,40 @@ const Home = () => (
         backgroundColor="#fcd98d"
         color="#151515"
         borderRadius="4px"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            left: 4.44444444444%;
+            top: 32.0549927641%;
+            width: 15.0965277778%;
+            height: 54.28px;
+          }`
+          }
+        ]}
       >
-        Launch App
+        View Watcher
       </Button>
       <CustomDiv
         position="absolute"
-        display="flex"
+        displayAs="flex"
         flexDirection="column"
         alignItems="flex-start"
         width="81.3333333333%"
         top={34.2920962199}
         left={8.53333333333}
         height="243.78px"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            left: 4.44444444444%;
+            top: 43.2387843705%;
+            width: 46.4583333333%;
+            height: 310px;
+          }`
+          }
+        ]}
       >
         <CustomDiv
           position="absolute"
@@ -848,13 +1140,21 @@ const Home = () => (
           top={0}
           width="100%"
           height="77px"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              height: 94px;
+            }`
+            }
+          ]}
         >
           <Icon
             icon={faCheckCircle}
             width={15.98}
             height={15.98}
             left="3.89180327869%"
-            top="13.8181818182%"
+            top="34.8181818182%"
             position="absolute"
             color="#fff"
           />
@@ -868,6 +1168,16 @@ const Home = () => (
             lineHeight={18}
             left={11.8229508197}
             top={13.8181818182}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+                width: 83.2047832586%;
+                font-size: 18px;
+                line-height: 27px;
+              }`
+              }
+            ]}
           >
             Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
             funding deals.
@@ -881,13 +1191,21 @@ const Home = () => (
           width="100%"
           height="77px"
           border="2px solid #232323"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              height: 94px;
+            }`
+            }
+          ]}
         >
           <Icon
             icon={faCheckCircle}
             width={15.98}
             height={15.98}
             left="3.89180327869%"
-            top="13.8181818182%"
+            top="34.8181818182%"
             position="absolute"
             color="#fff"
           />
@@ -901,6 +1219,16 @@ const Home = () => (
             lineHeight={18}
             left={11.8229508197}
             top={13.8181818182}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+                width: 83.2047832586%;
+                font-size: 18px;
+                line-height: 27px;
+              }`
+              }
+            ]}
           >
             Only whitelisted and Deftify token stakers will have access to contribute to project oboarded on PAP.
           </Text>
@@ -913,13 +1241,21 @@ const Home = () => (
           width="100%"
           height="77px"
           border="2px solid #232323"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              height: 94px;
+            }`
+            }
+          ]}
         >
           <Icon
             icon={faCheckCircle}
             width={15.98}
             height={15.98}
             left="3.89180327869%"
-            top="13.8181818182%"
+            top="34.8181818182%"
             position="absolute"
             color="#fff"
           />
@@ -933,6 +1269,16 @@ const Home = () => (
             lineHeight={18}
             left={11.8229508197}
             top={13.8181818182}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+                width: 83.2047832586%;
+                font-size: 18px;
+                line-height: 27px;
+              }`
+              }
+            ]}
           >
             Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
             funding deals.
@@ -948,6 +1294,17 @@ const Home = () => (
         top={65.4066437572}
         left={8.53333333333}
         boxSizing="border-box"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            left: 57.0833333333%;
+            top: 11.5774240232%;
+            height: 472px;
+            width: 38.4722222222%;
+          }`
+          }
+        ]}
       >
         <Image position="static" width="100%" height="100%" src={instantWatchImg} alt="Instant Watch" />
       </CustomDiv>
@@ -964,9 +1321,9 @@ const Home = () => (
           definition: `{
             position: absolute;
             width: 100%;
-            height: 701px;
+            height: 632px;
             left: 0;
-            top: 38.4088964927%;
+            top: 67.6005132592%;
           }`
         }
       ]}
@@ -986,7 +1343,7 @@ const Home = () => (
             screenSize: 768,
             definition: `{
             position: absolute;
-            top: 11.4921540656%;
+            top: 23.7911392405%;
             left: 4.44444444444%;
             font-size: 36px;
             line-height: 45px;
@@ -1006,6 +1363,20 @@ const Home = () => (
         fontWeight="500"
         left={8.53333333333}
         top={7.34822451317}
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            position: absolute;
+            top: 34.2341772152%;
+            left: 4.44444444444%;
+            font-size: 18px;
+            line-height: 27px;
+            width: 38.5715277778%;
+            height: 162px;
+          }`
+          }
+        ]}
       >
         Our play to earn gaming model is unique in that users only need to stake Deftify tokens to be able to create
         in-game NFT characters that will be used to play against other players, and as they win their opponents, they
@@ -1022,6 +1393,17 @@ const Home = () => (
         background="linear-gradient(0deg, #232323, #232323)"
         color="#fff"
         borderRadius="4px"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            top: 63.1898734177%;
+            height: 54.28px;
+            left: 4.44444444444%;
+            width: 15.0965277778%;
+          }`
+          }
+        ]}
       >
         Coming Soon
       </Button>
@@ -1034,11 +1416,41 @@ const Home = () => (
         top={43.9597238205}
         left={8.53333333333}
         boxSizing="border-box"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            left: 57.0833333333%;
+            top: 10.4430379747%;
+            height: 472px;
+            width: 38.4722222222%;
+          }`
+          }
+        ]}
       >
         <Image position="static" width="100%" height="100%" src={treeImg} alt="Tree" />
       </CustomDiv>
     </CustomDiv>
-    <CustomDiv position="absolute" width="100%" height="405px" left={0} top={90.8763234963} backgroundColor="#181a1c">
+    <CustomDiv
+      position="absolute"
+      width="100%"
+      height="405px"
+      left={0}
+      top={90.8763234963}
+      backgroundColor="#181a1c"
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+        width: 100%;
+        height: 633px;
+        top: 81.1163387511%;
+        left: 0;
+        background: linear-gradient(0deg, #181A1C, #181A1C);
+      }`
+        }
+      ]}
+    >
       <Text
         position="absolute"
         width={90.1333333333}
@@ -1049,19 +1461,40 @@ const Home = () => (
         color="#fff"
         top={12.8395061728}
         left={9.86666666667}
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            left: 29.1319444444%;
+            top: 12.9541864139%;
+            font-size: 48px;
+            line-height: 60px;
+          }`
+          }
+        ]}
       >
         Get in touch with the team
       </Text>
       <form>
         <CustomDiv
           position="absolute"
-          display="flex"
+          displayAs="flex"
           flexDirection="column"
           alignItems="flex-start"
           width="82.1333333333%"
           height="72.89px"
           left={8.53333333333}
           top={25.4518518519}
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              width: 38.8888888889%;
+              height: 97px;
+              left: 30.5777777778%;
+            }`
+            }
+          ]}
         >
           <Text
             position="absolute"
@@ -1103,13 +1536,23 @@ const Home = () => (
         </CustomDiv>
         <CustomDiv
           position="absolute"
-          display="flex"
+          displayAs="flex"
           flexDirection="column"
           alignItems="flex-start"
           width="82.1333333333%"
           height="72.89px"
           left={8.53333333333}
           top={49.3728395062}
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              width: 38.8888888889%;
+              height: 97px;
+              left: 30.5777777778%;
+            }`
+            }
+          ]}
         >
           <Text
             position="absolute"
@@ -1151,13 +1594,23 @@ const Home = () => (
         </CustomDiv>
         <CustomDiv
           position="absolute"
-          display="flex"
+          displayAs="flex"
           flexDirection="column"
           alignItems="flex-start"
           width="82.1333333333%"
           height="72.89px"
           left={8.53333333333}
           top={73.049382716}
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              width: 38.8888888889%;
+              height: 97px;
+              left: 30.5777777778%;
+            }`
+            }
+          ]}
         >
           <Button
             position="absolute"
@@ -1176,7 +1629,7 @@ const Home = () => (
       </form>
     </CustomDiv>
     <CustomDiv
-      display="flex"
+      displayAs="flex"
       flexDirection="column"
       alignItems="flex-start"
       position="absolute"
@@ -1184,10 +1637,22 @@ const Home = () => (
       height="246px"
       top={100.720883082}
       left={8.53333333333}
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+          flex-direction: row;
+          left: 23.0902777778%;
+          width: 53.8194444444%;
+          top: 96.7065868263%;
+          height: 24px;
+          align-items: center;
+        }`
+        }
+      ]}
     >
       <Anchor
         color="#fff"
-        position="absolute"
         width={100}
         height={21}
         fontSize={12}
@@ -1196,13 +1661,20 @@ const Home = () => (
         fontWeight="600"
         top={0}
         left={0}
-        textAlign="left"
+        textAlign="justify"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            text-align: center;
+          }`
+          }
+        ]}
       >
         Play n'Earn
       </Anchor>
       <Anchor
         color="#fff"
-        position="absolute"
         width={100}
         height={21}
         fontSize={12}
@@ -1211,13 +1683,20 @@ const Home = () => (
         fontWeight="600"
         left={0}
         top={18.2926829268}
-        textAlign="left"
+        textAlign="justify"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            text-align: center;
+          }`
+          }
+        ]}
       >
         Private Arena
       </Anchor>
       <Anchor
         color="#fff"
-        position="absolute"
         width={100}
         height={21}
         fontSize={12}
@@ -1226,13 +1705,20 @@ const Home = () => (
         fontWeight="600"
         left={0}
         top={36.5853658537}
-        textAlign="left"
+        textAlign="justify"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            text-align: center;
+          }`
+          }
+        ]}
       >
         Instant Watch
       </Anchor>
       <Anchor
         color="#fff"
-        position="absolute"
         width={100}
         height={21}
         fontSize={12}
@@ -1241,13 +1727,20 @@ const Home = () => (
         fontWeight="600"
         left={0}
         top={54.8780487805}
-        textAlign="left"
+        textAlign="justify"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            text-align: center;
+          }`
+          }
+        ]}
       >
         Staking
       </Anchor>
       <Anchor
         color="#fff"
-        position="absolute"
         width={100}
         height={21}
         fontSize={12}
@@ -1256,13 +1749,20 @@ const Home = () => (
         fontWeight="600"
         left={0}
         top={73.1707317073}
-        textAlign="left"
+        textAlign="justify"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            text-align: center;
+          }`
+          }
+        ]}
       >
         About
       </Anchor>
       <Anchor
         color="#fff"
-        position="absolute"
         width={100}
         height={21}
         fontSize={12}
@@ -1271,13 +1771,21 @@ const Home = () => (
         fontWeight="600"
         left={0}
         top={91.4634146341}
-        textAlign="left"
+        textAlign="justify"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            text-align: center;
+          }`
+          }
+        ]}
       >
         Contact Us
       </Anchor>
     </CustomDiv>
     <CustomDiv
-      display="flex"
+      displayAs="flex"
       flexDirection="column"
       alignItems="flex-start"
       position="absolute"
@@ -1285,10 +1793,24 @@ const Home = () => (
       height="246px"
       top={106.848389277}
       left={8.53333333333}
+      wideScreensDefinitions={[
+        {
+          screenSize: 768,
+          definition: `{
+          flex-direction: row;
+          left: 41.5972222222%;
+          width: 16.8055555556%;
+          height: 20px;
+          align-items: center;
+          left: 36.5069444444%;
+          right: 36.5069444444%;
+          top: 97.8614200171%;
+        }`
+        }
+      ]}
     >
       <Anchor
         color="#fff"
-        position="absolute"
         width={100}
         height={21}
         fontSize={12}
@@ -1296,13 +1818,20 @@ const Home = () => (
         href="#"
         top={0}
         left={0}
-        textAlign="left"
+        textAlign="justify"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            text-align: center;
+          }`
+          }
+        ]}
       >
         Terms of Use
       </Anchor>
       <Anchor
         color="#fff"
-        position="absolute"
         width={100}
         height={21}
         fontSize={12}
@@ -1310,7 +1839,15 @@ const Home = () => (
         href="#"
         left={0}
         top={18.2926829268}
-        textAlign="left"
+        textAlign="justify"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
+            text-align: center;
+          }`
+          }
+        ]}
       >
         Privacy Policy
       </Anchor>

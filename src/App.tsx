@@ -4,7 +4,7 @@ import { CustomDiv } from "./components";
 
 const App = () => (
   <CustomDiv
-    display="flex"
+    displayAs="flex"
     position="absolute"
     flexDirection="column"
     padding="0px"
