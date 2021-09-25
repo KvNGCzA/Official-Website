@@ -45,94 +45,86 @@ const Home = () => (
           flex-direction: row;
           align-items: flex-start;
           position: absolute;
-          top: 1.56971770744%;
-          left: 26.6909722222%;
-          width: 53.8194444444%;
+          top: 1%;
+          left: 23.0902777778%;
+          right: 23.0902777778%;
+          min-width: 53.8194444444%;
           height: 24px;
+          & * {
+            margin: 0 4.1935483871%;
+          }
         }`
           }
         ]}
       >
         <Anchor
+          widthAs={11.8709677419}
           color="#fff"
-          width={14.8709677419}
           height={24}
           fontSize={13}
           lineHeight={24}
-          href="#"
+          href="#playnearn"
           fontWeight="600"
-          top={0}
-          left={0}
           textAlign="center"
         >
           Play n'Earn
         </Anchor>
         <Anchor
+          widthAs={11.8709677419}
           color="#fff"
-          width={14.8709677419}
           height={24}
           fontSize={13}
           lineHeight={24}
-          href="#"
+          href="#privateaccess"
           fontWeight="600"
-          top={0}
-          left={18.064516129}
           textAlign="center"
         >
           Private Arena
         </Anchor>
         <Anchor
+          widthAs={11.8709677419}
           color="#fff"
-          width={14.8709677419}
           height={24}
           fontSize={13}
           lineHeight={24}
-          href="#"
+          href="#instantwatch"
           fontWeight="600"
-          top={0}
-          left={39.3548387097}
           textAlign="center"
         >
           Instant Watch
         </Anchor>
         <Anchor
+          widthAs={11.8709677419}
           color="#fff"
-          width={14.8709677419}
           height={24}
           fontSize={13}
           lineHeight={24}
           href="#"
           fontWeight="600"
-          top={0}
-          left={60.6451612903}
           textAlign="center"
         >
           Staking
         </Anchor>
         <Anchor
+          widthAs={11.8709677419}
           color="#fff"
-          width={14.8709677419}
           height={24}
           fontSize={13}
           lineHeight={24}
-          href="#"
+          href="#about"
           fontWeight="600"
-          top={0}
-          left={75.0967741935}
           textAlign="center"
         >
           About
         </Anchor>
         <Anchor
+          widthAs={11.8709677419}
           color="#fff"
-          width={14.8709677419}
           height={24}
           fontSize={13}
           lineHeight={24}
-          href="#"
+          href="#contact"
           fontWeight="600"
-          top={0}
-          left={88}
           textAlign="center"
         >
           Contact Us
@@ -168,7 +160,7 @@ const Home = () => (
       top={3.00293519982}
       width={82.9333333333}
       lineHeight={30}
-      fontSize={24}
+      fontSize={20}
       height={60}
       textAlign="center"
       fontWeight="800"
@@ -177,34 +169,34 @@ const Home = () => (
           screenSize: 768,
           definition: `{
             position: absolute;
-            top: 4.65739948674%;
-            left: 21.5625%;
-            width: 78.4375%;
-            height: 60px;
-            font-size: 48px;
+            top: 3.65739948674%;
+            left: 21.4583333333%;
+            width: 56.9444444444%;
+            font-size: 28px;
             line-height: 60px;
-            text-align: left;
+            text-align: center;
           }`
         }
       ]}
     >
-      Decentralised DeFi and NFT platform
+      Multi-Purpose DeFi and Decentralised NFT platform
     </Text>
-    <Text
-      position="absolute"
-      color="#cacaca"
-      left={11.1066666667}
-      top={4.8026642583}
-      width={77.7866666667}
-      lineHeight={23}
-      fontSize={16}
-      height={115}
-      textAlign="center"
-      fontWeight="500"
-      wideScreensDefinitions={[
-        {
-          screenSize: 768,
-          definition: `{
+    <section id="about">
+      <Text
+        position="absolute"
+        color="#cacaca"
+        left={11.1066666667}
+        top={4.8026642583}
+        width={77.7866666667}
+        lineHeight={23}
+        fontSize={16}
+        height={115}
+        textAlign="center"
+        fontWeight="500"
+        wideScreensDefinitions={[
+          {
+            screenSize: 768,
+            definition: `{
             position: absolute;
             top: 6.26133447391%;
             left: 21.5625%;
@@ -213,12 +205,13 @@ const Home = () => (
             font-size: 18px;
             line-height: 26px;
           }`
-        }
-      ]}
-    >
-      Deftify is a multipurpose DeFi and NFT platform that focuses on several product areas such as private funding,
-      incubation, gaming and market data aggregator.
-    </Text>
+          }
+        ]}
+      >
+        Deftify is a multipurpose DeFi and NFT platform that focuses on several product areas such as private funding,
+        incubation, gaming and market data aggregation.
+      </Text>
+    </section>
     <CustomDiv
       displayAs="flex"
       flexDirection="column"
@@ -730,30 +723,32 @@ const Home = () => (
       >
         Private Access Pad (PAP)
       </Text>
-      <Text
-        position="absolute"
-        color="#cacaca"
-        width={82.9333333333}
-        height={30}
-        lineHeight={23}
-        fontSize={16}
-        fontWeight="500"
-        left={8.53333333333}
-        top={7.34822451317}
-        wideScreensDefinitions={[
-          {
-            screenSize: 768,
-            definition: `{
+      <section id="privateaccess">
+        <Text
+          position="absolute"
+          color="#cacaca"
+          width={82.9333333333}
+          height={30}
+          lineHeight={23}
+          fontSize={16}
+          fontWeight="500"
+          left={8.53333333333}
+          top={7.34822451317}
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
             top: 19.0527817404%;
             left: 4.44444444444%;
             width: 44.1416666667%;
           }`
-          }
-        ]}
-      >
-        Deftify PAP focuses on incubating and privately raising capital for early stage blockchain startups off Africa,
-        allowing stage startup founders to access a variety of resources.
-      </Text>
+            }
+          ]}
+        >
+          Deftify PAP focuses on incubating and privately raising capital for early stage blockchain startups off
+          Africa, allowing stage startup founders to access a variety of resources.
+        </Text>
+      </section>
       <Button
         position="absolute"
         border="none"
@@ -1061,32 +1056,34 @@ const Home = () => (
       >
         Instant Watch
       </Text>
-      <Text
-        position="absolute"
-        color="#cacaca"
-        width={82.9333333333}
-        height={30}
-        lineHeight={23}
-        fontSize={16}
-        fontWeight="500"
-        left={8.53333333333}
-        top={7.34822451317}
-        wideScreensDefinitions={[
-          {
-            screenSize: 768,
-            definition: `
+      <section id="instantwatch">
+        <Text
+          position="absolute"
+          color="#cacaca"
+          width={82.9333333333}
+          height={30}
+          lineHeight={23}
+          fontSize={16}
+          fontWeight="500"
+          left={8.53333333333}
+          top={7.34822451317}
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `
           {
             top: 19.1751085384%;
             left: 4.44444444444%;
             width: 44.1416666667%;
           }
           `
-          }
-        ]}
-      >
-        Deftify' Instant Watch solution aims to solve the problem of insufficient market data resources and high cost of
-        accessing quality market data on the crypto market.
-      </Text>
+            }
+          ]}
+        >
+          Deftify' Instant Watch solution aims to solve the problem of insufficient market data resources and high cost
+          of accessing quality market data on the crypto market.
+        </Text>
+      </section>
       <Button
         position="absolute"
         border="none"
@@ -1230,7 +1227,7 @@ const Home = () => (
               }
             ]}
           >
-            Only whitelisted and Deftify token stakers will have access to contribute to project oboarded on PAP.
+            Users can make more informed market data decisions at all times using aggregated market data.
           </Text>
         </CustomDiv>
         <CustomDiv
@@ -1280,8 +1277,7 @@ const Home = () => (
               }
             ]}
           >
-            Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
-            funding deals.
+            Leverage the platform to get hot flash news all things crypto, blockchain, and finance.
           </Text>
         </CustomDiv>
       </CustomDiv>
@@ -1353,20 +1349,21 @@ const Home = () => (
       >
         Play n'Earn
       </Text>
-      <Text
-        position="absolute"
-        color="#cacaca"
-        width={82.9333333333}
-        height={30}
-        lineHeight={23}
-        fontSize={16}
-        fontWeight="500"
-        left={8.53333333333}
-        top={7.34822451317}
-        wideScreensDefinitions={[
-          {
-            screenSize: 768,
-            definition: `{
+      <section id="playnearn">
+        <Text
+          position="absolute"
+          color="#cacaca"
+          width={82.9333333333}
+          height={30}
+          lineHeight={23}
+          fontSize={16}
+          fontWeight="500"
+          left={8.53333333333}
+          top={7.34822451317}
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
             position: absolute;
             top: 34.2341772152%;
             left: 4.44444444444%;
@@ -1375,14 +1372,15 @@ const Home = () => (
             width: 38.5715277778%;
             height: 162px;
           }`
-          }
-        ]}
-      >
-        Our play to earn gaming model is unique in that users only need to stake Deftify tokens to be able to create
-        in-game NFT characters that will be used to play against other players, and as they win their opponents, they
-        earn gaming points which can be converted to Deftify tokens and also exchanged for USDT or ETH on supported
-        exchanges.
-      </Text>
+            }
+          ]}
+        >
+          Our play to earn gaming model is unique in that users only need to stake Deftify tokens to be able to create
+          in-game NFT characters that will be used to play against other players, and as they win their opponents, they
+          earn gaming points which can be converted to Deftify tokens and also exchanged for USDT or ETH on supported
+          exchanges.
+        </Text>
+      </section>
       <Button
         position="absolute"
         border="none"
@@ -1397,7 +1395,7 @@ const Home = () => (
           {
             screenSize: 768,
             definition: `{
-            top: 63.1898734177%;
+            top: 66.1898734177%;
             height: 54.28px;
             left: 4.44444444444%;
             width: 15.0965277778%;
@@ -1475,158 +1473,160 @@ const Home = () => (
       >
         Get in touch with the team
       </Text>
-      <form>
-        <CustomDiv
-          position="absolute"
-          displayAs="flex"
-          flexDirection="column"
-          alignItems="flex-start"
-          width="82.1333333333%"
-          height="72.89px"
-          left={8.53333333333}
-          top={25.4518518519}
-          wideScreensDefinitions={[
-            {
-              screenSize: 768,
-              definition: `{
+      <section id="contact">
+        <form>
+          <CustomDiv
+            position="absolute"
+            displayAs="flex"
+            flexDirection="column"
+            alignItems="flex-start"
+            width="82.1333333333%"
+            height="72.89px"
+            left={8.53333333333}
+            top={25.4518518519}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
               width: 38.8888888889%;
               height: 97px;
               left: 30.5777777778%;
             }`
-            }
-          ]}
-        >
-          <Text
-            position="absolute"
-            width={25.974025974}
-            height={17}
-            fontWeight="normal"
-            fontSize={12}
-            lineHeight={17}
-            color="#fff5f5"
-            top={0}
-            left={0}
+              }
+            ]}
           >
-            Email Address
-          </Text>
-          <Input
-            type="email"
-            padding="2px 1.5px"
-            color="#fff"
-            width={100}
-            height={46}
-            placeholder="Enter Email Address"
-            background="linear-gradient(0deg, #232323, #232323)"
-            position="absolute"
-            left={0}
-            top={36.8363287145}
-            borderRadius="2.22143px"
-            border="1px solid transparent"
-            mouseEvents={[
-              {
-                name: "focus",
-                definition: `
+            <Text
+              position="absolute"
+              width={25.974025974}
+              height={17}
+              fontWeight="normal"
+              fontSize={12}
+              lineHeight={17}
+              color="#fff5f5"
+              top={0}
+              left={0}
+            >
+              Email Address
+            </Text>
+            <Input
+              type="email"
+              padding="2px 1.5px"
+              color="#fff"
+              width={100}
+              height={46}
+              placeholder="Enter Email Address"
+              background="linear-gradient(0deg, #232323, #232323)"
+              position="absolute"
+              left={0}
+              top={36.8363287145}
+              borderRadius="2.22143px"
+              border="1px solid transparent"
+              mouseEvents={[
+                {
+                  name: "focus",
+                  definition: `
               {
                 border-image: linear-gradient(#fddb92, #d1fdff) 1;
               }
               `
-              }
-            ]}
-          />
-        </CustomDiv>
-        <CustomDiv
-          position="absolute"
-          displayAs="flex"
-          flexDirection="column"
-          alignItems="flex-start"
-          width="82.1333333333%"
-          height="72.89px"
-          left={8.53333333333}
-          top={49.3728395062}
-          wideScreensDefinitions={[
-            {
-              screenSize: 768,
-              definition: `{
+                }
+              ]}
+            />
+          </CustomDiv>
+          <CustomDiv
+            position="absolute"
+            displayAs="flex"
+            flexDirection="column"
+            alignItems="flex-start"
+            width="82.1333333333%"
+            height="72.89px"
+            left={8.53333333333}
+            top={49.3728395062}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
               width: 38.8888888889%;
               height: 97px;
               left: 30.5777777778%;
             }`
-            }
-          ]}
-        >
-          <Text
-            position="absolute"
-            width={30.974025974}
-            height={17}
-            fontWeight="normal"
-            fontSize={12}
-            lineHeight={17}
-            color="#fff5f5"
-            top={0}
-            left={0}
+              }
+            ]}
           >
-            Company Name
-          </Text>
-          <Input
-            type="text"
-            padding="2px 1.5px"
-            color="#fff"
-            width={100}
-            height={46}
-            placeholder="Enter Company Name"
-            background="linear-gradient(0deg, #232323, #232323)"
-            position="absolute"
-            left={0}
-            top={36.8363287145}
-            borderRadius="2.22143px"
-            border="1px solid transparent"
-            mouseEvents={[
-              {
-                name: "focus",
-                definition: `
+            <Text
+              position="absolute"
+              width={30.974025974}
+              height={17}
+              fontWeight="normal"
+              fontSize={12}
+              lineHeight={17}
+              color="#fff5f5"
+              top={0}
+              left={0}
+            >
+              Company Name
+            </Text>
+            <Input
+              type="text"
+              padding="2px 1.5px"
+              color="#fff"
+              width={100}
+              height={46}
+              placeholder="Enter Company Name"
+              background="linear-gradient(0deg, #232323, #232323)"
+              position="absolute"
+              left={0}
+              top={36.8363287145}
+              borderRadius="2.22143px"
+              border="1px solid transparent"
+              mouseEvents={[
+                {
+                  name: "focus",
+                  definition: `
               {
                 border-image: linear-gradient(#fddb92, #d1fdff) 1;
               }
               `
-              }
-            ]}
-          />
-        </CustomDiv>
-        <CustomDiv
-          position="absolute"
-          displayAs="flex"
-          flexDirection="column"
-          alignItems="flex-start"
-          width="82.1333333333%"
-          height="72.89px"
-          left={8.53333333333}
-          top={73.049382716}
-          wideScreensDefinitions={[
-            {
-              screenSize: 768,
-              definition: `{
+                }
+              ]}
+            />
+          </CustomDiv>
+          <CustomDiv
+            position="absolute"
+            displayAs="flex"
+            flexDirection="column"
+            alignItems="flex-start"
+            width="82.1333333333%"
+            height="72.89px"
+            left={8.53333333333}
+            top={73.049382716}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
               width: 38.8888888889%;
               height: 97px;
               left: 30.5777777778%;
             }`
-            }
-          ]}
-        >
-          <Button
-            position="absolute"
-            border="none"
-            width={100}
-            height={53.87}
-            borderRadius="4px"
-            top={0}
-            left={0}
-            backgroundColor="#fcd98d"
-            color="#000"
+              }
+            ]}
           >
-            Submit
-          </Button>
-        </CustomDiv>
-      </form>
+            <Button
+              position="absolute"
+              border="none"
+              width={100}
+              height={53.87}
+              borderRadius="4px"
+              top={0}
+              left={0}
+              backgroundColor="#fcd98d"
+              color="#000"
+            >
+              Submit
+            </Button>
+          </CustomDiv>
+        </form>
+      </section>
     </CustomDiv>
     <CustomDiv
       displayAs="flex"
@@ -1643,21 +1643,25 @@ const Home = () => (
           definition: `{
           flex-direction: row;
           left: 23.0902777778%;
-          width: 53.8194444444%;
+          right: 23.0902777778%;
+          min-width: 53.8194444444%;
           top: 96.7065868263%;
           height: 24px;
-          align-items: center;
+          align-items: flex-start;
+          & * {
+            margin: 0 4.1935483871%;
+          }
         }`
         }
       ]}
     >
       <Anchor
         color="#fff"
-        width={100}
+        widthAs={11.8709677419}
         height={21}
-        fontSize={12}
+        fontSize={13}
         lineHeight={21}
-        href="#"
+        href="#playnearn"
         fontWeight="600"
         top={0}
         left={0}
@@ -1675,11 +1679,11 @@ const Home = () => (
       </Anchor>
       <Anchor
         color="#fff"
-        width={100}
+        widthAs={11.8709677419}
         height={21}
-        fontSize={12}
+        fontSize={13}
         lineHeight={21}
-        href="#"
+        href="#privateaccess"
         fontWeight="600"
         left={0}
         top={18.2926829268}
@@ -1697,11 +1701,11 @@ const Home = () => (
       </Anchor>
       <Anchor
         color="#fff"
-        width={100}
+        widthAs={11.8709677419}
         height={21}
-        fontSize={12}
+        fontSize={13}
         lineHeight={21}
-        href="#"
+        href="#instantwatch"
         fontWeight="600"
         left={0}
         top={36.5853658537}
@@ -1719,9 +1723,9 @@ const Home = () => (
       </Anchor>
       <Anchor
         color="#fff"
-        width={100}
+        widthAs={11.8709677419}
         height={21}
-        fontSize={12}
+        fontSize={13}
         lineHeight={21}
         href="#"
         fontWeight="600"
@@ -1741,11 +1745,11 @@ const Home = () => (
       </Anchor>
       <Anchor
         color="#fff"
-        width={100}
+        widthAs={11.8709677419}
         height={21}
-        fontSize={12}
+        fontSize={13}
         lineHeight={21}
-        href="#"
+        href="#about"
         fontWeight="600"
         left={0}
         top={73.1707317073}
@@ -1763,11 +1767,11 @@ const Home = () => (
       </Anchor>
       <Anchor
         color="#fff"
-        width={100}
+        widthAs={11.8709677419}
         height={21}
-        fontSize={12}
+        fontSize={13}
         lineHeight={21}
-        href="#"
+        href="#contact"
         fontWeight="600"
         left={0}
         top={91.4634146341}
@@ -1799,21 +1803,23 @@ const Home = () => (
           definition: `{
           flex-direction: row;
           left: 41.5972222222%;
-          width: 16.8055555556%;
+          min-width: 16.8055555556%;
           height: 20px;
-          align-items: center;
-          left: 36.5069444444%;
-          right: 36.5069444444%;
+          right: 41.5972222222%;
           top: 97.8614200171%;
+          align-items: flex-start;
+          & * {
+            margin: 0 4.1935483871%;
+          }
         }`
         }
       ]}
     >
       <Anchor
         color="#fff"
-        width={100}
+        widthAs={11.8709677419}
         height={21}
-        fontSize={12}
+        fontSize={13}
         lineHeight={21}
         href="#"
         top={0}
@@ -1832,9 +1838,9 @@ const Home = () => (
       </Anchor>
       <Anchor
         color="#fff"
-        width={100}
+        widthAs={11.8709677419}
         height={21}
-        fontSize={12}
+        fontSize={13}
         lineHeight={21}
         href="#"
         left={0}

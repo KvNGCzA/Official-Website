@@ -10,7 +10,7 @@ interface AnchorProps {
   textDecoration?: string;
   textAlign?: "left" | "center" | "right" | "justify";
   lineHeight?: number;
-  width: number;
+  widthAs?: number;
   height: number;
   top?: number;
   left?: number;
@@ -27,7 +27,7 @@ const Anchor = styled("a")<AnchorProps & CommonDefs>`
   text-decoration: ${props => props.textDecoration || "none"};
   text-align: ${props => props.textAlign || "center"};
   line-height: ${props => (!!props.lineHeight ? props.lineHeight + "px" : "12px")};
-  width: ${props => props.width + "%"};
+  min-width: ${props => props.widthAs + "%"};
   height: ${props => props.height + "px"};
   top: ${props => (!!props.top ? props.top + "%" : undefined)};
   left: ${props => (!!props.left ? props.left + "%" : undefined)};
