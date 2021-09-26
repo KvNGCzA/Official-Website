@@ -348,11 +348,11 @@ const Home = () => (
             position: absolute;
             top: 14.6996124031%;
             left: 35.3819444444%;
-            width: 64.6180555556%;
+            width: 61.6180555556%;
             height: 59px;
             font-size: 48px;
             line-height: 59px;
-            text-align: center;
+            text-align: justify;
           }`
           }
         ]}
