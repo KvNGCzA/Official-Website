@@ -19,14 +19,14 @@ const Home = () => (
         position="absolute"
         left={8.53333333333}
         top={1.03289029061}
-        width="12.5333333333%"
-        height="38px"
+        width="10.1333333333%"
+        height="32px"
         wideScreensDefinitions={[
           {
             screenSize: 768,
             definition: `{
-          width: 7.15277777778%;
-          height: 112px;
+          width: 4.86111111111%;
+          height: 38px;
           left: 1.875%;
           top: 0.74850299401%;
         }`
@@ -208,7 +208,7 @@ const Home = () => (
           }
         ]}
       >
-        Deftify is a multipurpose DeFi and NFT platform that focuses on several product areas such as private funding,
+        Deftify is a multi-purpose DeFi and NFT platform that focuses on several product areas such as private funding,
         incubation, gaming and market data aggregation.
       </Text>
     </section>
@@ -384,8 +384,8 @@ const Home = () => (
           }
         ]}
       >
-        Focused on building a DeFi and NFT market data aggregator for better cryptocurrency market insights for traders,
-        investors, companies and crypto enthusiasts in general.
+        Focused on building a DeFi and NFT market data aggregator, which offers intricate insights to individual, as
+        well as corporate traders, and crypto enthusiasts in general.
       </Text>
       <CustomDiv
         position="absolute"
@@ -408,35 +408,6 @@ const Home = () => (
           }
         ]}
       >
-        <Text
-          position="absolute"
-          color="#fff"
-          left={10.9134615385}
-          top={9.77564102564}
-          width={78.2211538462}
-          lineHeight={24}
-          fontSize={18}
-          height={48}
-          fontWeight="700"
-          wideScreensDefinitions={[
-            {
-              screenSize: 768,
-              definition: `{
-            position: absolute;
-            top: 21.7671397895%;
-            left: 31.808771369%;
-            width: 68.191228631%;
-            height: 22px;
-            font-size: 18px;
-            line-height: 22px;
-            text-align: left;
-            font-weight: bold;
-          }`
-            }
-          ]}
-        >
-          Deftify Platform supports all EVM compatible Blockchains
-        </Text>
         <CustomDiv
           displayAs="flex"
           flexDirection="column"
@@ -453,9 +424,9 @@ const Home = () => (
             flex-direction: row;
             padding: 0px;
             width: 86.438020429%;
-            height: 37.73px;
-            left: 6.78098978551%;
-            top: 30.0026187608%;
+            height: 71.73px;
+            left: 8.15347222222%;
+            top: 4.7671397895%;
           }`
             }
           ]}
@@ -474,74 +445,43 @@ const Home = () => (
                 definition: `{
             align-items: center;
             width: 20.5813462013%;
-            height: 37.73px;
+            height: 71.73px;
             left: 0;
             top: 0;
+            flex-direction: column;
+            & * {
+              margin: 2.7294019239% 0;
+            }
           }`
               }
             ]}
           >
             <CustomDiv
               position="static"
-              width="15.27px"
-              height="15.27px"
+              width="24px"
+              height="24px"
               backgroundColor="#ffeec2"
               margin="0px 8px"
               borderRadius="50%"
             >
-              <Image position="static" src={binanceImg} width="100%" height="100%" alt="Binance" />
+              <Image position="static" src={avalancheImg} width="100%" height="100%" alt="Binance" />
             </CustomDiv>
             <Text
               position="static"
               color="#fff"
-              width={79.8882681564}
+              width={100}
               height={17}
               lineHeight={17}
               fontSize={14}
               fontWeight="600"
-            >
-              Binance Smartchain
-            </Text>
-          </CustomDiv>
-          <CustomDiv
-            displayAs="flex"
-            flexDirection="row"
-            alignItems="center"
-            position="static"
-            width="100%"
-            height="24px"
-            margin="6.7304041694% 0px"
-            wideScreensDefinitions={[
-              {
-                screenSize: 768,
-                definition: `{
-            align-items: center;
-            width: 20.5813462013%;
-            height: 37.73px;
-            left: 0;
-            top: 0;
-          }`
-              }
-            ]}
-          >
-            <CustomDiv
-              position="static"
-              width="15.27px"
-              height="15.27px"
-              backgroundColor="#ffe6e6"
-              margin="0px 8px"
-              borderRadius="50%"
-            >
-              <Image position="static" src={avalancheImg} width="100%" height="100%" alt="Avalanche" />
-            </CustomDiv>
-            <Text
-              position="static"
-              color="#fff"
-              width={79.8882681564}
-              height={17}
-              lineHeight={17}
-              fontSize={14}
-              fontWeight="600"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  text-align: center;
+                }`
+                }
+              ]}
             >
               Avalanche
             </Text>
@@ -563,71 +503,41 @@ const Home = () => (
             height: 37.73px;
             left: 0;
             top: 0;
+            flex-direction: column;
+            text-align: center;
+            & * {
+              margin: 2.7294019239% 0;
+            }
           }`
               }
             ]}
           >
             <CustomDiv
               position="static"
-              width="15.27px"
-              height="15.27px"
-              backgroundColor="#c2cbff"
+              width="24px"
+              height="24px"
+              backgroundColor="#ffe6e6"
               margin="0px 8px"
               borderRadius="50%"
             >
-              <Image position="static" src={ethereumImg} width="100%" height="100%" alt="Ethereum" />
+              <Image position="static" src={polygonImg} width="100%" height="100%" alt="Avalanche" />
             </CustomDiv>
             <Text
               position="static"
               color="#fff"
-              width={79.8882681564}
+              width={100}
               height={17}
               lineHeight={17}
               fontSize={14}
               fontWeight="600"
-            >
-              Ethereum
-            </Text>
-          </CustomDiv>
-          <CustomDiv
-            displayAs="flex"
-            flexDirection="row"
-            alignItems="center"
-            position="static"
-            width="100%"
-            height="24px"
-            margin="6.7304041694% 0px"
-            wideScreensDefinitions={[
-              {
-                screenSize: 768,
-                definition: `{
-            align-items: center;
-            width: 20.5813462013%;
-            height: 37.73px;
-            left: 0;
-            top: 0;
-          }`
-              }
-            ]}
-          >
-            <CustomDiv
-              position="static"
-              width="15.27px"
-              height="15.27px"
-              backgroundColor="#efe6ff"
-              margin="0px 8px"
-              borderRadius="50%"
-            >
-              <Image position="static" src={polygonImg} width="100%" height="100%" alt="Polygon" />
-            </CustomDiv>
-            <Text
-              position="static"
-              color="#fff"
-              width={79.8882681564}
-              height={17}
-              lineHeight={17}
-              fontSize={14}
-              fontWeight="600"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  text-align: center;
+                }`
+                }
+              ]}
             >
               Polygon
             </Text>
@@ -649,19 +559,23 @@ const Home = () => (
             height: 37.73px;
             left: 0;
             top: 0;
+            flex-direction: column;
+            & * {
+              margin: 2.7294019239% 0;
+            }
           }`
               }
             ]}
           >
             <CustomDiv
               position="static"
-              width="15.27px"
-              height="15.27px"
-              backgroundColor="#c2f0ff"
+              width="24px"
+              height="24px"
+              backgroundColor="#c2cbff"
               margin="0px 8px"
               borderRadius="50%"
             >
-              <Image position="static" src={fantomImg} width="100%" height="100%" alt="Fantom" />
+              <Image position="static" src={binanceImg} width="100%" height="100%" alt="Ethereum" />
             </CustomDiv>
             <Text
               position="static"
@@ -671,11 +585,158 @@ const Home = () => (
               lineHeight={17}
               fontSize={14}
               fontWeight="600"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  text-align: center;
+                }`
+                }
+              ]}
+            >
+              Binance Smartchain
+            </Text>
+          </CustomDiv>
+          <CustomDiv
+            displayAs="flex"
+            flexDirection="row"
+            alignItems="center"
+            position="static"
+            width="100%"
+            height="24px"
+            margin="6.7304041694% 0px"
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+            align-items: center;
+            width: 20.5813462013%;
+            height: 37.73px;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            & * {
+              margin: 2.7294019239% 0;
+            }
+          }`
+              }
+            ]}
+          >
+            <CustomDiv
+              position="static"
+              width="24px"
+              height="24px"
+              backgroundColor="#efe6ff"
+              margin="0px 8px"
+              borderRadius="50%"
+            >
+              <Image position="static" src={fantomImg} width="100%" height="100%" alt="Polygon" />
+            </CustomDiv>
+            <Text
+              position="static"
+              color="#fff"
+              width={79.8882681564}
+              height={17}
+              lineHeight={17}
+              fontSize={14}
+              fontWeight="600"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  text-align: center;
+                }`
+                }
+              ]}
             >
               Fantom
             </Text>
           </CustomDiv>
+          <CustomDiv
+            displayAs="flex"
+            flexDirection="row"
+            alignItems="center"
+            position="static"
+            width="100%"
+            height="24px"
+            margin="6.7304041694% 0px"
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+            align-items: center;
+            width: 20.5813462013%;
+            height: 37.73px;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            & * {
+              margin: 2.7294019239% 0;
+            }
+          }`
+              }
+            ]}
+          >
+            <CustomDiv
+              position="static"
+              width="24px"
+              height="24px"
+              backgroundColor="#c2f0ff"
+              margin="0px 8px"
+              borderRadius="50%"
+            >
+              <Image position="static" src={ethereumImg} width="100%" height="100%" alt="Fantom" />
+            </CustomDiv>
+            <Text
+              position="static"
+              color="#fff"
+              width={79.8882681564}
+              height={17}
+              lineHeight={17}
+              fontSize={14}
+              fontWeight="600"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  text-align: center;
+                }`
+                }
+              ]}
+            >
+              Ethereum
+            </Text>
+          </CustomDiv>
         </CustomDiv>
+        <Text
+          position="absolute"
+          color="#fff"
+          left={10.9134615385}
+          top={9.77564102564}
+          width={78.2211538462}
+          lineHeight={24}
+          fontSize={18}
+          height={48}
+          fontWeight="700"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+            position: absolute;
+            top: 76.0959513958%;
+            left: 30.6534722222%;
+            width: 68.191228631%;
+            height: 22px;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: left;
+            font-weight: bold;
+          }`
+            }
+          ]}
+        >
+          Deftify will support all EVM compatible Blockchains
+        </Text>
       </CustomDiv>
     </CustomDiv>
     <CustomDiv
@@ -745,8 +806,8 @@ const Home = () => (
             }
           ]}
         >
-          Deftify PAP focuses on incubating and privately raising capital for early stage blockchain startups off
-          Africa, allowing stage startup founders to access a variety of resources.
+          Deftify PAP focuses on incubating and privately raising capital for early stage blockchain startups of Africa,
+          allowing early stage startup founders to access a variety of resources.
         </Text>
       </section>
       <Button
@@ -1080,8 +1141,8 @@ const Home = () => (
             }
           ]}
         >
-          Deftify' Instant Watch solution aims to solve the problem of insufficient market data resources and high cost
-          of accessing quality market data on the crypto market.
+          Deftify's Instant Watch solution aims to solve the problem of insufficient market data resources and high
+          costs of accessing quality market data on the crypto market.
         </Text>
       </section>
       <Button
@@ -1131,60 +1192,9 @@ const Home = () => (
       >
         <CustomDiv
           position="absolute"
-          border="2px solid #232323"
           backgroundColor="#181a1c"
           left={0}
           top={0}
-          width="100%"
-          height="77px"
-          wideScreensDefinitions={[
-            {
-              screenSize: 768,
-              definition: `{
-              height: 94px;
-            }`
-            }
-          ]}
-        >
-          <Icon
-            icon={faCheckCircle}
-            width={15.98}
-            height={15.98}
-            left="3.89180327869%"
-            top="34.8181818182%"
-            position="absolute"
-            color="#fff"
-          />
-          <Text
-            color="#cacaca"
-            position="absolute"
-            fontWeight="500"
-            width={83.3049180328}
-            height={54}
-            fontSize={12}
-            lineHeight={18}
-            left={11.8229508197}
-            top={13.8181818182}
-            wideScreensDefinitions={[
-              {
-                screenSize: 768,
-                definition: `{
-                width: 83.2047832586%;
-                font-size: 18px;
-                line-height: 27px;
-              }`
-              }
-            ]}
-          >
-            Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
-            funding deals.
-          </Text>
-        </CustomDiv>
-        <CustomDiv
-          position="absolute"
-          backgroundColor="#181a1c"
-          left={0}
-          top={34.2070719501}
           width="100%"
           height="77px"
           border="2px solid #232323"
@@ -1234,7 +1244,7 @@ const Home = () => (
           position="absolute"
           backgroundColor="#181a1c"
           left={0}
-          top={68.4141439002}
+          top={34.2070719501}
           width="100%"
           height="77px"
           border="2px solid #232323"
@@ -1277,7 +1287,7 @@ const Home = () => (
               }
             ]}
           >
-            Leverage the platform to get hot flash news all things crypto, blockchain, and finance.
+            Leverage the platform to get hot flash news on all things crypto, blockchain, and finance.
           </Text>
         </CustomDiv>
       </CustomDiv>
@@ -1375,9 +1385,9 @@ const Home = () => (
             }
           ]}
         >
-          Our play to earn gaming model is unique in that users only need to stake Deftify tokens to be able to create
-          in-game NFT characters that will be used to play against other players, and as they win their opponents, they
-          earn gaming points which can be converted to Deftify tokens and also exchanged for USDT or ETH on supported
+          Our play n'earn gaming model is unique. Users only need to stake Deftify tokens to be able to create in-game
+          NFT characters that will be used to play against other players, and as they defeat their opponents, they earn
+          gaming points which can be converted to Deftify tokens and also exchanged for USDT or ETH on supported
           exchanges.
         </Text>
       </section>
