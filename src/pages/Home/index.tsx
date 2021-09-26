@@ -356,7 +356,7 @@ const Home = () => (
           }
         ]}
       >
-        Powered by Deftify
+        Powered by the Blockchain
       </Text>
       <Text
         position="absolute"
