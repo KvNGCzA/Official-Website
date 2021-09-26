@@ -352,6 +352,7 @@ const Home = () => (
             height: 59px;
             font-size: 48px;
             line-height: 59px;
+            text-align: center;
           }`
           }
         ]}
