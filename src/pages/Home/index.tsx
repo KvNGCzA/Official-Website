@@ -347,7 +347,7 @@ const Home = () => (
             definition: `{
             position: absolute;
             top: 14.6996124031%;
-            left: 35.3819444444%;
+            left: 33.3819444444%;
             width: 61.6180555556%;
             height: 59px;
             font-size: 48px;
