@@ -356,7 +356,7 @@ const Home = () => (
           }
         ]}
       >
-        Powered by the Blockchain
+        Powered by Blockchain
       </Text>
       <Text
         position="absolute"
