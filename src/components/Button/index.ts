@@ -18,6 +18,7 @@ interface ButtonProps {
   borderRadius?: string;
   background?: string;
   textAlign?: string;
+  fontWeight?: string;
 }
 
 const Button = styled("button")<ButtonProps & CommonDefs>`
@@ -40,6 +41,7 @@ const Button = styled("button")<ButtonProps & CommonDefs>`
   transition: transform 1s ease-in-out;
   background: ${props => props.background};
   text-align: ${props => props.textAlign};
+  font-weight: ${props => props.fontWeight || "bold"};
   ${props =>
     !!props.mouseEvents &&
     props.mouseEvents.length > 0 &&

@@ -169,7 +169,7 @@ const Home = () => (
           screenSize: 768,
           definition: `{
             position: absolute;
-            top: 3.65739948674%;
+            top: 4.65739948674%;
             left: 21.4583333333%;
             width: 56.9444444444%;
             font-size: 28px;
@@ -246,6 +246,7 @@ const Home = () => (
         left={0}
         backgroundColor="#fcd98d"
         color="#151515"
+        fontWeight="bold"
         wideScreensDefinitions={[
           {
             screenSize: 768,
@@ -272,6 +273,7 @@ const Home = () => (
         borderRadius="4px"
         borderImage="linear-gradient(#d1fdff, #fddb92) 1"
         textAlign="center"
+        fontWeight="bold"
         wideScreensDefinitions={[
           {
             screenSize: 768,
@@ -459,13 +461,13 @@ const Home = () => (
           >
             <CustomDiv
               position="static"
-              width="24px"
-              height="24px"
+              width="30px"
+              height="30px"
               backgroundColor="#ffeec2"
               margin="0px 8px"
               borderRadius="50%"
             >
-              <Image position="static" src={avalancheImg} width="100%" height="100%" alt="Binance" />
+              <Image position="static" src={avalancheImg} width="100%" height="100%" alt="Avalanche" />
             </CustomDiv>
             <Text
               position="static"
@@ -515,13 +517,13 @@ const Home = () => (
           >
             <CustomDiv
               position="static"
-              width="24px"
-              height="24px"
+              width="30px"
+              height="30px"
               backgroundColor="#ffe6e6"
               margin="0px 8px"
               borderRadius="50%"
             >
-              <Image position="static" src={polygonImg} width="100%" height="100%" alt="Avalanche" />
+              <Image position="static" src={polygonImg} width="100%" height="100%" alt="Polygon" />
             </CustomDiv>
             <Text
               position="static"
@@ -570,13 +572,13 @@ const Home = () => (
           >
             <CustomDiv
               position="static"
-              width="24px"
-              height="24px"
+              width="30px"
+              height="30px"
               backgroundColor="#c2cbff"
               margin="0px 8px"
               borderRadius="50%"
             >
-              <Image position="static" src={binanceImg} width="100%" height="100%" alt="Ethereum" />
+              <Image position="static" src={binanceImg} width="100%" height="100%" alt="Binance" />
             </CustomDiv>
             <Text
               position="static"
@@ -625,13 +627,13 @@ const Home = () => (
           >
             <CustomDiv
               position="static"
-              width="24px"
-              height="24px"
+              width="30px"
+              height="30px"
               backgroundColor="#efe6ff"
               margin="0px 8px"
               borderRadius="50%"
             >
-              <Image position="static" src={fantomImg} width="100%" height="100%" alt="Polygon" />
+              <Image position="static" src={fantomImg} width="100%" height="100%" alt="Fantom" />
             </CustomDiv>
             <Text
               position="static"
@@ -680,13 +682,13 @@ const Home = () => (
           >
             <CustomDiv
               position="static"
-              width="24px"
-              height="24px"
+              width="30px"
+              height="30px"
               backgroundColor="#c2f0ff"
               margin="0px 8px"
               borderRadius="50%"
             >
-              <Image position="static" src={ethereumImg} width="100%" height="100%" alt="Fantom" />
+              <Image position="static" src={ethereumImg} width="100%" height="100%" alt="Ethereum" />
             </CustomDiv>
             <Text
               position="static"
@@ -902,8 +904,8 @@ const Home = () => (
               }
             ]}
           >
-            Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
-            funding deals.
+            Only users who stake a certain amount of Deftify tokens will have access to participate into Deftify's
+            private funding deals.
           </Text>
         </CustomDiv>
         <CustomDiv
@@ -1001,8 +1003,8 @@ const Home = () => (
               }
             ]}
           >
-            Only users who stake certain amount of Deftify tokens will have access to participate into Deftify's private
-            funding deals.
+            Only users who stake a certain amount of Deftify tokens will have access to participate into Deftify's
+            private funding deals.
           </Text>
         </CustomDiv>
       </CustomDiv>
