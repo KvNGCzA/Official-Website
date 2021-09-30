@@ -8,8 +8,8 @@ import avalancheImg from "../../assets/img/avalanche.svg";
 import ethereumImg from "../../assets/img/ethereum.svg";
 import polygonImg from "../../assets/img/polygon.svg";
 import fantomImg from "../../assets/img/fantom.svg";
-import papImg from "../../assets/img/pap.gif";
-import instantWatchImg from "../../assets/img/instant_watch.gif";
+import papImg from "../../assets/img/frame_30.svg";
+import instantWatchImg from "../../assets/img/instant_watch.svg";
 import treeImg from "../../assets/img/tree.svg";
 
 const Home = () => (
@@ -1057,7 +1057,7 @@ const Home = () => (
         position="absolute"
         width="83.2453333333%"
         height="265.96px"
-        border="3.94433px solid #232323"
+        border="none"
         borderRadius="2.2539px"
         top={65.4066437572}
         left={8.53333333333}
@@ -1075,47 +1075,13 @@ const Home = () => (
         ]}
       >
         <Image
-          position="absolute"
-          width="79.1780119807%"
-          height="70.3263648669%"
+          width="100%"
+          height="100%"
           left={8.66666666667}
           top={13.3290720409}
           src={papImg}
           alt="Private Access Pad"
-          wideScreensDefinitions={[
-            {
-              screenSize: 768,
-              definition: `{
-              width: 79.178700361%;
-            }`
-            }
-          ]}
         />
-        <Text
-          position="absolute"
-          top={69.7022108588}
-          left={32.1299292052}
-          fontWeight="600"
-          lineHeight={15}
-          color="#cacaca"
-          fontSize={10.1426}
-          width={55.9195310248}
-          height={15.21}
-          wideScreensDefinitions={[
-            {
-              screenSize: 768,
-              definition: `{
-              height: 27px;
-              line-height: 27px;
-              font-size: 18px;
-              left: 32.1299638989%;
-            }`
-            }
-          ]}
-        >
-          Private Access:
-          <span style={{ color: "#219653", paddingLeft: "4px" }}>Granted</span>
-        </Text>
       </CustomDiv>
     </CustomDiv>
     <CustomDiv
@@ -1343,7 +1309,7 @@ const Home = () => (
         position="absolute"
         width="83.2453333333%"
         height="265.96px"
-        border="3.94433px solid #232323"
+        border="none"
         borderRadius="2.2539px"
         top={65.4066437572}
         left={8.53333333333}
@@ -1360,7 +1326,7 @@ const Home = () => (
           }
         ]}
       >
-        <Image position="static" width="100%" height="100%" src={instantWatchImg} alt="Instant Watch" />
+        <Image width="100%" height="100%" src={instantWatchImg} alt="Instant Watch" />
       </CustomDiv>
     </CustomDiv>
     <CustomDiv

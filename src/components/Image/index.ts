@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { CommonDefs } from "../commonDefinitions";
 
 interface ImageProps {
-  position: "absolute" | "relative" | "fixed" | "static";
+  position?: "absolute" | "relative" | "fixed" | "static";
   width: string;
   height: string;
   left?: number;
