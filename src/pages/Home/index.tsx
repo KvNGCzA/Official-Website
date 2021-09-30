@@ -429,7 +429,7 @@ const Home = () => (
             width: 86.438020429%;
             height: 71.73px;
             left: 8.15347222222%;
-            top: 4.7671397895%;
+            top: 0.7671397895%;
           }`
             }
           ]}
@@ -440,7 +440,7 @@ const Home = () => (
             alignItems="center"
             position="static"
             width="100%"
-            height="24px"
+            height="30px"
             margin="6.7304041694% 0px"
             wideScreensDefinitions={[
               {
@@ -466,13 +466,22 @@ const Home = () => (
               backgroundColor="#ffeec2"
               margin="0px 8px"
               borderRadius="50%"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  width: ${30 + 0.5 * 30}px;
+                  height: ${30 + 0.5 * 30}px;
+                }`
+                }
+              ]}
             >
               <Image position="static" src={avalancheImg} width="100%" height="100%" alt="Avalanche" />
             </CustomDiv>
             <Text
               position="static"
               color="#fff"
-              width={100}
+              width={78.1082681564}
               height={17}
               lineHeight={17}
               fontSize={14}
@@ -495,7 +504,7 @@ const Home = () => (
             alignItems="center"
             position="static"
             width="100%"
-            height="24px"
+            height="30px"
             margin="6.7304041694% 0px"
             wideScreensDefinitions={[
               {
@@ -522,13 +531,22 @@ const Home = () => (
               backgroundColor="#ffe6e6"
               margin="0px 8px"
               borderRadius="50%"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  width: ${30 + 0.5 * 30}px;
+                  height: ${30 + 0.5 * 30}px;
+                }`
+                }
+              ]}
             >
               <Image position="static" src={polygonImg} width="100%" height="100%" alt="Polygon" />
             </CustomDiv>
             <Text
               position="static"
               color="#fff"
-              width={100}
+              width={78.1082681564}
               height={17}
               lineHeight={17}
               fontSize={14}
@@ -551,7 +569,7 @@ const Home = () => (
             alignItems="center"
             position="static"
             width="100%"
-            height="24px"
+            height="30px"
             margin="6.7304041694% 0px"
             wideScreensDefinitions={[
               {
@@ -577,13 +595,22 @@ const Home = () => (
               backgroundColor="#c2cbff"
               margin="0px 8px"
               borderRadius="50%"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  width: ${30 + 0.5 * 30}px;
+                  height: ${30 + 0.5 * 30}px;
+                }`
+                }
+              ]}
             >
               <Image position="static" src={binanceImg} width="100%" height="100%" alt="Binance" />
             </CustomDiv>
             <Text
               position="static"
               color="#fff"
-              width={79.8882681564}
+              width={78.1082681564}
               height={17}
               lineHeight={17}
               fontSize={14}
@@ -606,7 +633,7 @@ const Home = () => (
             alignItems="center"
             position="static"
             width="100%"
-            height="24px"
+            height="30px"
             margin="6.7304041694% 0px"
             wideScreensDefinitions={[
               {
@@ -632,13 +659,22 @@ const Home = () => (
               backgroundColor="#efe6ff"
               margin="0px 8px"
               borderRadius="50%"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  width: ${30 + 0.5 * 30}px;
+                  height: ${30 + 0.5 * 30}px;
+                }`
+                }
+              ]}
             >
               <Image position="static" src={fantomImg} width="100%" height="100%" alt="Fantom" />
             </CustomDiv>
             <Text
               position="static"
               color="#fff"
-              width={79.8882681564}
+              width={78.1082681564}
               height={17}
               lineHeight={17}
               fontSize={14}
@@ -661,7 +697,7 @@ const Home = () => (
             alignItems="center"
             position="static"
             width="100%"
-            height="24px"
+            height="30px"
             margin="6.7304041694% 0px"
             wideScreensDefinitions={[
               {
@@ -687,13 +723,22 @@ const Home = () => (
               backgroundColor="#c2f0ff"
               margin="0px 8px"
               borderRadius="50%"
+              wideScreensDefinitions={[
+                {
+                  screenSize: 768,
+                  definition: `{
+                  width: ${30 + 0.5 * 30}px;
+                  height: ${30 + 0.5 * 30}px;
+                }`
+                }
+              ]}
             >
               <Image position="static" src={ethereumImg} width="100%" height="100%" alt="Ethereum" />
             </CustomDiv>
             <Text
               position="static"
               color="#fff"
-              width={79.8882681564}
+              width={78.1082681564}
               height={17}
               lineHeight={17}
               fontSize={14}
