@@ -246,7 +246,7 @@ const Home = () => (
         left={0}
         backgroundColor="#fcd98d"
         color="#151515"
-        fontWeight="bold"
+        fontWeight="800"
         wideScreensDefinitions={[
           {
             screenSize: 768,
@@ -273,7 +273,7 @@ const Home = () => (
         borderRadius="4px"
         borderImage="linear-gradient(#d1fdff, #fddb92) 1"
         textAlign="center"
-        fontWeight="bold"
+        fontWeight="800"
         wideScreensDefinitions={[
           {
             screenSize: 768,

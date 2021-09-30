@@ -41,7 +41,7 @@ const Button = styled("button")<ButtonProps & CommonDefs>`
   transition: transform 1s ease-in-out;
   background: ${props => props.background};
   text-align: ${props => props.textAlign};
-  font-weight: ${props => props.fontWeight || "bold"};
+  font-weight: ${props => props.fontWeight || "800"};
   ${props =>
     !!props.mouseEvents &&
     props.mouseEvents.length > 0 &&
