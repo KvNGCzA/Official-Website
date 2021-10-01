@@ -67,7 +67,7 @@ const Home = () => (
           fontWeight="600"
           textAlign="center"
         >
-          Play n'Earn
+          Play'N Earn
         </Anchor>
         <Anchor
           widthAs={11.8709677419}
@@ -1371,7 +1371,7 @@ const Home = () => (
           }
         ]}
       >
-        Play n'Earn
+        Play'N Earn
       </Text>
       <section id="playnearn">
         <Text
@@ -1699,7 +1699,7 @@ const Home = () => (
           }
         ]}
       >
-        Play n'Earn
+        Play'N Earn
       </Anchor>
       <Anchor
         color="#fff"
