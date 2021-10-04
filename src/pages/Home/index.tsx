@@ -772,7 +772,7 @@ const Home = () => (
               screenSize: 768,
               definition: `{
             position: absolute;
-            top: 76.0959513958%;
+            top: 77.0959513958%;
             left: 8.9043856845%;
             width: 82.191228631%;
             right: 8.9043856845%;
