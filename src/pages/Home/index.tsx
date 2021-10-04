@@ -351,12 +351,12 @@ const Home = () => (
             position: absolute;
             top: 14.6996124031%;
             left: 8.1909722222%;
-            right: 8.1909722222;
+            right: 8.1909722222%;
             width: 83.6180555556%;
             height: 59px;
             font-size: 48px;
             line-height: 59px;
-            text-align: justify;
+            text-align: center;
           }`
           }
         ]}
@@ -379,7 +379,8 @@ const Home = () => (
             definition: `{
             position: absolute;
             top: 29.234496124%;
-            left: 24.2458333333%;
+            left: 24.2461805556%;
+            right: 24.2461805556%;
             width: 51.5076388889%;
             height: 52px;
             font-size: 18px;
