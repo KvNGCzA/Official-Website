@@ -428,7 +428,7 @@ const Home = () => (
             flex-direction: row;
             padding: 0px;
             width: 86.438020429%;
-            height: 67.73px;
+            height: 54.73px;
             left: 8.15347222222%;
             top: 0.7671397895%;
           }`
@@ -449,7 +449,7 @@ const Home = () => (
                 definition: `{
             align-items: center;
             width: 20.5813462013%;
-            height: 67.73px;
+            height: 54.73px;
             left: 0;
             top: 0;
             flex-direction: column;
