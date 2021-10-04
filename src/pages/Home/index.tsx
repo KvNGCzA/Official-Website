@@ -171,7 +171,7 @@ const Home = () => (
             position: absolute;
             top: 4.65739948674%;
             left: 21.4583333333%;
-            width: 56.9444444444%;
+            width: 82.9444444444%;
             font-size: 28px;
             line-height: 60px;
             text-align: center;
@@ -773,11 +773,11 @@ const Home = () => (
             position: absolute;
             top: 76.0959513958%;
             left: 30.6534722222%;
-            width: 68.191228631%;
+            width: 82.191228631%;
             height: 22px;
             font-size: 18px;
             line-height: 22px;
-            text-align: left;
+            text-align: center;
             font-weight: bold;
           }`
             }
@@ -1000,56 +1000,6 @@ const Home = () => (
             ]}
           >
             Only whitelisted and Deftify token stakers will have access to contribute to project oboarded on PAP.
-          </Text>
-        </CustomDiv>
-        <CustomDiv
-          position="absolute"
-          backgroundColor="#181a1c"
-          left={0}
-          top={68.4141439002}
-          width="100%"
-          height="77px"
-          wideScreensDefinitions={[
-            {
-              screenSize: 768,
-              definition: `{
-              height: 94px;
-            }`
-            }
-          ]}
-        >
-          <Icon
-            icon={faCheckCircle}
-            width={15.98}
-            height={15.98}
-            left="3.89180327869%"
-            top="34.8181818182%"
-            position="absolute"
-            color="#fff"
-          />
-          <Text
-            color="#cacaca"
-            position="absolute"
-            fontWeight="500"
-            width={83.3049180328}
-            height={54}
-            fontSize={12}
-            lineHeight={18}
-            left={11.8229508197}
-            top={13.8181818182}
-            wideScreensDefinitions={[
-              {
-                screenSize: 768,
-                definition: `{
-                width: 83.2047832586%;
-                font-size: 18px;
-                line-height: 27px;
-              }`
-              }
-            ]}
-          >
-            Only users who stake a certain amount of Deftify tokens will have access to participate into Deftify's
-            private funding deals.
           </Text>
         </CustomDiv>
       </CustomDiv>
