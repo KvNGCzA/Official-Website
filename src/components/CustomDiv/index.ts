@@ -24,7 +24,7 @@ interface DivProps {
 
 const CustomDiv = styled("div")<DivProps & CommonDefs>`
   position: ${props => props.position};
-  min-width: ${props => props.width};
+  width: ${props => props.width};
   height: ${props => props.height};
   left: ${props => (!!props.left ? props.left + "%" : undefined)};
   right: ${props => (!!props.right ? props.right + "%" : undefined)};
