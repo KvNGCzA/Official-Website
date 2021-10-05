@@ -46,12 +46,12 @@ const Home = () => (
           align-items: flex-start;
           position: absolute;
           top: 1%;
-          left: 23.0902777778%;
-          right: 23.0902777778%;
-          min-width: 53.8194444444%;
+          left: 17.5902777778%;
+          right: 17.5902777778%;
+          min-width: 64.8194444444%;
           height: 24px;
           & * {
-            margin: 0 4.1935483871%;
+            margin: 0 3.1935483871%;
           }
         }`
           }
@@ -63,11 +63,23 @@ const Home = () => (
           height={24}
           fontSize={13}
           lineHeight={24}
+          href="#instantwatch"
+          fontWeight="600"
+          textAlign="center"
+        >
+          Instant Watch
+        </Anchor>
+        <Anchor
+          widthAs={11.8709677419}
+          color="#fff"
+          height={24}
+          fontSize={13}
+          lineHeight={24}
           href="#playnearn"
           fontWeight="600"
           textAlign="center"
         >
-          Play'N Earn
+          Play 'n' Earn
         </Anchor>
         <Anchor
           widthAs={11.8709677419}
@@ -79,19 +91,7 @@ const Home = () => (
           fontWeight="600"
           textAlign="center"
         >
-          Private Arena
-        </Anchor>
-        <Anchor
-          widthAs={11.8709677419}
-          color="#fff"
-          height={24}
-          fontSize={13}
-          lineHeight={24}
-          href="#instantwatch"
-          fontWeight="600"
-          textAlign="center"
-        >
-          Instant Watch
+          Private Access Pad
         </Anchor>
         <Anchor
           widthAs={11.8709677419}
@@ -180,7 +180,7 @@ const Home = () => (
         }
       ]}
     >
-      Multi-Purpose DeFi and Decentralised NFT platform
+      Multi-Purpose DeFi and NFT ecosystem
     </Text>
     <section id="about">
       <Text
@@ -209,8 +209,8 @@ const Home = () => (
           }
         ]}
       >
-        Deftify is a multi-purpose DeFi and NFT platform that focuses on several product areas such as private funding,
-        incubation, gaming and market data aggregation.
+        Deftity is a market data aggregator, P2E game, incubator/launchpad and index fund all in one, connected and
+        powered by our DFTY token.
       </Text>
     </section>
     <CustomDiv
@@ -314,7 +314,7 @@ const Home = () => (
     </CustomDiv>
     <CustomDiv
       position="absolute"
-      width="100%"
+      width="100vw"
       height="706px"
       left={0}
       right={0}
@@ -361,7 +361,7 @@ const Home = () => (
           }
         ]}
       >
-        Powered by Blockchain
+        Powered by blockchain
       </Text>
       <Text
         position="absolute"
@@ -379,10 +379,10 @@ const Home = () => (
             definition: `{
             position: absolute;
             top: 29.234496124%;
-            left: 24.2461805556%;
-            right: 24.2461805556%;
-            width: 51.5076388889%;
-            height: 52px;
+            left: 25.7461805556%;
+            right: 25.7461805556%;
+            width: 48.5076388889%;
+            height: 50px;
             font-size: 18px;
             line-height: 26px;
             text-align: center;
@@ -422,7 +422,7 @@ const Home = () => (
           width="57.0512820513%"
           height="289.73px"
           left={10.9134615385}
-          top={24.7963800905}
+          top={16.7963800905}
           wideScreensDefinitions={[
             {
               screenSize: 768,
@@ -456,7 +456,7 @@ const Home = () => (
             top: 0;
             flex-direction: column;
             & * {
-              margin: 2.7294019239% 0;
+              margin: 1.7294019239% 0;
             }
           }`
               }
@@ -469,6 +469,7 @@ const Home = () => (
               backgroundColor="#ffeec2"
               margin="0px 8px"
               borderRadius="50%"
+              textAlign="center"
               wideScreensDefinitions={[
                 {
                   screenSize: 768,
@@ -479,7 +480,21 @@ const Home = () => (
                 }
               ]}
             >
-              <Image position="static" src={avalancheImg} width="100%" height="100%" alt="Avalanche" />
+              <Image
+                position="static"
+                src={avalancheImg}
+                width="90%"
+                height="27px"
+                alt="Avalanche"
+                wideScreensDefinitions={[
+                  {
+                    screenSize: 768,
+                    definition: `{
+                  height: 40.5px;
+                }`
+                  }
+                ]}
+              />
             </CustomDiv>
             <Text
               position="static"
@@ -534,6 +549,7 @@ const Home = () => (
               backgroundColor="#ffe6e6"
               margin="0px 8px"
               borderRadius="50%"
+              textAlign="center"
               wideScreensDefinitions={[
                 {
                   screenSize: 768,
@@ -544,7 +560,21 @@ const Home = () => (
                 }
               ]}
             >
-              <Image position="static" src={polygonImg} width="100%" height="100%" alt="Polygon" />
+              <Image
+                position="static"
+                src={polygonImg}
+                width="90%"
+                height="27px"
+                alt="Polygon"
+                wideScreensDefinitions={[
+                  {
+                    screenSize: 768,
+                    definition: `{
+                  height: 40.5px;
+                }`
+                  }
+                ]}
+              />
             </CustomDiv>
             <Text
               position="static"
@@ -598,6 +628,7 @@ const Home = () => (
               backgroundColor="#c2cbff"
               margin="0px 8px"
               borderRadius="50%"
+              textAlign="center"
               wideScreensDefinitions={[
                 {
                   screenSize: 768,
@@ -608,7 +639,21 @@ const Home = () => (
                 }
               ]}
             >
-              <Image position="static" src={binanceImg} width="100%" height="100%" alt="Binance" />
+              <Image
+                position="static"
+                src={binanceImg}
+                width="90%"
+                height="27px"
+                alt="Binance"
+                wideScreensDefinitions={[
+                  {
+                    screenSize: 768,
+                    definition: `{
+                  height: 40.5px;
+                }`
+                  }
+                ]}
+              />
             </CustomDiv>
             <Text
               position="static"
@@ -662,6 +707,7 @@ const Home = () => (
               backgroundColor="#efe6ff"
               margin="0px 8px"
               borderRadius="50%"
+              textAlign="center"
               wideScreensDefinitions={[
                 {
                   screenSize: 768,
@@ -672,7 +718,21 @@ const Home = () => (
                 }
               ]}
             >
-              <Image position="static" src={fantomImg} width="100%" height="100%" alt="Fantom" />
+              <Image
+                position="static"
+                src={fantomImg}
+                width="90%"
+                height="27px"
+                alt="Fantom"
+                wideScreensDefinitions={[
+                  {
+                    screenSize: 768,
+                    definition: `{
+                  height: 40.5px;
+                }`
+                  }
+                ]}
+              />
             </CustomDiv>
             <Text
               position="static"
@@ -726,6 +786,7 @@ const Home = () => (
               backgroundColor="#c2f0ff"
               margin="0px 8px"
               borderRadius="50%"
+              textAlign="center"
               wideScreensDefinitions={[
                 {
                   screenSize: 768,
@@ -736,7 +797,21 @@ const Home = () => (
                 }
               ]}
             >
-              <Image position="static" src={ethereumImg} width="100%" height="100%" alt="Ethereum" />
+              <Image
+                position="static"
+                src={ethereumImg}
+                width="90%"
+                height="27px"
+                alt="Ethereum"
+                wideScreensDefinitions={[
+                  {
+                    screenSize: 768,
+                    definition: `{
+                  height: 40.5px;
+                }`
+                  }
+                ]}
+              />
             </CustomDiv>
             <Text
               position="static"
@@ -763,7 +838,7 @@ const Home = () => (
           position="absolute"
           color="#fff"
           left={10.9134615385}
-          top={9.77564102564}
+          top={6.77564102564}
           width={78.2211538462}
           lineHeight={24}
           fontSize={18}
@@ -774,7 +849,7 @@ const Home = () => (
               screenSize: 768,
               definition: `{
             position: absolute;
-            top: 77.0959513958%;
+            top: 80.0959513958%;
             left: 8.9043856845%;
             width: 82.191228631%;
             right: 8.9043856845%;
@@ -858,8 +933,8 @@ const Home = () => (
             }
           ]}
         >
-          Deftify PAP focuses on incubating and privately raising capital for early stage blockchain startups of Africa,
-          allowing early stage startup founders to access a variety of resources.
+          Deftify’s PAP focuses on incubating early-stage blockchain startups from emerging economies, as well as
+          raising private capital for promising projects. Through PAP we aim to build a better tomorrow.
         </Text>
       </section>
       <Button
@@ -884,7 +959,7 @@ const Home = () => (
           }
         ]}
       >
-        Launch App
+        Coming Soon
       </Button>
       <CustomDiv
         position="absolute"
@@ -953,8 +1028,8 @@ const Home = () => (
               }
             ]}
           >
-            Only users who stake a certain amount of Deftify tokens will have access to participate into Deftify's
-            private funding deals.
+            Incubates promising crypto startups from around the world, with a focus on Africa, and connects projects
+            with an experienced network of entrepreneurs and experts.
           </Text>
         </CustomDiv>
         <CustomDiv
@@ -1003,7 +1078,58 @@ const Home = () => (
               }
             ]}
           >
-            Only whitelisted and Deftify token stakers will have access to contribute to project oboarded on PAP.
+            Raises early-stage capital for these projects by allowing Deftify token holders to invest in them before the
+            public.
+          </Text>
+        </CustomDiv>
+        <CustomDiv
+          position="absolute"
+          backgroundColor="#181a1c"
+          left={0}
+          top={68.2070719501}
+          width="100%"
+          height="77px"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              height: 94px;
+            }`
+            }
+          ]}
+        >
+          <Icon
+            icon={faCheckCircle}
+            width={15.98}
+            height={15.98}
+            left="3.89180327869%"
+            top="34.8181818182%"
+            position="absolute"
+            color="#fff"
+          />
+          <Text
+            color="#cacaca"
+            position="absolute"
+            fontWeight="500"
+            width={83.3049180328}
+            height={54}
+            fontSize={12}
+            lineHeight={18}
+            left={11.8229508197}
+            top={13.8181818182}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+                width: 83.2047832586%;
+                font-size: 18px;
+                line-height: 27px;
+              }`
+              }
+            ]}
+          >
+            Early-stage investment opportunities are available to users who undergo KYC and stake a certain amount of
+            DFTY on the platform.
           </Text>
         </CustomDiv>
       </CustomDiv>
@@ -1109,8 +1235,9 @@ const Home = () => (
             }
           ]}
         >
-          Deftify's Instant Watch solution aims to solve the problem of insufficient market data resources and high
-          costs of accessing quality market data on the crypto market.
+          We believe that essential data should be free, so we’re giving it to the world with our market data
+          aggregator, Instant Watch. Instant Watch gives users access to key crypto metrics, including information on
+          DeFi, NFTs and other market segments.
         </Text>
       </section>
       <Button
@@ -1118,7 +1245,7 @@ const Home = () => (
         border="none"
         width={57.9706666667}
         height={53.87}
-        top={23.4054982818}
+        top={25.4054982818}
         left={8.53333333333}
         backgroundColor="#fcd98d"
         color="#151515"
@@ -1128,14 +1255,14 @@ const Home = () => (
             screenSize: 768,
             definition: `{
             left: 4.44444444444%;
-            top: 32.0549927641%;
+            top: 34.0549927641%;
             width: 15.0965277778%;
             height: 54.28px;
           }`
           }
         ]}
       >
-        View Watcher
+        Coming Soon
       </Button>
       <CustomDiv
         position="absolute"
@@ -1205,7 +1332,7 @@ const Home = () => (
               }
             ]}
           >
-            Users can make more informed market data decisions at all times using aggregated market data.
+            User-friendly crypto market data aggregator with an additional focus on DeFi and NFTs.
           </Text>
         </CustomDiv>
         <CustomDiv
@@ -1255,7 +1382,58 @@ const Home = () => (
               }
             ]}
           >
-            Leverage the platform to get hot flash news on all things crypto, blockchain, and finance.
+            Free to use, with premium features available to those who stake a certain amount of DFTY.
+          </Text>
+        </CustomDiv>
+        <CustomDiv
+          position="absolute"
+          backgroundColor="#181a1c"
+          left={0}
+          top={68.2070719501}
+          width="100%"
+          height="77px"
+          border="2px solid #232323"
+          wideScreensDefinitions={[
+            {
+              screenSize: 768,
+              definition: `{
+              height: 94px;
+            }`
+            }
+          ]}
+        >
+          <Icon
+            icon={faCheckCircle}
+            width={15.98}
+            height={15.98}
+            left="3.89180327869%"
+            top="34.8181818182%"
+            position="absolute"
+            color="#fff"
+          />
+          <Text
+            color="#cacaca"
+            position="absolute"
+            fontWeight="500"
+            width={83.3049180328}
+            height={54}
+            fontSize={12}
+            lineHeight={18}
+            left={11.8229508197}
+            top={13.8181818182}
+            wideScreensDefinitions={[
+              {
+                screenSize: 768,
+                definition: `{
+                width: 83.2047832586%;
+                font-size: 18px;
+                line-height: 27px;
+              }`
+              }
+            ]}
+          >
+            Provides crucial information through an intuitive interface, helping newer participants and crypto veterans
+            alike stay on top of their positions.
           </Text>
         </CustomDiv>
       </CustomDiv>
@@ -1325,7 +1503,7 @@ const Home = () => (
           }
         ]}
       >
-        Play'N Earn
+        Play 'n' Earn
       </Text>
       <section id="playnearn">
         <Text
@@ -1353,10 +1531,10 @@ const Home = () => (
             }
           ]}
         >
-          Our play n'earn gaming model is unique. Users only need to stake Deftify tokens to be able to create in-game
-          NFT characters that will be used to play against other players, and as they defeat their opponents, they earn
-          gaming points which can be converted to Deftify tokens and also exchanged for USDT or ETH on supported
-          exchanges.
+          Play ‘n’ Earn is an exciting new way to challenge friends and foes online in an easy-to-understand,
+          difficult-to-master battle arena that requires you to outsmart the opponent player and predict their moves.
+          Users who stake DFTY will be able to mint a unique NFT hero to help them win tokens and glory in the battle
+          arena.
         </Text>
       </section>
       <Button

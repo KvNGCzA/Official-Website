@@ -20,6 +20,7 @@ interface DivProps {
   margin?: string;
   borderRadius?: string;
   boxSizing?: string;
+  textAlign?: string;
 }
 
 const CustomDiv = styled("div")<DivProps & CommonDefs>`
@@ -40,6 +41,7 @@ const CustomDiv = styled("div")<DivProps & CommonDefs>`
   margin: ${props => props.margin};
   border-radius: ${props => props.borderRadius};
   box-sizing: ${props => props.boxSizing};
+  text-align: ${props => props.textAlign};
   ${props =>
     !!props.wideScreensDefinitions &&
     props.wideScreensDefinitions.length > 0 &&
