@@ -1245,7 +1245,7 @@ const Home = () => (
         border="none"
         width={57.9706666667}
         height={53.87}
-        top={25.4054982818}
+        top={26.4054982818}
         left={8.53333333333}
         backgroundColor="#fcd98d"
         color="#151515"
