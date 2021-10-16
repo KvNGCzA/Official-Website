@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./pages/Home";
+import Routes from "./pages/router";
 import { CustomDiv } from "./components";
 
 const App = () => (
@@ -14,7 +14,7 @@ const App = () => (
     left={0}
     top={0}
   >
-    <Home />
+    <Routes />
   </CustomDiv>
 );
 
