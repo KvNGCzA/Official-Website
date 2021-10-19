@@ -75,7 +75,7 @@ export const Home = (props: Props) => {
         </Flex>
 
         <Flex itemsFlex={0.6} itemsFlexMd={0.9}>
-          <Text textAlign="center">
+          <Text mt="16px" textAlign="center">
             Focused on building a DeFi and NFT market data aggregator for better cryptocurrency market insights for
             traders, investors, companies and crypto enthusiasts in general.
           </Text>
@@ -115,7 +115,7 @@ export const Home = (props: Props) => {
             </Text>
 
             <Spacing marginVertical="21px">
-              <RegularButton>Launch App</RegularButton>
+              <RegularButton>Coming Soon</RegularButton>
             </Spacing>
 
             <CustomList
@@ -128,8 +128,8 @@ export const Home = (props: Props) => {
           </div>
 
           <div>
-            <ImageBorder img="./images/pap.svg" mobileImg="./images/pap-mobile.png">
-              <div />
+            <ImageBorder>
+              <img src="./images/pap.svg" alt="" />
             </ImageBorder>
           </div>
         </Flex>
@@ -156,69 +156,68 @@ export const Home = (props: Props) => {
             </Text>
 
             <Spacing marginVertical="21px">
-              <RegularButton>View Watcher</RegularButton>
+              <RegularButton>Coming Soon</RegularButton>
             </Spacing>
 
             <CustomList
               data={[
                 "User-friendly crypto market data aggregator with an additional focus on DeFi and NFTs.",
                 "Free to use, with premium features available to those who stake a certain amount of DFTY.",
-                "Provides crucial information through an intuitive interface, helping newer participants and crypto veterans alike stay on top of their positions.",
+                "Instant Watch will also host Deftify Indexes, weighted index funds that track the performance of baskets of crypto assets from across the market",
               ]}
             />
           </div>
 
           <div>
-            <ImageBorder img="./images/instant-watch.svg" mobileImg="./images/watch-mobile.png">
-              <div />
+            <ImageBorder>
+              <img src="./images/instant-watch.png" alt="" />
             </ImageBorder>
           </div>
         </Flex>
       </Spacing>
 
-      <HideDown hideMd>
-        <Spacing
-          fullWidth
-          paddingHorizontal="60px"
-          paddingHorizontalSm="20px"
-          paddingTop="80px"
-          paddingBottom="50px"
-          background="#181A1C"
-        >
-          <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
-            <div>
-              <Text color="#fff" fontSize={36} fontWeight={800}>
-                Deftify Indexes
-              </Text>
+      {/* <Spacing
+        fullWidth
+        paddingHorizontal="60px"
+        paddingHorizontalSm="20px"
+        paddingTop="80px"
+        paddingBottom="50px"
+        background="#181A1C"
+      >
+        <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
+          <div>
+            <Text color="#fff" fontSize={36} fontWeight={800}>
+              Deftify Indexes
+            </Text>
 
-              <Text fontWeight={500}>
-                Deftify Indexes are weighted index funds that track the performance of baskets of crypto assets from
-                across the market. Our first index will be the first in the market to focus on DeFi on Avalanche.
-              </Text>
+            <Text fontWeight={500}>
+              Deftify Indexes are weighted index funds that track the performance of baskets of crypto assets from
+              across the market. Our first index will be the first in the market to focus on DeFi on Avalanche.
+            </Text>
 
-              <Spacing marginVertical="21px">
-                <RegularButton background="#232323" color="#FFf">
-                  Coming Soon
-                </RegularButton>
-              </Spacing>
+            <Spacing marginVertical="21px">
+              <RegularButton background="#232323" color="#FFf">
+                Coming Soon
+              </RegularButton>
+            </Spacing>
 
-              <CustomList
-                data={[
-                  "Diversify your holdings by purchasing a single asset backed by a basket of leading tokens.",
-                  "Index funds move less than individual assets, making them attractive strategies in highly volatile markets.",
-                  "Where most index funds focus on Ethereum, Deftify Indexes will support assets from multiple emerging blockchains.",
-                ]}
-              />
-            </div>
+            <CustomList
+              data={[
+                "Diversify your holdings by purchasing a single asset backed by a basket of leading tokens.",
+                "Index funds move less than individual assets, making them attractive strategies in highly volatile markets.",
+                "Where most index funds focus on Ethereum, Deftify Indexes will support assets from multiple emerging blockchains.",
+              ]}
+            />
+          </div>
 
-            <div>
-              <ImageBorder>
-                <img src="./images/deftify-indexes.svg" alt="" />
-              </ImageBorder>
-            </div>
-          </Flex>
-        </Spacing>
-      </HideDown>
+          <div>
+            <ImageBorder>
+              <img src="./images/deftify-indexes.svg" alt="" />
+            </ImageBorder>
+          </div>
+        </Flex>
+      </Spacing> */}
+
       <Spacing
         fullWidth
         paddingHorizontal="60px"
@@ -228,7 +227,7 @@ export const Home = (props: Props) => {
         background="#151515"
       >
         <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
-          <Spacing marginBottomMd="30px">
+          <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
               Play 'n Earn
             </Text>
@@ -242,22 +241,22 @@ export const Home = (props: Props) => {
 
             <Spacing marginTop="21px" />
 
-            <CustomList
+            {/* <CustomList
               data={[
                 "Free for players who stake DFTY in-game. The more a player stakes, the better the fighter they can create.",
                 "Accrue points that can be used to buy in-game items or exchanged for DFTY.",
                 "All fighters in the game will be tied to NFTs that can be auctioned off within the P2P in-game trading network.",
               ]}
-            />
+            /> */}
 
             <RegularButton mt="21px" background="#232323" color="#FFf">
               Coming Soon
             </RegularButton>
-          </Spacing>
+          </div>
 
           <div>
-            <ImageBorder img="./images/play-n-earn.png">
-              <div />
+            <ImageBorder>
+              <img src="./images/play-n-earn.png" alt="" />
             </ImageBorder>
           </div>
         </Flex>

@@ -47,33 +47,12 @@ export const ColoredBorders = styled.div`
   }
 `;
 
-export const ImageBorder = styled.div<{ img?: string; mobileImg?: string }>`
+export const ImageBorder = styled.div`
   width: 100%;
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #232323;
-  > div {
-    background-size: cover;
-    background-position: center;
-    width: 500px;
-    height: 500px;
-    background-image: url(${({ img }) => img});
-    width: 100%;
-    ${({ theme }) => theme.breakpoint.down("md")} {
-      background-image: url(${({ img, mobileImg }) => mobileImg || img});
-      width: 390px;
-      height: 390px;
-    }
-
-    ${({ theme }) => theme.breakpoint.down("sm")} {
-      width: 350px;
-      height: 350px;
-    }
-
-    ${({ theme }) => theme.breakpoint.down("xs")} {
-      width: 280px;
-      height: 280px;
-    }
+  > img {
+    min-width: 100%;
+    border-radius: 8px;
+    border: 10px solid #232323;
   }
 `;
 
