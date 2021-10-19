@@ -15,6 +15,7 @@ const RegularButton = styled.button<Props>`
   height: ${({ stretch }) => stretch && "100%"};
   background: ${({ background }) => background || "#fcd98d"};
   border-radius: 4px;
+  cursor: pointer;
   border: 2px solid ${({ background }) => background || "#fcd98d"};
   font-size: 18px;
   font-family: "Gilroy";

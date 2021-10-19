@@ -12,6 +12,7 @@ interface Props {
 const OutlinedButton = styled.button<Props>`
   height: ${({ stretch }) => stretch && "100%"};
   background: #151515;
+  cursor: pointer;
   border-radius: 6px;
   border: 2px solid;
   border-image-slice: 1;
