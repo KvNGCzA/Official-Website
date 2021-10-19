@@ -16,7 +16,7 @@
   transition: 0.3s ease all;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -33,4 +33,11 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@media all and (max-width: 768px) {
+  .chain-label-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
 }

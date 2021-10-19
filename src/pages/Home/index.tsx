@@ -7,7 +7,7 @@ import Flex from "../../components/Flex";
 import Spacing from "../../components/Spacing";
 import Text from "../../components/Typography";
 import { HomeChainLabels } from "./ChainLabel";
-import { ClipText, ColoredBorders, DashboardWrapper, ImageBorder } from "../../components/JSS";
+import { ClipText, ColoredBorders, DashboardWrapper, HideDown, ImageBorder } from "../../components/JSS";
 import CustomList from "../../components/CustomList";
 import TextField from "../../components/TextField";
 
@@ -41,11 +41,13 @@ export const Home = (props: Props) => {
               </OutlinedButton>
             </Flex>
 
-            <Spacing fullWidth marginTop="20px">
-              <Flex>
-                <OutlinedButton>Whitepaper</OutlinedButton>
-              </Flex>
-            </Spacing>
+            <HideDown hideMd>
+              <Spacing fullWidth marginTop="20px">
+                <Flex>
+                  <OutlinedButton>Whitepaper</OutlinedButton>
+                </Flex>
+              </Spacing>
+            </HideDown>
           </Spacing>
         </Spacing>
 
@@ -80,14 +82,16 @@ export const Home = (props: Props) => {
         </Flex>
 
         <ColoredBorders>
-          <Flex itemsFlex={0.7} itemsFlexLg={1}>
-            <Flex justifyContent="space-between" flexDirectionMd="column">
+          <Flex itemsFlex={0.7} itemsFlexMd={1}>
+            <Flex justifyContent="space-between" alignItemsMd="flex-start" flexDirectionMd="column">
               <HomeChainLabels />
             </Flex>
           </Flex>
-          <Text mt="10px" fontWeight={700} color="#fff" textAlign="center">
-            Deftify will support all EVM-compatible Blockchains
-          </Text>
+          <Spacing marginBottomMd="30px">
+            <Text mt="10px" fontWeight={700} color="#fff" textAlign="center">
+              Deftify will support all EVM-compatible Blockchains
+            </Text>
+          </Spacing>
         </ColoredBorders>
       </Spacing>
 
@@ -124,8 +128,8 @@ export const Home = (props: Props) => {
           </div>
 
           <div>
-            <ImageBorder>
-              <img src="./images/pap.svg" alt="" />
+            <ImageBorder img="./images/pap.svg" mobileImg="./images/pap-mobile.png">
+              <div />
             </ImageBorder>
           </div>
         </Flex>
@@ -165,55 +169,56 @@ export const Home = (props: Props) => {
           </div>
 
           <div>
-            <ImageBorder>
-              <img src="./images/instant-watch.svg" alt="" />
+            <ImageBorder img="./images/instant-watch.svg" mobileImg="./images/watch-mobile.png">
+              <div />
             </ImageBorder>
           </div>
         </Flex>
       </Spacing>
 
-      <Spacing
-        fullWidth
-        paddingHorizontal="60px"
-        paddingHorizontalSm="20px"
-        paddingTop="80px"
-        paddingBottom="50px"
-        background="#181A1C"
-      >
-        <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
-          <div>
-            <Text color="#fff" fontSize={36} fontWeight={800}>
-              Deftify Indexes
-            </Text>
+      <HideDown hideMd>
+        <Spacing
+          fullWidth
+          paddingHorizontal="60px"
+          paddingHorizontalSm="20px"
+          paddingTop="80px"
+          paddingBottom="50px"
+          background="#181A1C"
+        >
+          <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
+            <div>
+              <Text color="#fff" fontSize={36} fontWeight={800}>
+                Deftify Indexes
+              </Text>
 
-            <Text fontWeight={500}>
-              Deftify Indexes are weighted index funds that track the performance of baskets of crypto assets from
-              across the market. Our first index will be the first in the market to focus on DeFi on Avalanche.
-            </Text>
+              <Text fontWeight={500}>
+                Deftify Indexes are weighted index funds that track the performance of baskets of crypto assets from
+                across the market. Our first index will be the first in the market to focus on DeFi on Avalanche.
+              </Text>
 
-            <Spacing marginVertical="21px">
-              <RegularButton background="#232323" color="#FFf">
-                Coming Soon
-              </RegularButton>
-            </Spacing>
+              <Spacing marginVertical="21px">
+                <RegularButton background="#232323" color="#FFf">
+                  Coming Soon
+                </RegularButton>
+              </Spacing>
 
-            <CustomList
-              data={[
-                "Diversify your holdings by purchasing a single asset backed by a basket of leading tokens.",
-                "Index funds move less than individual assets, making them attractive strategies in highly volatile markets.",
-                "Where most index funds focus on Ethereum, Deftify Indexes will support assets from multiple emerging blockchains.",
-              ]}
-            />
-          </div>
+              <CustomList
+                data={[
+                  "Diversify your holdings by purchasing a single asset backed by a basket of leading tokens.",
+                  "Index funds move less than individual assets, making them attractive strategies in highly volatile markets.",
+                  "Where most index funds focus on Ethereum, Deftify Indexes will support assets from multiple emerging blockchains.",
+                ]}
+              />
+            </div>
 
-          <div>
-            <ImageBorder>
-              <img src="./images/deftify-indexes.svg" alt="" />
-            </ImageBorder>
-          </div>
-        </Flex>
-      </Spacing>
-
+            <div>
+              <ImageBorder>
+                <img src="./images/deftify-indexes.svg" alt="" />
+              </ImageBorder>
+            </div>
+          </Flex>
+        </Spacing>
+      </HideDown>
       <Spacing
         fullWidth
         paddingHorizontal="60px"
@@ -223,7 +228,7 @@ export const Home = (props: Props) => {
         background="#151515"
       >
         <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
-          <div>
+          <Spacing marginBottomMd="30px">
             <Text color="#fff" fontSize={36} fontWeight={800}>
               Play 'n Earn
             </Text>
@@ -248,11 +253,11 @@ export const Home = (props: Props) => {
             <RegularButton mt="21px" background="#232323" color="#FFf">
               Coming Soon
             </RegularButton>
-          </div>
+          </Spacing>
 
           <div>
-            <ImageBorder>
-              <img src="./images/play-n-earn.png" alt="" />
+            <ImageBorder img="./images/play-n-earn.png">
+              <div />
             </ImageBorder>
           </div>
         </Flex>
@@ -279,7 +284,7 @@ export const Home = (props: Props) => {
                 label="Company Name"
               />
 
-              <RegularButton fullWidth >Submit</RegularButton>
+              <RegularButton fullWidth>Submit</RegularButton>
             </form>
           </Flex>
         </Spacing>

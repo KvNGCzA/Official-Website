@@ -5,6 +5,7 @@ interface textTypes {
   lineHeight?: string;
   textAlign?: "center" | "left" | "right";
   textAlignMd?: "center" | "left" | "right";
+  textAlignSm?: "center" | "left" | "right";
   fontWeight?: number;
   fontFamily?: "Gilroy" | "Euclid Circular A" | "SF Pro Display" | "Inter";
   color?: string;
@@ -43,6 +44,7 @@ const Text = styled.p<textTypes>`
   ${({ theme }) => theme.breakpoint.down("sm")} {
     font-size: ${({ fontSize }) => (fontSize ? fontSize - 4 + "px" : "14px")};
     line-height: ${({ fontSize }) => (fontSize ? fontSize + 6 + "px" : "23px")};
+    text-align: ${({ textAlignSm }) => textAlignSm};
   }
 `;
 

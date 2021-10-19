@@ -49,7 +49,7 @@ const Flex = styled.div<Props>`
     flex-direction: ${({ flexDirectionMd }) => flexDirectionMd};
     justify-content: ${({ justifyContentMd }) => justifyContentMd};
     align-items: ${({ alignItemsMd }) => alignItemsMd};
-    > * {
+    > *, > div {
       flex: ${({ itemsFlexMd }) => itemsFlexMd};
     }
   }
@@ -58,7 +58,7 @@ const Flex = styled.div<Props>`
     flex-direction: ${({ flexDirectionSm }) => flexDirectionSm};
     justify-content: ${({ justifyContentSm }) => justifyContentSm};
     align-items: ${({ alignItemsSm }) => alignItemsSm};
-    > * {
+    > *, > div {
       flex: ${({ itemsFlexSm }) => itemsFlexSm};
     }
   }

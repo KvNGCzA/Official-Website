@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import { AvalancheIcon, BinanceIcon, EthereumIcon, FantomIcon, PolygonIcon } from "../../assets/Icons";
 import Flex from "../../components/Flex";
+import Spacing from "../../components/Spacing";
 import Text from "../../components/Typography";
 
 interface Props {
@@ -18,9 +19,13 @@ const chainData = [
 
 export function ChainLabel({ label, icon: Icon }: Props): ReactElement {
   return (
-    <Flex flexDirection="column">
-      <Icon />
-      <Text fontWeight={600} textAlignMd="center" fontFamily="Inter" color="#fff" mt="12px" mb="20px">
+    <Flex flexDirection="column" flexDirectionMd="row">
+      <Spacing marginBottom="12px" marginBottomMd="0px" marginRightMd="12px">
+        <Icon
+          className="chain-label-icon"
+        />
+      </Spacing>
+      <Text fontWeight={600} textAlignMd="center" fontFamily="Inter" color="#fff">
         {label}
       </Text>
     </Flex>
@@ -31,7 +36,9 @@ export function HomeChainLabels(): ReactElement {
   return (
     <>
       {chainData.map((value, index) => (
-        <ChainLabel key={index.toString()} icon={value.icon} label={value.name} />
+        <Spacing key={index.toString()} marginBottomMd="40px" marginBottom="20px">
+          <ChainLabel  icon={value.icon} label={value.name} />
+        </Spacing>
       ))}
     </>
   );
