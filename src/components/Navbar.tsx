@@ -9,6 +9,9 @@ const Wrapper = styled.nav`
   padding: 30px 50px;
   justify-content: space-between;
   align-items: center;
+  ${({ theme }) => theme.breakpoint.down("xl")} {
+    padding: 30px;
+  }
 `;
 
 const NavLink = styled(Link)`
@@ -26,6 +29,7 @@ const NavLink = styled(Link)`
   }
   ${({ theme }) => theme.breakpoint.down("xl")} {
     font-size: 16px;
+    margin-right: 28px;
   }
   ${({ theme }) => theme.breakpoint.down("lg")} {
     margin-right: 0;
