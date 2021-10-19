@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 interface Props {
+  background?: string;
+
   flexWrap?: boolean;
   alignItems?: string;
   justifyContent?: string;
@@ -22,17 +24,24 @@ interface Props {
   itemsFlexLg?: number;
   itemsFlexMd?: number;
   itemsFlexSm?: number;
+  // parent fles
+  flex?: number;
+  flexLg?: number;
+  flexMd?: number;
+  flexSm?: number;
 }
 
 const Flex = styled.div<Props>`
   /* width: 100%; */
   display: flex;
+  background: ${({ background }) => background};
   flex-wrap: ${({ flexWrap }) => flexWrap && "wrap"};
   flex-direction: ${({ flexDirection }) => flexDirection || "row"};
   justify-content: ${({ justifyContent }) => justifyContent || "center"};
   align-items: ${({ alignItems }) => alignItems || "center"};
-
-  > *, > div {
+  flex: ${({ flex }) => flex};
+  > *,
+  > div {
     flex: ${({ itemsFlex }) => itemsFlex};
   }
 
@@ -40,6 +49,7 @@ const Flex = styled.div<Props>`
     flex-direction: ${({ flexDirectionLg }) => flexDirectionLg};
     justify-content: ${({ justifyContentLg }) => justifyContentLg};
     align-items: ${({ alignItemsLg }) => alignItemsLg};
+    flex: ${({ flexLg }) => flexLg};
     > * {
       flex: ${({ itemsFlexLg }) => itemsFlexLg};
     }
@@ -49,7 +59,9 @@ const Flex = styled.div<Props>`
     flex-direction: ${({ flexDirectionMd }) => flexDirectionMd};
     justify-content: ${({ justifyContentMd }) => justifyContentMd};
     align-items: ${({ alignItemsMd }) => alignItemsMd};
-    > *, > div {
+    flex: ${({ flexMd }) => flexMd};
+    > *,
+    > div {
       flex: ${({ itemsFlexMd }) => itemsFlexMd};
     }
   }
@@ -58,7 +70,9 @@ const Flex = styled.div<Props>`
     flex-direction: ${({ flexDirectionSm }) => flexDirectionSm};
     justify-content: ${({ justifyContentSm }) => justifyContentSm};
     align-items: ${({ alignItemsSm }) => alignItemsSm};
-    > *, > div {
+    flex: ${({ flexSm }) => flexSm};
+    > *,
+    > div {
       flex: ${({ itemsFlexSm }) => itemsFlexSm};
     }
   }

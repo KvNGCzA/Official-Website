@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { Home } from "./pages/Home";
 import { theme } from "./config/theme";
 import Footer from "./components/Footer";
+import Teams from "./pages/Teams";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/teams" component={Teams} />
         </Switch>
         <Footer />
       </BrowserRouter>

@@ -30,7 +30,7 @@ const routes: Array<routeType> = [
   },
   {
     name: "About Us",
-    path: "/about-us",
+    path: "/teams",
   },
   {
     name: "Contact Us",

@@ -6,3 +6,4 @@ export { default as FantomIcon } from "./Fantom";
 export { default as AvalancheIcon } from "./Avalanche";
 export { default as PolygonIcon } from "./Polygon";
 export { default as CheckIcon } from "./Check";
+export { default as LinkedInIcon } from "./LinkedIn";
