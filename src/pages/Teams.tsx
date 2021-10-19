@@ -30,7 +30,7 @@ function Teams(props: Props): ReactElement {
   return (
     <div>
       <Spacing paddingTop="120px" paddingBottom="160px" paddingHorizontal="60px" paddingHorizontalSm="20px">
-        <Flex itemsFlex={0.55} itemsFlexLg={0.8} itemsFlexSm={1}>
+        <Flex itemsFlex={0.6} itemsFlexLg={1} >
           <div>
             <Text fontWeight={800} fontSize={48} color="#fff" textAlign="center">
               Meet the People Building Deftify
@@ -83,17 +83,21 @@ function Teams(props: Props): ReactElement {
         </ProfileGrid>
 
         <Spacing marginTop="88px">
-          <Flex justifyContent="space-between" alignItems="stretch">
+          <Flex flexDirectionMd="column-reverse" justifyContent="space-between" alignItems="stretch">
             <Flex flex={0.3} flexLg={0.45} flexSm={1}>
-              <Profile
-                name="Jay Wang"
-                position="Business Development Manager"
-                linkedIn="https://www.linkedin.com/feed/"
-                avatar="./images/profile/2.png"
-              />
+              <Spacing fullWidth marginTopMd="50px">
+                <Profile
+                  name="Jay Wang"
+                  position="Business Development Manager"
+                  linkedIn="https://www.linkedin.com/feed/"
+                  avatar="./images/profile/2.png"
+                />
+              </Spacing>
             </Flex>
             <Flex
-              itemsFlex={0.75}
+              itemsFlex={0.85}
+              itemsFlexLg={1}
+              justifyContent="flex-start"
               background="#181A1C"
               style={{ borderRadius: 20 }}
               flex={0.6}
@@ -101,8 +105,14 @@ function Teams(props: Props): ReactElement {
               flexSm={1}
             >
               <form>
-                <Spacing fullWidth paddingTop="68px" paddingBottom="79px">
-                  <Text fontWeight={700} fontSize={36} mt="48px">
+                <Spacing
+                  fullWidth
+                  paddingTop="68px"
+                  paddingBottom="79px"
+                  paddingHorizontal="55px"
+                  paddingHorizontalLg="35px"
+                >
+                  <Text fontWeight={700} fontSize={36} mb="48px" color="#fff">
                     Join the Team
                   </Text>
 

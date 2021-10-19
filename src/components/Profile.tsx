@@ -13,7 +13,8 @@ interface Props {
 }
 
 const Wrapper = styled.div`
-  width: 100%;
+  width: 85%;
+  margin: auto;
 `;
 
 const Avatar = styled.img`
@@ -25,7 +26,6 @@ function Profile({ name, position, linkedIn, avatar }: Props): ReactElement {
   return (
     <Wrapper>
       <Avatar src={avatar} />
-
       <Spacing marginTop="32px">
         <Flex justifyContent="space-between">
           <div>
