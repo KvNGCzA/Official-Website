@@ -7,3 +7,4 @@ export { default as AvalancheIcon } from "./Avalanche";
 export { default as PolygonIcon } from "./Polygon";
 export { default as CheckIcon } from "./Check";
 export { default as LinkedInIcon } from "./LinkedIn";
+export { default as GitHubIcon } from "./GitHub";

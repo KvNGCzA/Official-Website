@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 interface props {
   fullWidth?: boolean;
+  fullWidthLg?: boolean;
+  fullWidthMd?: boolean;
+  fullWidthSm?: boolean;
   background?: string;
 
   padding?: string;
@@ -82,6 +85,7 @@ const Spacing = styled.div<props>`
   margin-left: ${({ marginLeft, marginHorizontal }) => marginHorizontal || marginLeft};
 
   ${({ theme }) => theme.breakpoint.down("lg")} {
+    width: ${({ fullWidthLg }) => (fullWidthLg ? "100%" : "unset")};
     padding: ${({ paddingLg }) => paddingLg};
     padding-top: ${({ paddingTopLg, paddingVerticalLg }) => paddingVerticalLg || paddingTopLg};
     padding-bottom: ${({ paddingBottomLg, paddingVerticalLg }) => paddingVerticalLg || paddingBottomLg};
@@ -95,6 +99,7 @@ const Spacing = styled.div<props>`
   }
 
   ${({ theme }) => theme.breakpoint.down("md")} {
+    width: ${({ fullWidthMd }) => (fullWidthMd ? "100%" : "unset")};
     padding: ${({ paddingMd }) => paddingMd};
     padding-top: ${({ paddingTopMd, paddingVerticalMd }) => paddingVerticalMd || paddingTopMd};
     padding-bottom: ${({ paddingBottomMd, paddingVerticalMd }) => paddingVerticalMd || paddingBottomMd};
@@ -108,6 +113,7 @@ const Spacing = styled.div<props>`
   }
 
   ${({ theme }) => theme.breakpoint.down("sm")} {
+    width: ${({ fullWidthSm }) => (fullWidthSm ? "100%" : "unset")};
     padding: ${({ paddingSm }) => paddingSm};
     padding-top: ${({ paddingTopSm, paddingVerticalSm }) => paddingVerticalSm || paddingTopSm};
     padding-bottom: ${({ paddingBottomSm, paddingVerticalSm }) => paddingVerticalSm || paddingBottomSm};

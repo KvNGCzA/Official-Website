@@ -21,16 +21,16 @@ const routes: Array<routeType> = [
     path: "/play-n-earn",
   },
   {
-    name: "Private Arena",
-    path: "/private-arena",
+    name: "Private  Access Pad",
+    path: "/private-access-pad",
   },
   {
     name: "Staking",
     path: "/staking",
   },
   {
-    name: "About Us",
-    path: "/teams",
+    name: "Team",
+    path: "/team",
   },
   {
     name: "Contact Us",

@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
-import { LinkedInIcon } from "../assets/Icons";
+import { GitHubIcon, LinkedInIcon } from "../assets/Icons";
 import Flex from "./Flex";
 import Spacing from "./Spacing";
 import Text from "./Typography";
@@ -10,6 +10,7 @@ interface Props {
   position: string;
   linkedIn: string;
   avatar: string;
+  github?: string;
 }
 
 const Wrapper = styled.div`
@@ -22,7 +23,7 @@ const Avatar = styled.img`
   width: 100%;
 `;
 
-function Profile({ name, position, linkedIn, avatar }: Props): ReactElement {
+function Profile({ name, position, linkedIn, avatar, github }: Props): ReactElement {
   return (
     <Wrapper>
       <Avatar src={avatar} />
@@ -36,9 +37,18 @@ function Profile({ name, position, linkedIn, avatar }: Props): ReactElement {
           </div>
 
           <Spacing marginLeft="15px">
-            <a href={linkedIn} target="_blank" rel="noreferrer">
-              <LinkedInIcon />
-            </a>
+            <Flex>
+              <a href={linkedIn} target="_blank" rel="noreferrer">
+                <LinkedInIcon />
+              </a>
+              {github && (
+                <Spacing marginRight="10px">
+                  <a href={github} target="_blank" rel="noreferrer">
+                    <GitHubIcon />
+                  </a>
+                </Spacing>
+              )}
+            </Flex>
           </Spacing>
         </Flex>
       </Spacing>

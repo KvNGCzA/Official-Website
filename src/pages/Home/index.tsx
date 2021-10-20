@@ -103,7 +103,13 @@ export const Home = (props: Props) => {
         paddingBottom="50px"
         background="#181A1C"
       >
-        <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
+        <Flex
+          itemsFlex={0.45}
+          alignItems="flex-start"
+          itemsFlexLg={1}
+          justifyContent="space-between"
+          flexDirectionLg="column"
+        >
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
               Private Access Pad (PAP)
@@ -127,11 +133,11 @@ export const Home = (props: Props) => {
             />
           </div>
 
-          <div>
+          <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
               <img src="./images/pap.svg" alt="" />
             </ImageBorder>
-          </div>
+          </Spacing>
         </Flex>
       </Spacing>
 
@@ -143,7 +149,13 @@ export const Home = (props: Props) => {
         paddingBottom="50px"
         background="#181A1C"
       >
-        <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
+        <Flex
+          alignItems="flex-start"
+          itemsFlex={0.45}
+          itemsFlexLg={1}
+          justifyContent="space-between"
+          flexDirectionLg="column"
+        >
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
               Instant Watch
@@ -168,11 +180,11 @@ export const Home = (props: Props) => {
             />
           </div>
 
-          <div>
+          <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
-              <img src="./images/instant-watch.png" alt="" />
+              <img src="./images/instant-watch.svg" alt="" />
             </ImageBorder>
-          </div>
+          </Spacing>
         </Flex>
       </Spacing>
 
@@ -226,7 +238,13 @@ export const Home = (props: Props) => {
         paddingBottom="50px"
         background="#151515"
       >
-        <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
+        <Flex
+          alignItems="flex-start"
+          itemsFlex={0.45}
+          itemsFlexMd={1}
+          justifyContent="space-between"
+          flexDirectionLg="column"
+        >
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
               Play 'n Earn
@@ -240,8 +258,8 @@ export const Home = (props: Props) => {
             </Text>
 
             <Spacing marginTop="21px" />
-
-            {/* <CustomList
+            {/* 
+            <CustomList
               data={[
                 "Free for players who stake DFTY in-game. The more a player stakes, the better the fighter they can create.",
                 "Accrue points that can be used to buy in-game items or exchanged for DFTY.",
@@ -254,11 +272,11 @@ export const Home = (props: Props) => {
             </RegularButton>
           </div>
 
-          <div>
+          <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
-              <img src="./images/play-n-earn.png" alt="" />
+              <img src="./images/playearn.png" alt="" />
             </ImageBorder>
-          </div>
+          </Spacing>
         </Flex>
       </Spacing>
 

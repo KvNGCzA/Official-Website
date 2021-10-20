@@ -9,12 +9,9 @@ interface Props {}
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
-  ${({ theme }) => theme.breakpoint.down("lg")} {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  ${({ theme }) => theme.breakpoint.down("sm")} {
+  ${({ theme }) => theme.breakpoint.down("md")} {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
@@ -29,7 +26,7 @@ function Footer(props: Props): ReactElement {
             Play n’Earn
           </Text>
           <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Private Arena
+            Private Access Pad
           </Text>
           <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Instant Watch
@@ -38,11 +35,11 @@ function Footer(props: Props): ReactElement {
             Staking
           </Text>
           <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            About
+            Team
           </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+          {/* <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Contact Us
-          </Text>
+          </Text> */}
         </Grid>
       </Flex>
 
