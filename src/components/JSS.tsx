@@ -50,7 +50,7 @@ export const ColoredBorders = styled.div`
 export const ImageBorder = styled.div`
   width: 100%;
   > img {
-    min-width: 100%;
+    width: 100%;
     border-radius: 8px;
     border: 10px solid #232323;
   }

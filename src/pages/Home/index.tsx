@@ -10,8 +10,19 @@ import { HomeChainLabels } from "./ChainLabel";
 import { ClipText, ColoredBorders, DashboardWrapper, HideDown, ImageBorder } from "../../components/JSS";
 import CustomList from "../../components/CustomList";
 import TextField from "../../components/TextField";
+import styled from "styled-components";
 
 interface Props {}
+
+const FeaturesGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  ${({ theme }) => theme.breakpoint.down("xl")} {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+`;
 
 export const Home = (props: Props) => {
   const [email, setEmail] = React.useState<string>("");
@@ -103,13 +114,7 @@ export const Home = (props: Props) => {
         paddingBottom="50px"
         background="#181A1C"
       >
-        <Flex
-          itemsFlex={0.45}
-          alignItems="flex-start"
-          itemsFlexLg={1}
-          justifyContent="space-between"
-          flexDirectionLg="column"
-        >
+        <FeaturesGrid>
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
               Private Access Pad (PAP)
@@ -138,7 +143,7 @@ export const Home = (props: Props) => {
               <img src="./images/pap.svg" alt="" />
             </ImageBorder>
           </Spacing>
-        </Flex>
+        </FeaturesGrid>
       </Spacing>
 
       <Spacing
@@ -149,13 +154,7 @@ export const Home = (props: Props) => {
         paddingBottom="50px"
         background="#181A1C"
       >
-        <Flex
-          alignItems="flex-start"
-          itemsFlex={0.45}
-          itemsFlexLg={1}
-          justifyContent="space-between"
-          flexDirectionLg="column"
-        >
+        <FeaturesGrid>
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
               Instant Watch
@@ -185,7 +184,7 @@ export const Home = (props: Props) => {
               <img src="./images/instant-watch.svg" alt="" />
             </ImageBorder>
           </Spacing>
-        </Flex>
+        </FeaturesGrid>
       </Spacing>
 
       {/* <Spacing
@@ -238,13 +237,7 @@ export const Home = (props: Props) => {
         paddingBottom="50px"
         background="#151515"
       >
-        <Flex
-          alignItems="flex-start"
-          itemsFlex={0.45}
-          itemsFlexMd={1}
-          justifyContent="space-between"
-          flexDirectionLg="column"
-        >
+        <FeaturesGrid>
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
               Play 'n Earn
@@ -274,10 +267,10 @@ export const Home = (props: Props) => {
 
           <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
-              <img src="./images/playearn.png" alt="" />
+              <img src="./images/play.svg" alt="" />
             </ImageBorder>
           </Spacing>
-        </Flex>
+        </FeaturesGrid>
       </Spacing>
 
       <EllipseBg showSun moveSunUp="unset" moveSunDown="109px" showMint moveMintUp="0px">
