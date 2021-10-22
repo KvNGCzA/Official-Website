@@ -37,8 +37,8 @@ export const Home = (props: Props) => {
           </Text>
 
           <Text fontWeight={500} textAlign="center">
-            Deftity is a market data aggregator, P2E game, incubator/launchpad and index fund all in one, <br />{" "}
-            connected and powered by our DFTY token.
+            Deftity is a market data aggregator, P2E game, incubator, launchpad, and index fund all in one same
+            ecosystem
           </Text>
 
           <Spacing fullWidth marginTop="50px">
@@ -121,8 +121,9 @@ export const Home = (props: Props) => {
             </Text>
 
             <Text fontWeight={500}>
-              Deftify’s PAP focuses on incubating early-stage blockchain startups from emerging economies, as well as
-              raising private capital for promising projects. Through PAP we aim to build a better tomorrow.
+              Deftify’s first platform is called Private Access Pad (PAP). It focuses on incubating early-stage
+              blockchain startups from emerging economies, as well as raising private capital for promising projects.
+              Through PAP we aim to build a better tomorrow.
             </Text>
 
             <Spacing marginVertical="21px">
@@ -161,20 +162,17 @@ export const Home = (props: Props) => {
             </Text>
 
             <Text fontWeight={500}>
-              We believe that essential data should be free, so we’re giving it to the world with our market data
-              aggregator, Instant Watch. Instant Watch gives users access to key crypto metrics, including information
-              on DeFi, NFTs and other market segments.
+              The second platform inside Deftify ecosystem is called Instant Watch. We believe that essential data
+              should be free, so we’re giving it to the world with our market data aggregator. Instant Watch gives users
+              access to key crypto metrics on DeFi projects and NFTs. Once available, multi-chain Deftify Indexes will
+              be hosted on Instant Watch as well.
             </Text>
-
-            <Spacing marginVertical="21px">
-              <RegularButton>Coming Soon</RegularButton>
-            </Spacing>
 
             <CustomList
               data={[
-                "User-friendly crypto market data aggregator with an additional focus on DeFi and NFTs.",
-                "Free to use, with premium features available to those who stake a certain amount of DFTY.",
-                "Instant Watch will also host Deftify Indexes, weighted index funds that track the performance of baskets of crypto assets from across the market",
+                "User-friendly crypto market data aggregator with interactive and advanced charting tools. Instant Watch is free to use, with premium features available to those who stake DFTY",
+                "Provides crucial information on DeFi and NFTs through an intuitive interface, such as TVL or APY comparisons among DeFi projects and important market details on different NFT ecosystems.",
+                "Instant Watch will host Deftify Indexes, weighted index funds supported by different baskets of crypto assets in multiple chains and will not be limited to popular blockchains",
               ]}
             />
           </div>
@@ -244,25 +242,22 @@ export const Home = (props: Props) => {
             </Text>
 
             <Text fontWeight={500}>
-              Play ‘n’ Earn is an exciting new way to challenge friends and foes online in an easy-to-understand,
-              difficult-to-master battle arena that requires you to outsmart the opponent player and predict their
-              moves. Users who stake DFTY will be able to mint a unique NFT hero to help them win tokens and glory in
-              the battle arena.
+              Deftify’s third platform is called Play ‘n’ Earn. It is an exciting new way to challenge friends and foes
+              online in an easy-to-understand, difficult-to-master battle arena that requires you to outsmart the
+              opponent player and predict their moves.
             </Text>
 
-            <Spacing marginTop="21px" />
-            {/* 
+            <Spacing marginVertical="21px">
+              <RegularButton>Coming Soon</RegularButton>
+            </Spacing>
+
             <CustomList
               data={[
-                "Free for players who stake DFTY in-game. The more a player stakes, the better the fighter they can create.",
-                "Accrue points that can be used to buy in-game items or exchanged for DFTY.",
-                "All fighters in the game will be tied to NFTs that can be auctioned off within the P2P in-game trading network.",
+                "In our Play ‘n’ Earn arena, players will pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
+                "It is free-to-play for all players who stake DFTY in the game. The more a player stakes, the better the fighter they can create. The fighter NFTs can be auctioned off within the P2P in-game trading.",
+                "Staking DFTY tokens through Play ‘n’ Earn game is similar to our regular staking model as users will be able redeem their game tokens for DFTY, while also earning in-game credits.",
               ]}
-            /> */}
-
-            <RegularButton mt="21px" background="#232323" color="#FFf">
-              Coming Soon
-            </RegularButton>
+            />
           </div>
 
           <Spacing fullWidthLg marginTopLg="40px">
