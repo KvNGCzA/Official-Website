@@ -1,5 +1,5 @@
 import React from "react";
-import { PlayIcon } from "../../assets/Icons";
+import { PlayIcon, PlayNEarnIcon } from "../../assets/Icons";
 import OutlinedButton from "../../components/Button/Outlined";
 import RegularButton from "../../components/Button/Regular";
 import { EllipseBg } from "../../components/EllipseBg";
@@ -10,6 +10,7 @@ import { HomeChainLabels } from "./ChainLabel";
 import { ClipText, ColoredBorders, DashboardWrapper, HideDown, ImageBorder } from "../../components/JSS";
 import CustomList from "../../components/CustomList";
 import TextField from "../../components/TextField";
+
 import styled from "styled-components";
 
 interface Props {}
@@ -87,8 +88,10 @@ export const Home = (props: Props) => {
 
         <Flex itemsFlex={0.6} itemsFlexMd={0.9}>
           <Text mt="16px" textAlign="center">
-            Focused on building a DeFi and NFT market data aggregator for better cryptocurrency market insights for
-            traders, investors, companies and crypto enthusiasts in general.
+            In Deftify, there are multiple platforms utilizing one same token (DFTY). Private access launchpad, project
+            incubator, advanced data aggregation tools, tradable index funds, and P2E game are all part of the same
+            Deftify ecosystem. With DFTY being needed for each platform in Deftify, the token utility will increase over
+            time
           </Text>
         </Flex>
 
@@ -185,48 +188,6 @@ export const Home = (props: Props) => {
         </FeaturesGrid>
       </Spacing>
 
-      {/* <Spacing
-        fullWidth
-        paddingHorizontal="60px"
-        paddingHorizontalSm="20px"
-        paddingTop="80px"
-        paddingBottom="50px"
-        background="#181A1C"
-      >
-        <Flex itemsFlex={0.45} itemsFlexMd={1} justifyContent="space-between" flexDirectionMd="column">
-          <div>
-            <Text color="#fff" fontSize={36} fontWeight={800}>
-              Deftify Indexes
-            </Text>
-
-            <Text fontWeight={500}>
-              Deftify Indexes are weighted index funds that track the performance of baskets of crypto assets from
-              across the market. Our first index will be the first in the market to focus on DeFi on Avalanche.
-            </Text>
-
-            <Spacing marginVertical="21px">
-              <RegularButton background="#232323" color="#FFf">
-                Coming Soon
-              </RegularButton>
-            </Spacing>
-
-            <CustomList
-              data={[
-                "Diversify your holdings by purchasing a single asset backed by a basket of leading tokens.",
-                "Index funds move less than individual assets, making them attractive strategies in highly volatile markets.",
-                "Where most index funds focus on Ethereum, Deftify Indexes will support assets from multiple emerging blockchains.",
-              ]}
-            />
-          </div>
-
-          <div>
-            <ImageBorder>
-              <img src="./images/deftify-indexes.svg" alt="" />
-            </ImageBorder>
-          </div>
-        </Flex>
-      </Spacing> */}
-
       <Spacing
         fullWidth
         paddingHorizontal="60px"
@@ -262,7 +223,7 @@ export const Home = (props: Props) => {
 
           <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
-              <img src="./images/play.svg" alt="" />
+              <PlayNEarnIcon />
             </ImageBorder>
           </Spacing>
         </FeaturesGrid>

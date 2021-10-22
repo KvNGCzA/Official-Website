@@ -49,7 +49,7 @@ export const ColoredBorders = styled.div`
 
 export const ImageBorder = styled.div`
   width: 100%;
-  > img {
+  > img, svg {
     width: 100%;
     border-radius: 8px;
     border: 10px solid #232323;

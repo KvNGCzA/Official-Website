@@ -1,3 +1,4 @@
+export { default as PlayNEarnIcon } from "./PlayN'Earn";
 export { default as LogoIcon } from "./Logo";
 export { default as PlayIcon } from "./Play";
 export { default as BinanceIcon } from "./Binance";
