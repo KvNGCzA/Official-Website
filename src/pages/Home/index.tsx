@@ -150,7 +150,7 @@ export const Home = (props: Props) => {
 
           <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
-              <img src="./images/pap.svg" alt="" />
+              <img src="./images/pap.png" alt="" />
             </ImageBorder>
           </Spacing>
         </FeaturesGrid>
@@ -188,7 +188,7 @@ export const Home = (props: Props) => {
 
           <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
-              <img src="./images/instant-watch.svg" alt="" />
+              <img src="./images/instant-watch.png" alt="" />
             </ImageBorder>
           </Spacing>
         </FeaturesGrid>
