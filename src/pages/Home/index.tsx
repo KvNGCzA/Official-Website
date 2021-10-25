@@ -71,7 +71,7 @@ export const Home = (props: Props) => {
 
         <DashboardWrapper>
           <div>
-            <img src="./images/dashboard.svg" alt="" />
+            <img src="./images/dashboard.png" alt="" />
           </div>
         </DashboardWrapper>
       </EllipseBg>
