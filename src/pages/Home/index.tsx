@@ -80,7 +80,7 @@ export const Home = (props: Props) => {
         fullWidth
         paddingHorizontal="60px"
         paddingHorizontalSm="20px"
-        paddingTop="80px"
+        paddingTop="20px"
         paddingBottom="50px"
         background="#181A1C"
       >
