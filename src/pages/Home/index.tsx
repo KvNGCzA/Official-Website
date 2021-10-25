@@ -80,7 +80,7 @@ export const Home = (props: Props) => {
         fullWidth
         paddingHorizontal="60px"
         paddingHorizontalSm="20px"
-        paddingTop="20px"
+        paddingTop="50px"
         paddingBottom="50px"
         background="#181A1C"
       >
@@ -121,7 +121,7 @@ export const Home = (props: Props) => {
         fullWidth
         paddingHorizontal="60px"
         paddingHorizontalSm="20px"
-        paddingTop="80px"
+        paddingTop="50px"
         paddingBottom="50px"
         background="#181A1C"
       >
@@ -159,7 +159,7 @@ export const Home = (props: Props) => {
         fullWidth
         paddingHorizontal="60px"
         paddingHorizontalSm="20px"
-        paddingTop="80px"
+        paddingTop="50px"
         paddingBottom="50px"
         background="#151515"
       >
@@ -199,7 +199,7 @@ export const Home = (props: Props) => {
       <Spacing
         fullWidth
         background="#181A1C"
-        paddingVertical="75px"
+        paddingVertical="55px"
         paddingHorizontal="60px"
         paddingHorizontalMd="20px"
       >
@@ -207,7 +207,7 @@ export const Home = (props: Props) => {
           <Text textAlign="center" display="inline" fontSize={48} fontWeight={800}>
             Powered by{" "}
             <ClipText display="inline-block" fontSize={48} fontWeight={800}>
-              Blockchain
+              blockchain
             </ClipText>
           </Text>
         </Flex>
