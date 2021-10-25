@@ -58,17 +58,13 @@ export const Home = (props: Props) => {
                 <Flex flexDirectionSm="column">
                   <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
                 <Flex>
-                  <OutlinedButton>One Pager</OutlinedButton>
-                </Flex>
-                  </Spacing>
-                 <Flex>
                   <OutlinedButton>Whitepaper</OutlinedButton>
                 </Flex>
                   </Spacing>
-                 <Flex>
                   <OutlinedButton>Pitch Deck</OutlinedButton>
+                  </Spacing>
+                  <OutlinedButton>One Pager</OutlinedButton>
                 </Flex>
-                </Flex>  
               </Spacing>
             </HideDown>
           </Spacing>
