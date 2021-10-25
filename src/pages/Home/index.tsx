@@ -34,7 +34,7 @@ export const Home = (props: Props) => {
       <EllipseBg showSun moveSunUp="unset" moveSunDown="109px" showMint moveMintUp="0px">
         <Spacing margin="auto" paddingSm="20px" padding="60px">
           <Text fontWeight={800} fontSize={48} color="#fff" textAlign="center">
-            Multi23purpose DeFi and NFT ecosystem
+            Multipurpose DeFi and NFT ecosystem
           </Text>
 
           <Text fontWeight={500} textAlign="center">
@@ -57,6 +57,16 @@ export const Home = (props: Props) => {
               <Spacing fullWidth marginTop="20px">
                 <Flex>
                   <OutlinedButton>Whitepaper</OutlinedButton>
+                </Flex>
+              </Spacing>
+            </HideDown>
+          </Spacing>
+        </Spacing>
+        
+                    <HideDown hideMd>
+              <Spacing fullWidth marginTop="20px">
+                <Flex>
+                  <OutlinedButton>Pitch Deck</OutlinedButton>
                 </Flex>
               </Spacing>
             </HideDown>
