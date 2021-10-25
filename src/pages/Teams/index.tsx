@@ -116,7 +116,7 @@ function Teams(props: Props): ReactElement {
                   paddingHorizontalLg="35px"
                 >
                   <Text fontWeight={700} fontSize={36} mb="48px" color="#fff">
-                    Join the Team
+                    Contact the Team
                   </Text>
 
                   <TextField
