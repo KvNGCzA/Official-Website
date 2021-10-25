@@ -78,45 +78,6 @@ export const Home = (props: Props) => {
 
       <Spacing
         fullWidth
-        background="#181A1C"
-        paddingVertical="75px"
-        paddingHorizontal="60px"
-        paddingHorizontalMd="20px"
-      >
-        <Flex>
-          <Text textAlign="center" display="inline" fontSize={48} fontWeight={800}>
-            Powered by{" "}
-            <ClipText display="inline-block" fontSize={48} fontWeight={800}>
-              Blockchain
-            </ClipText>
-          </Text>
-        </Flex>
-
-        <Flex itemsFlex={0.6} itemsFlexMd={0.9}>
-          <Text mt="16px" textAlign="center">
-            In Deftify, there are multiple platforms utilizing one same token (DFTY). Private access launchpad, project
-            incubator, advanced data aggregation tools, tradable index funds, and P2E game are all part of the same
-            Deftify ecosystem. With DFTY being needed for each platform in Deftify, the token utility will increase over
-            time
-          </Text>
-        </Flex>
-
-        <ColoredBorders>
-          <Flex itemsFlex={0.7} itemsFlexMd={1}>
-            <Flex justifyContent="space-between" alignItemsMd="flex-start" flexDirectionMd="column">
-              <HomeChainLabels />
-            </Flex>
-          </Flex>
-          <Spacing marginBottomMd="30px">
-            <Text mt="10px" fontWeight={700} color="#fff" textAlign="center">
-              Deftify will support all EVM-compatible Blockchains
-            </Text>
-          </Spacing>
-        </ColoredBorders>
-      </Spacing>
-
-      <Spacing
-        fullWidth
         paddingHorizontal="60px"
         paddingHorizontalSm="20px"
         paddingTop="80px"
@@ -233,6 +194,45 @@ export const Home = (props: Props) => {
             </ImageBorder>
           </Spacing>
         </FeaturesGrid>
+      </Spacing>
+
+      <Spacing
+        fullWidth
+        background="#181A1C"
+        paddingVertical="75px"
+        paddingHorizontal="60px"
+        paddingHorizontalMd="20px"
+      >
+        <Flex>
+          <Text textAlign="center" display="inline" fontSize={48} fontWeight={800}>
+            Powered by{" "}
+            <ClipText display="inline-block" fontSize={48} fontWeight={800}>
+              Blockchain
+            </ClipText>
+          </Text>
+        </Flex>
+
+        <Flex itemsFlex={0.6} itemsFlexMd={0.9}>
+          <Text mt="16px" textAlign="center">
+            In Deftify, there are multiple platforms utilizing one same token (DFTY). Private access launchpad, project
+            incubator, advanced data aggregation tools, tradable index funds, and P2E game are all part of the same
+            Deftify ecosystem. With DFTY being needed for each platform in Deftify, the token utility will increase over
+            time
+          </Text>
+        </Flex>
+
+        <ColoredBorders>
+          <Flex itemsFlex={0.7} itemsFlexMd={1}>
+            <Flex justifyContent="space-between" alignItemsMd="flex-start" flexDirectionMd="column">
+              <HomeChainLabels />
+            </Flex>
+          </Flex>
+          <Spacing marginBottomMd="30px">
+            <Text mt="10px" fontWeight={700} color="#fff" textAlign="center">
+              Deftify will support all EVM-compatible Blockchains
+            </Text>
+          </Spacing>
+        </ColoredBorders>
       </Spacing>
 
       <EllipseBg showSun moveSunUp="unset" moveSunDown="109px" showMint moveMintUp="0px">
