@@ -45,7 +45,7 @@ export const Home = (props: Props) => {
           <Spacing fullWidth marginTop="50px">
             <Flex flexDirectionSm="column">
               <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
-                <RegularButton stretch>Whitepaper</RegularButton>
+                <RegularButton stretch><a href="https://docsend.com/view/pkxf3t4dy9bjyjt6" target="_blank">Whitepaper</a></RegularButton>
               </Spacing>
               <OutlinedButton>
                 <PlayIcon style={{ marginRight: 10 }} />
