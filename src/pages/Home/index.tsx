@@ -126,7 +126,7 @@ export const Home = (props: Props) => {
         <FeaturesGrid>
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
-              Private Access Pad (PAP)
+              BUIDL: Private Access Pad (PAP)
             </Text>
 
             <Text fontWeight={500}>
@@ -167,7 +167,7 @@ export const Home = (props: Props) => {
         <FeaturesGrid>
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
-              Instant Watch
+              TRADE: Instant Watch
             </Text>
 
             <Text fontWeight={500}>
@@ -205,11 +205,11 @@ export const Home = (props: Props) => {
         <FeaturesGrid>
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
-              Play 'n Earn
+              PLAY: BlockCraze
             </Text>
 
             <Text fontWeight={500}>
-              Deftify’s third platform is called Play ‘n’ Earn. It is an exciting new way to challenge friends and foes
+              Deftify’s third platform is called BlockCraze. It is an exciting new way to challenge friends and foes
               online in an easy-to-understand, difficult-to-master battle arena that requires you to outsmart the
               opponent player and predict their moves.
             </Text>
@@ -220,9 +220,9 @@ export const Home = (props: Props) => {
 
             <CustomList
               data={[
-                "In our Play ‘n’ Earn arena, players will pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
+                "In our BlockCraze arena, players will pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
                 "It is free-to-play for all players who stake DFTY in the game. The more a player stakes, the better the fighter they can create. The fighter NFTs can be auctioned off within the P2P in-game trading.",
-                "Staking DFTY tokens through Play ‘n’ Earn game is similar to our regular staking model as users will be able redeem their game tokens for DFTY, while also earning in-game credits.",
+                "Staking DFTY tokens through BlockCraze game is similar to our regular staking model as users will be able redeem their game tokens for DFTY, while also earning in-game credits.",
               ]}
             />
           </div>
