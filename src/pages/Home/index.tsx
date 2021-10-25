@@ -55,23 +55,19 @@ export const Home = (props: Props) => {
 
             <HideDown hideMd>
               <Spacing fullWidth marginTop="20px">
+                <Flex flexDirectionSm="column">
+                  <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
                 <Flex>
                   <OutlinedButton>Whitepaper</OutlinedButton>
                 </Flex>
-              </Spacing>
-            </HideDown>
-          </Spacing>
-        </Spacing>
-        
-                    <HideDown hideMd>
-              <Spacing fullWidth marginTop="20px">
-                <Flex>
+                  </Spacing>
                   <OutlinedButton>Pitch Deck</OutlinedButton>
                 </Flex>
               </Spacing>
             </HideDown>
           </Spacing>
         </Spacing>
+        
 
         <DashboardWrapper>
           <div>
