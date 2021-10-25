@@ -61,7 +61,7 @@ export const Home = (props: Props) => {
                   <OutlinedButton>One Pager</OutlinedButton>
                 </Flex>
                   </Spacing>
-                  <OutlinedButton>Pitch Deck</OutlinedButton>
+                  <a href="https://docsend.com/view/vex4z4hgqzsftzvi" target="_blank" rel="noreferrer"><OutlinedButton>Pitch Deck</OutlinedButton></a>
                 </Flex>
               </Spacing>
             </HideDown>
