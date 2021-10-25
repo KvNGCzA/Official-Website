@@ -34,7 +34,7 @@ export const Home = (props: Props) => {
       <EllipseBg showSun moveSunUp="unset" moveSunDown="109px" showMint moveMintUp="0px">
         <Spacing margin="auto" paddingSm="20px" padding="60px">
           <Text fontWeight={800} fontSize={48} color="#fff" textAlign="center">
-            Multipurpose DeFi and NFT ecosystem
+            Multi23purpose DeFi and NFT ecosystem
           </Text>
 
           <Text fontWeight={500} textAlign="center">
