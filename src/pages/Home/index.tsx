@@ -45,7 +45,7 @@ export const Home = (props: Props) => {
           <Spacing fullWidth marginTop="50px">
             <Flex flexDirectionSm="column">
               <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
-                <RegularButton stretch>Get Early Access</RegularButton>
+                <RegularButton stretch>Whitepaper</RegularButton>
               </Spacing>
               <OutlinedButton>
                 <PlayIcon style={{ marginRight: 10 }} />
@@ -58,12 +58,10 @@ export const Home = (props: Props) => {
                 <Flex flexDirectionSm="column">
                   <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
                 <Flex>
-                  <OutlinedButton>Whitepaper</OutlinedButton>
+                  <OutlinedButton>One Pager</OutlinedButton>
                 </Flex>
                   </Spacing>
                   <OutlinedButton>Pitch Deck</OutlinedButton>
-                  </Spacing>
-                  <OutlinedButton>One Pager</OutlinedButton>
                 </Flex>
               </Spacing>
             </HideDown>
