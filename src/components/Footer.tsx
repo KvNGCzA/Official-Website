@@ -40,6 +40,8 @@ function Footer(props: Props): ReactElement {
           <a href ="https://www.linkedin.com/company/deftify/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Discord
           </Text></a>
+          </Grid>
+          <Grid>
           <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Instant Watch
           </Text>
