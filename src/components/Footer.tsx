@@ -48,15 +48,15 @@ function Footer(props: Props): ReactElement {
 
       <Spacing fullWidth marginTop="40px" marginTopSm="10px">
         <Flex flexDirectionSm="column" alignItems="flex-start">
-        <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-48.png" alt="Telegram" /></a>
+        <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-32.png" alt="Telegram" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-48.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-32.png" alt="Telegram" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-48.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-32.png" alt="Telegram" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-48.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-32.png" alt="Telegram" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-48.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-32.png" alt="Telegram" /></a>
         </Flex>
       </Spacing>
 
