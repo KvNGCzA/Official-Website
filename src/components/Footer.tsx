@@ -37,6 +37,9 @@ function Footer(props: Props): ReactElement {
           <a href ="https://www.linkedin.com/company/deftify/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             LinkedIn
           </Text></a>
+          <a href ="https://www.linkedin.com/company/deftify/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Discord
+          </Text></a>
           {/* <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Contact Us
           </Text> */}
