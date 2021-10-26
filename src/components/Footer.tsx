@@ -31,7 +31,7 @@ function Footer(props: Props): ReactElement {
           <a href ="https://medium.com/@deftify"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Medium
           </Text></a>
-          <a href ="https://reddit.com/user/Deftify_"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+          <a href ="https://www.reddit.com/r/Deftify/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Reddit
           </Text></a>
           <a href ="https://www.linkedin.com/company/deftify/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
@@ -40,6 +40,18 @@ function Footer(props: Props): ReactElement {
           <a href ="https://www.linkedin.com/company/deftify/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Discord
           </Text></a>
+          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Instant Watch
+          </Text>
+          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Deftify Indexes
+          </Text>
+          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            BlockCraze
+          </Text>
+          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Private Access Pad
+          </Text>
           {/* <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Contact Us
           </Text> */}
