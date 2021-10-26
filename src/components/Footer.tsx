@@ -22,20 +22,20 @@ function Footer(props: Props): ReactElement {
     <Spacing paddingHorizontal="20px" paddingTop="80px" paddingBottom="50px" background="#151515">
       <Flex itemsFlex={0.7} itemsFlexSm={1}>
         <Grid>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Instant Watch
-          </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Deftify Indexes
-          </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            BlockCraze
-          </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Private Access Pad
-          </Text>
-          <a href ="/team"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Team
+        <a href ="https://twitter.com/Deftify_"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Twitter
+          </Text></a>
+          <a href ="https://t.me/deftify"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Telegram
+          </Text></a>
+          <a href ="https://medium.com/@deftify"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Medium
+          </Text></a>
+          <a href ="https://reddit.com/user/Deftify_"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Reddit
+          </Text></a>
+          <a href ="https://www.linkedin.com/company/deftify/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            LinkedIn
           </Text></a>
           {/* <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Contact Us
