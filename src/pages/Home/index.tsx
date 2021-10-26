@@ -45,12 +45,12 @@ export const Home = (props: Props) => {
           <Spacing fullWidth marginTop="50px">
             <Flex flexDirectionSm="column">
               <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
-                <a href="https://docsend.com/view/pkxf3t4dy9bjyjt6" target="_blank" rel="noreferrer"><RegularButton stretch>Whitepaper</RegularButton></a>
-              </Spacing>
-              <OutlinedButton>
                 <PlayIcon style={{ marginRight: 10 }} />
-                Watch Demo
-              </OutlinedButton>
+                  <RegularButton stretch>Watch Demo</RegularButton>
+              </Spacing>
+              <a href="https://docsend.com/view/pkxf3t4dy9bjyjt6" target="_blank" rel="noreferrer"><OutlinedButton>
+                Whitepaper
+              </OutlinedButton></a>
             </Flex>
 
               <Spacing fullWidth marginTop="20px">
