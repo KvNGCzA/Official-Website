@@ -7,7 +7,7 @@ import Flex from "../../components/Flex";
 import Spacing from "../../components/Spacing";
 import Text from "../../components/Typography";
 import { HomeChainLabels } from "./ChainLabel";
-import { ClipText, ColoredBorders, DashboardWrapper, HideDown, ImageBorder } from "../../components/JSS";
+import { ClipText, ColoredBorders, DashboardWrapper, ImageBorder } from "../../components/JSS";
 import CustomList from "../../components/CustomList";
 import TextField from "../../components/TextField";
 
