@@ -48,17 +48,9 @@ function Footer(props: Props): ReactElement {
 
       <Spacing fullWidth marginTop="40px" marginTopSm="10px">
         <Flex flexDirectionSm="column" alignItems="flex-start">
-        <img src="https://1000marcas.net/wp-content/uploads/2021/06/Telegram-logo.png" alt="" />
+        <a href ="https://t.me/deftify"><img src="./images/telegram-64.png" alt="Telegram" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <Text
-            color="rgba(255, 255, 255, 0.69);"
-            textAlign="center"
-            textAlignSm="left"
-            fontSize={16}
-            fontFamily="Euclid Circular A"
-          >
-            Privacy Policy
-          </Text>
+          <a href ="https://t.me/deftify"><img src="./images/telegram-64.png" alt="Telegram" /></a>
         </Flex>
       </Spacing>
 
