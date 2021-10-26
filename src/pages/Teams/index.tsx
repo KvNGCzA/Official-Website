@@ -97,7 +97,38 @@ function Teams(props: Props): ReactElement {
                 />
               </Spacing>
             </Flex>
-            <Flex
+            
+          </Flex>
+        </Spacing>
+      </Spacing>
+
+      <Spacing paddingHorizontal="60px" paddingHorizontalSm="20px" marginBottom="120px">
+        <Text fontWeight={800} fontSize={48} color="#fff" textAlign="center" mb="48px">
+          Partners & Advisors
+        </Text>
+
+        <ProfileGrid>
+          <Profile
+            name="Obasi Francis Ifegwu"
+            position="Strategic Advisor"
+            linkedIn="https://www.linkedin.com/feed/"
+            avatar="./images/profile/7.png"
+          />
+          <Profile
+            name="Micky Irons"
+            position="Marketing Advisor"
+            linkedIn="https://www.linkedin.com/feed/"
+            avatar="./images/profile/8.png"
+          />
+          <Profile
+            name="CryptoEdit"
+            position="Research & Content Lead"
+            linkedIn="https://www.linkedin.com/feed/"
+            avatar="./images/profile/9.png"
+          />
+        </ProfileGrid>
+      </Spacing>
+      <Flex
               itemsFlex={0.85}
               itemsFlexLg={1}
               justifyContent="flex-start"
@@ -136,36 +167,6 @@ function Teams(props: Props): ReactElement {
                 </Spacing>
               </form>
             </Flex>
-          </Flex>
-        </Spacing>
-      </Spacing>
-
-      <Spacing paddingHorizontal="60px" paddingHorizontalSm="20px" marginBottom="120px">
-        <Text fontWeight={800} fontSize={48} color="#fff" textAlign="center" mb="48px">
-          Partners & Advisors
-        </Text>
-
-        <ProfileGrid>
-          <Profile
-            name="Obasi Francis Ifegwu"
-            position="Strategic Advisor"
-            linkedIn="https://www.linkedin.com/feed/"
-            avatar="./images/profile/7.png"
-          />
-          <Profile
-            name="Micky Irons"
-            position="Marketing Advisor"
-            linkedIn="https://www.linkedin.com/feed/"
-            avatar="./images/profile/8.png"
-          />
-          <Profile
-            name="CryptoEdit"
-            position="Research & Content Lead"
-            linkedIn="https://www.linkedin.com/feed/"
-            avatar="./images/profile/9.png"
-          />
-        </ProfileGrid>
-      </Spacing>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import Flex from "../../components/Flex";
 import Spacing from "../../components/Spacing";
 import Text from "../../components/Typography";
 import { HomeChainLabels } from "./ChainLabel";
-import { ClipText, ColoredBorders, DashboardWrapper, HideDown, ImageBorder } from "../../components/JSS";
+import { ClipText, ColoredBorders, DashboardWrapper, ImageBorder } from "../../components/JSS";
 import CustomList from "../../components/CustomList";
 import TextField from "../../components/TextField";
 
@@ -45,15 +45,14 @@ export const Home = (props: Props) => {
           <Spacing fullWidth marginTop="50px">
             <Flex flexDirectionSm="column">
               <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
-                <a href="https://docsend.com/view/pkxf3t4dy9bjyjt6" target="_blank" rel="noreferrer"><RegularButton stretch>Whitepaper</RegularButton></a>
-              </Spacing>
               <OutlinedButton>
                 <PlayIcon style={{ marginRight: 10 }} />
                 Watch Demo
               </OutlinedButton>
+              </Spacing>
+              <a href="https://docsend.com/view/pkxf3t4dy9bjyjt6" target="_blank" rel="noreferrer"><RegularButton stretch>Whitepaper</RegularButton></a>
             </Flex>
 
-            <HideDown hideMd>
               <Spacing fullWidth marginTop="20px">
                 <Flex flexDirectionSm="column">
                   <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
@@ -64,7 +63,6 @@ export const Home = (props: Props) => {
                   <a href="https://docsend.com/view/vex4z4hgqzsftzvi" target="_blank" rel="noreferrer"><OutlinedButton>Pitch Deck</OutlinedButton></a>
                 </Flex>
               </Spacing>
-            </HideDown>
           </Spacing>
         </Spacing>
         
@@ -91,9 +89,9 @@ export const Home = (props: Props) => {
             </Text>
 
             <Text fontWeight={500}>
-              Deftify’s first platform is called Private Access Pad (PAP). It focuses on incubating early-stage
-              blockchain startups from emerging economies, as well as raising private capital for promising projects.
-              Through PAP we aim to build a better tomorrow.
+            Deftify's Private Access Pad (PAP) is for African founders and developers who have the next big blockchain idea
+              but do not know how to start. PAP is designed perfectly to help match ideas with teams, fund and accelerate
+              founders from 0 to 1.
             </Text>
 
             <Spacing marginVertical="21px">
@@ -137,6 +135,10 @@ export const Home = (props: Props) => {
               access to key crypto metrics on DeFi projects and NFTs. Once available, multi-chain Deftify Indexes will
               be hosted on Instant Watch as well.
             </Text>
+
+            <Spacing marginVertical="21px">
+              <RegularButton>Coming Soon</RegularButton>
+            </Spacing>
 
             <CustomList
               data={[
