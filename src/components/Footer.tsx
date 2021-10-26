@@ -23,16 +23,16 @@ function Footer(props: Props): ReactElement {
       <Flex itemsFlex={0.7} itemsFlexSm={1}>
         <Grid>
           <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Play n’Earn
-          </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Private Access Pad
-          </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Instant Watch
           </Text>
           <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Staking
+            Deftify Indexes
+          </Text>
+          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            BlockCraze
+          </Text>
+          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Private Access Pad
           </Text>
           <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Team
