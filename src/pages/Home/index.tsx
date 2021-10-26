@@ -138,6 +138,10 @@ export const Home = (props: Props) => {
               be hosted on Instant Watch as well.
             </Text>
 
+            <Spacing marginVertical="21px">
+              <RegularButton>Coming Soon</RegularButton>
+            </Spacing>
+
             <CustomList
               data={[
                 "User-friendly crypto market data aggregator with interactive and advanced charting tools. Instant Watch is free to use, with premium features available to those who stake DFTY",
