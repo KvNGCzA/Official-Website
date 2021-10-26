@@ -53,7 +53,6 @@ export const Home = (props: Props) => {
               </OutlinedButton>
             </Flex>
 
-            <HideDown hideMd>
               <Spacing fullWidth marginTop="20px">
                 <Flex flexDirectionSm="column">
                   <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
@@ -64,7 +63,6 @@ export const Home = (props: Props) => {
                   <a href="https://docsend.com/view/vex4z4hgqzsftzvi" target="_blank" rel="noreferrer"><OutlinedButton>Pitch Deck</OutlinedButton></a>
                 </Flex>
               </Spacing>
-            </HideDown>
           </Spacing>
         </Spacing>
         
