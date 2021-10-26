@@ -22,7 +22,7 @@ function Footer(props: Props): ReactElement {
     <Spacing paddingHorizontal="20px" paddingTop="50px" paddingBottom="40px" background="#151515">
       <Flex itemsFlex={0.7} itemsFlexSm={1}>
         <Grid>
-        <a href ="https://twitter.com/Deftify_"><Text fontWeight={400} textAlign="center" textAlignSm="left" color="#fff">
+        <a href ="https://twitter.com/Deftify_"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Twitter
           </Text></a>
           <a href ="https://t.me/deftify"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
@@ -40,23 +40,35 @@ function Footer(props: Props): ReactElement {
           <a href ="https://www.linkedin.com/company/deftify/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Discord
           </Text></a>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Instant Watch
-          </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Deftify Indexes
-          </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            BlockCraze
-          </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Private Access Pad
-          </Text>
           {/* <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Contact Us
           </Text> */}
         </Grid>
       </Flex>
+
+      <Spacing fullWidth marginTop="40px" marginTopSm="10px">
+        <Flex flexDirectionSm="column" alignItems="flex-start">
+          <Text
+            color="rgba(255, 255, 255, 0.69);"
+            textAlign="center"
+            textAlignSm="left"
+            fontSize={16}
+            fontFamily="Euclid Circular A"
+          >
+            Terms of Use
+          </Text>
+          <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
+          <Text
+            color="rgba(255, 255, 255, 0.69);"
+            textAlign="center"
+            textAlignSm="left"
+            fontSize={16}
+            fontFamily="Euclid Circular A"
+          >
+            Privacy Policy
+          </Text>
+        </Flex>
+      </Spacing>
 
       <Spacing fullWidth marginTop="40px" marginTopSm="10px">
         <Flex flexDirectionSm="column" alignItems="flex-start">
