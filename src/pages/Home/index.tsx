@@ -89,9 +89,9 @@ export const Home = (props: Props) => {
             </Text>
 
             <Text fontWeight={500}>
-              Deftify’s first platform is called Private Access Pad (PAP). It focuses on incubating early-stage
-              blockchain startups from emerging economies, as well as raising private capital for promising projects.
-              Through PAP we aim to build a better tomorrow.
+            Deftify's Private Access Pad (PAP) is for African founders and developers who have the next big blockchain idea
+              but do not know how to start. PAP is designed perfectly to help match ideas with teams, fund and accelerate
+              founders from 0 to 1.
             </Text>
 
             <Spacing marginVertical="21px">
