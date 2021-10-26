@@ -48,21 +48,21 @@ function Footer(props: Props): ReactElement {
 
       <Spacing fullWidth marginTop="40px" marginTopSm="10px">
         <Flex flexDirectionSm="column" alignItems="flex-start">
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-24.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/twitter-24.png" alt="Twitter" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
           <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-24.png" alt="Telegram" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-24.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/discord-24.png" alt="Discord" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-24.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/medium-24.png" alt="Medium" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-24.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/reddit-24.png" alt="Reddit" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-24.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/linkedin-24.png" alt="LinkedIn" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-24.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/facebook-24.png" alt="Facebook" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/telegram-24.png" alt="Telegram" /></a>
+          <a href ="https://t.me/deftify" target="_blank" rel="noreferrer"><img src="./images/instagram-24.png" alt="Instagram" /></a>
         </Flex>
       </Spacing>
 
