@@ -34,9 +34,9 @@ function Footer(props: Props): ReactElement {
           <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Private Access Pad
           </Text>
-          <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+          <a href ="/team"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Team
-          </Text>
+          </Text></a>
           {/* <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Contact Us
           </Text> */}
