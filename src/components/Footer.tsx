@@ -19,10 +19,10 @@ const Grid = styled.div`
 
 function Footer(props: Props): ReactElement {
   return (
-    <Spacing paddingHorizontal="20px" paddingTop="80px" paddingBottom="50px" background="#151515">
+    <Spacing paddingHorizontal="20px" paddingTop="50px" paddingBottom="40px" background="#151515">
       <Flex itemsFlex={0.7} itemsFlexSm={1}>
         <Grid>
-        <a href ="https://twitter.com/Deftify_"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+        <a href ="https://twitter.com/Deftify_"><Text fontWeight={400} textAlign="center" textAlignSm="left" color="#fff">
             Twitter
           </Text></a>
           <a href ="https://t.me/deftify"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
@@ -40,8 +40,6 @@ function Footer(props: Props): ReactElement {
           <a href ="https://www.linkedin.com/company/deftify/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Discord
           </Text></a>
-          </Grid>
-          <Grid>
           <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Instant Watch
           </Text>
