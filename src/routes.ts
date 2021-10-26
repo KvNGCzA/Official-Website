@@ -17,7 +17,7 @@ interface routeType {
       path: "/", //path: "/deftify-indexes" <= supposedly, will edit when the platform is ready
     },
     {
-      name: "Play n’Earn",
+      name: "BlockCraze",
       path: "/", //path: "/play-n-earn" <= supposedly, will edit when the platform is ready
     },
     {
@@ -29,12 +29,12 @@ interface routeType {
       path: "/", //path: ""/staking" <= supposedly, will edit later
     },
     {
-      name: "Team",
-      path: "/team",
+      name: "Tokenomics",
+      path: "/", //path: "link it to a medium article" <= will edit later
     },
     {
-      name: "Contact Us",
-      path: "/", //path: "/contact-us" <= supposedly, will edit later
+      name: "Team",
+      path: "/team", 
     },
   ];
   
