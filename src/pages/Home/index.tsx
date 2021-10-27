@@ -1,5 +1,5 @@
 import React from "react";
-import { PlayIcon, PlayNEarnIcon } from "../../assets/Icons";
+import { PlayIcon } from "../../assets/Icons";
 import OutlinedButton from "../../components/Button/Outlined";
 import RegularButton from "../../components/Button/Regular";
 import { EllipseBg } from "../../components/EllipseBg";
@@ -109,7 +109,7 @@ export const Home = (props: Props) => {
 
           <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
-              <PlayNEarnIcon />
+            <img src="./images/blockcraze.png" alt="" />
             </ImageBorder>
           </Spacing>
         </FeaturesGrid>
