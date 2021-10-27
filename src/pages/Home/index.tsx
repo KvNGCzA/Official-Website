@@ -57,7 +57,7 @@ export const Home = (props: Props) => {
                 <Flex flexDirectionSm="column">
                   <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
                 <Flex>
-                  <OutlinedButton>One Pager</OutlinedButton>
+                  <a href="https://docsend.com/view/ydgq769zq6ejjnbf" target="_blank" rel="noreferrer"><OutlinedButton>One Pager</OutlinedButton></a>
                 </Flex>
                   </Spacing>
                   <a href="https://docsend.com/view/vex4z4hgqzsftzvi" target="_blank" rel="noreferrer"><OutlinedButton>Pitch Deck</OutlinedButton></a>
@@ -89,7 +89,7 @@ export const Home = (props: Props) => {
             </Text>
 
             <Text fontWeight={500}>
-              Deftify’s third platform is called BlockCraze. It is an exciting new way to challenge friends and foes
+              Deftify’s first platform is called BlockCraze. It is an exciting new way to challenge friends and foes
               online in an easy-to-understand, difficult-to-master battle arena that requires you to outsmart the
               opponent player and predict their moves.
             </Text>
