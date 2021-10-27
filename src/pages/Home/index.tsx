@@ -85,13 +85,13 @@ export const Home = (props: Props) => {
         <FeaturesGrid>
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
-              BUIDL: Private Access Pad (PAP)
+              PLAY: BlockCraze
             </Text>
 
             <Text fontWeight={500}>
-            Deftify's Private Access Pad (PAP) is for African founders and developers who have the next big blockchain idea
-              but do not know how to start. PAP is designed perfectly to help match ideas with teams, fund and accelerate
-              founders from 0 to 1.
+              Deftify’s third platform is called BlockCraze. It is an exciting new way to challenge friends and foes
+              online in an easy-to-understand, difficult-to-master battle arena that requires you to outsmart the
+              opponent player and predict their moves.
             </Text>
 
             <Spacing marginVertical="21px">
@@ -100,16 +100,16 @@ export const Home = (props: Props) => {
 
             <CustomList
               data={[
-                "Incubates promising crypto startups from around the world, with a focus on Africa, and connects projects with an experienced network of entrepreneurs and experts.",
-                "Raises early-stage capital for these projects by allowing Deftify token holders to invest in them before the public.",
-                "Early-stage investment opportunities are available to users who undergo KYC and stake a certain amount of DFTY on the platform.",
+                "In our BlockCraze arena, players will pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
+                "It is free-to-play for all players who stake DFTY in the game. The more a player stakes, the better the fighter they can create. The fighter NFTs can be auctioned off within the P2P in-game trading.",
+                "Staking DFTY tokens through BlockCraze game is similar to our regular staking model as users will be able redeem their game tokens for DFTY, while also earning in-game credits.",
               ]}
             />
           </div>
 
           <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
-              <img src="./images/pap.png" alt="" />
+              <PlayNEarnIcon />
             </ImageBorder>
           </Spacing>
         </FeaturesGrid>
@@ -168,13 +168,13 @@ export const Home = (props: Props) => {
         <FeaturesGrid>
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
-              PLAY: BlockCraze
+              BUIDL: Private Access Pad (PAP)
             </Text>
 
             <Text fontWeight={500}>
-              Deftify’s third platform is called BlockCraze. It is an exciting new way to challenge friends and foes
-              online in an easy-to-understand, difficult-to-master battle arena that requires you to outsmart the
-              opponent player and predict their moves.
+            Deftify's Private Access Pad (PAP) is for African founders and developers who have the next big blockchain idea
+              but do not know how to start. PAP is designed perfectly to help match ideas with teams, fund and accelerate
+              founders from 0 to 1.
             </Text>
 
             <Spacing marginVertical="21px">
@@ -183,16 +183,16 @@ export const Home = (props: Props) => {
 
             <CustomList
               data={[
-                "In our BlockCraze arena, players will pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
-                "It is free-to-play for all players who stake DFTY in the game. The more a player stakes, the better the fighter they can create. The fighter NFTs can be auctioned off within the P2P in-game trading.",
-                "Staking DFTY tokens through BlockCraze game is similar to our regular staking model as users will be able redeem their game tokens for DFTY, while also earning in-game credits.",
+                "Incubates promising crypto startups from around the world, with a focus on Africa, and connects projects with an experienced network of entrepreneurs and experts.",
+                "Raises early-stage capital for these projects by allowing Deftify token holders to invest in them before the public.",
+                "Early-stage investment opportunities are available to users who undergo KYC and stake a certain amount of DFTY on the platform.",
               ]}
             />
           </div>
 
           <Spacing fullWidthLg marginTopLg="40px">
             <ImageBorder>
-              <PlayNEarnIcon />
+              <img src="./images/pap.png" alt="" />
             </ImageBorder>
           </Spacing>
         </FeaturesGrid>
