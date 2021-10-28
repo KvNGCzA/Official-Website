@@ -231,7 +231,7 @@ export const Home = (props: Props) => {
           </Flex>
           <Spacing marginBottomMd="30px">
             <Text mt="10px" fontWeight={700} color="#fff" textAlign="center">
-              Deftify will support all EVM-compatible Blockchains
+              Deftify will support all EVM-compatible blockchains
             </Text>
           </Spacing>
         </ColoredBorders>
