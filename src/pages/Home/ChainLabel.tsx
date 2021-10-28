@@ -25,7 +25,7 @@ export function ChainLabel({ label, icon: Icon }: Props): ReactElement {
           className="chain-label-icon"
         />
       </Spacing>
-      <Text fontWeight={600} textAlignMd="center" fontFamily="Arial" color="#fff">
+      <Text fontWeight={600} textAlignMd="center" color="#fff">
         {label}
       </Text>
     </Flex>
