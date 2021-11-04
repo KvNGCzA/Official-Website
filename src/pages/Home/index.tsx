@@ -101,7 +101,7 @@ export const Home = (props: Props) => {
             <CustomList
               data={[
                 "In our BlockCraze arena, players will pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
-                "It is free-to-play for all players who stake DFTY in the game. The more a player stakes, the better the fighter they can create. Users will be able redeem their game tokens for DFTY",
+                "Players do not need to buy the NFT characters, they just need to stake DFTY. The more a player stakes DFTY, the better the fighter they can create. Game tokens are tradeable for DFTY",
                 "Metaverse will be introduced to the BlockCraze ecosystem where you can use the same NFT characters to roam around a virtual world and finish quests to earn tokens",
               ]}
             />
