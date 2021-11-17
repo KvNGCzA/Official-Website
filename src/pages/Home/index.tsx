@@ -48,7 +48,6 @@ export const Home = (props: Props) => {
               <OutlinedButton>
                 <PlayIcon style={{ marginRight: 10 }} />
                 Watch Demo
-                //Placeholder for the video later!
               </OutlinedButton>
               </Spacing>
               <a href="https://docsend.com/view/pkxf3t4dy9bjyjt6" target="_blank" rel="noreferrer"><RegularButton stretch>Whitepaper</RegularButton></a>
