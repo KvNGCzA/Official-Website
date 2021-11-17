@@ -48,6 +48,7 @@ export const Home = (props: Props) => {
               <OutlinedButton>
                 <PlayIcon style={{ marginRight: 10 }} />
                 Watch Demo
+                //Placeholder for the video later!
               </OutlinedButton>
               </Spacing>
               <a href="https://docsend.com/view/pkxf3t4dy9bjyjt6" target="_blank" rel="noreferrer"><RegularButton stretch>Whitepaper</RegularButton></a>
@@ -101,8 +102,8 @@ export const Home = (props: Props) => {
             <CustomList
               data={[
                 "In our BlockCraze arena, players will pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
-                "It is free-to-play for all players who stake DFTY in the game. The more a player stakes, the better the fighter they can create. The fighter NFTs can be auctioned off within the P2P in-game trading.",
-                "Staking DFTY tokens through BlockCraze game is similar to our regular staking model as users will be able redeem their game tokens for DFTY, while also earning in-game credits.",
+                "Players need to stake DFTY to mint the NFT characters. The more a player stakes DFTY, the better the fighter they can create. Game tokens are tradeable for DFTY",
+                "Metaverse will be introduced to the BlockCraze ecosystem where you can use the same NFT characters to roam around a virtual world and finish quests to earn tokens",
               ]}
             />
           </div>
