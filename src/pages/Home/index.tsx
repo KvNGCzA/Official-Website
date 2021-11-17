@@ -89,9 +89,8 @@ export const Home = (props: Props) => {
             </Text>
 
             <Text fontWeight={500}>
-              Deftify’s first platform is a metaverse game called MetaCurse. It is an exciting new way to roam in a metaverse world, challenge friends and foes
-              online in an easy-to-understand, difficult-to-master battle arena that requires you to outsmart the
-              opponent player and predict their moves.
+              Deftify’s first platform is a metaverse game called MetaCurse. It is an exciting new way to roam in a metaverse world, and challenge friends and foes
+              online in a battle arena that requires you to outsmart the opponent player and predict their moves.
             </Text>
 
             <Spacing marginVertical="21px">
@@ -100,9 +99,9 @@ export const Home = (props: Props) => {
 
             <CustomList
               data={[
-                "In our MetaCurse combat system, players can pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
+                "In our MetaCurse's combat system, players can pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
                 "Players need to stake DFTY to activate the NFT characters. Game tokens are tradeable for DFTY",
-                "Metaverse will be introduced to the MetaCurse ecosystem where you can use the same NFT characters to roam around a virtual world and interact in many different ways",
+                "You can use the same NFT characters to roam around a virtual world and interact in many different ways",
               ]}
             />
           </div>
