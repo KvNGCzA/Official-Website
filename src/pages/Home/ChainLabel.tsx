@@ -12,7 +12,7 @@ interface Props {
 const chainData = [
   { name: "Polygon", icon: PolygonIcon },
   { name: "Avalanche", icon: AvalancheIcon },
-  { name: "Binance Smart Chain", icon: BinanceIcon },
+  { name: "BSC", icon: BinanceIcon },
   { name: "Ethereum", icon: EthereumIcon },
   { name: "Fantom", icon: FantomIcon },
 ];
