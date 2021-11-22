@@ -13,15 +13,15 @@ interface routeType {
       path: "/", //path: "/instant-watch" <= supposedly, will edit when the platform is ready
     },
     {
-      name: "Deftify Indexes",
+      name: "Indexes",
       path: "/", //path: "/deftify-indexes" <= supposedly, will edit when the platform is ready
     },
     {
-      name: "BlockCraze",
+      name: "MetaCurse",
       path: "/", //path: "/play-n-earn" <= supposedly, will edit when the platform is ready
     },
     {
-      name: "Private  Access Pad",
+      name: "PAP",
       path: "/", //path: "/private-access-pad" <= supposedly, will edit when the platform is ready
     },
     {

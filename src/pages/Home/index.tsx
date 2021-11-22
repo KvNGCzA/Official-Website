@@ -38,8 +38,7 @@ export const Home = (props: Props) => {
           </Text>
 
           <Text fontWeight={500} textAlign="center">
-            Deftity is a market data aggregator, P2E game, incubator, launchpad, and index fund all in one same
-            ecosystem
+            Deftity combines three different platforms in one same ecosystem: a metaverse game, market data aggregator with index fund, and private access launchpad focusing on niche markets
           </Text>
 
           <Spacing fullWidth marginTop="50px">
@@ -47,8 +46,7 @@ export const Home = (props: Props) => {
               <Spacing marginRight="40px" marginRightSm="0px" marginBottomSm="20px">
               <OutlinedButton>
                 <PlayIcon style={{ marginRight: 10 }} />
-                Watch Demo
-                //Placeholder for the video later!
+                Coming Soon
               </OutlinedButton>
               </Spacing>
               <a href="https://docsend.com/view/pkxf3t4dy9bjyjt6" target="_blank" rel="noreferrer"><RegularButton stretch>Whitepaper</RegularButton></a>
@@ -86,13 +84,12 @@ export const Home = (props: Props) => {
         <FeaturesGrid>
           <div>
             <Text color="#fff" fontSize={36} fontWeight={800}>
-              PLAY: BlockCraze
+              PLAY: MetaCurse
             </Text>
 
             <Text fontWeight={500}>
-              Deftify’s first platform is called BlockCraze. It is an exciting new way to challenge friends and foes
-              online in an easy-to-understand, difficult-to-master battle arena that requires you to outsmart the
-              opponent player and predict their moves.
+              Deftify’s first platform is a metaverse game called MetaCurse. It is an exciting new way to roam in a metaverse world, and challenge friends and foes
+              online in a battle arena that requires you to outsmart the opponent player and predict their moves.
             </Text>
 
             <Spacing marginVertical="21px">
@@ -101,9 +98,9 @@ export const Home = (props: Props) => {
 
             <CustomList
               data={[
-                "In our BlockCraze arena, players will pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
-                "Players need to stake DFTY to mint the NFT characters. The more a player stakes DFTY, the better the fighter they can create. Game tokens are tradeable for DFTY",
-                "Metaverse will be introduced to the BlockCraze ecosystem where you can use the same NFT characters to roam around a virtual world and finish quests to earn tokens",
+                "In our MetaCurse's combat system, players can pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
+                "In-game assets will be owned by the community and players can mint and burn their NFT characters with DFTY (Deftify token) staking mechanism",
+                "You can also use the same NFT characters to roam around a virtual world and interact in many different ways",
               ]}
             />
           </div>
@@ -217,8 +214,8 @@ export const Home = (props: Props) => {
 
         <Flex itemsFlex={0.6} itemsFlexMd={0.9}>
           <Text mt="16px" textAlign="center">
-            In Deftify, there are multiple platforms utilizing one same token (DFTY). Private access launchpad, project
-            incubator, advanced data aggregation tools, tradable index funds, and P2E game are all part of the same
+            In Deftify, there are three platforms utilizing one same token (DFTY). Metaverse game, private access launchpad and project
+            incubator, advanced data aggregation tools with tradable index funds are all part of the same
             Deftify ecosystem. With DFTY being needed for each platform in Deftify, the token utility will increase over
             time
           </Text>

@@ -26,13 +26,13 @@ function Footer(props: Props): ReactElement {
             Instant Watch
           </Text></a>
           <a href ="/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Deftify Indexes
+            Indexes
           </Text></a>
           <a href ="/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            BlockCraze
+            MetaCurse
           </Text></a>
           <a href ="/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
-            Private Access Pad
+            PAP
           </Text></a>
           <a href ="./team"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Team
