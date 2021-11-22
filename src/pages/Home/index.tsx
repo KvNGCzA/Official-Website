@@ -38,8 +38,7 @@ export const Home = (props: Props) => {
           </Text>
 
           <Text fontWeight={500} textAlign="center">
-            Deftity is a market data aggregator, P2E game, incubator, launchpad, and index fund all in one same
-            ecosystem
+            Deftity combines three different platforms in one same ecosystem: a metaverse game, market data aggregator with index fund, and private access launchpad focusing on niche markets
           </Text>
 
           <Spacing fullWidth marginTop="50px">
@@ -100,8 +99,8 @@ export const Home = (props: Props) => {
             <CustomList
               data={[
                 "In our MetaCurse's combat system, players can pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
-                "Players need to stake DFTY to activate the NFT characters. Game tokens are tradeable for DFTY",
-                "You can use the same NFT characters to roam around a virtual world and interact in many different ways",
+                "In-game assets will be owned by the community and players can mint and burn their NFT characters with DFTY (Deftify token) staking mechanism",
+                "You can also use the same NFT characters to roam around a virtual world and interact in many different ways",
               ]}
             />
           </div>
@@ -215,8 +214,8 @@ export const Home = (props: Props) => {
 
         <Flex itemsFlex={0.6} itemsFlexMd={0.9}>
           <Text mt="16px" textAlign="center">
-            In Deftify, there are multiple platforms utilizing one same token (DFTY). Private access launchpad, project
-            incubator, advanced data aggregation tools, tradable index funds, and P2E game are all part of the same
+            In Deftify, there are three platforms utilizing one same token (DFTY). Metaverse game, private access launchpad and project
+            incubator, advanced data aggregation tools with tradable index funds are all part of the same
             Deftify ecosystem. With DFTY being needed for each platform in Deftify, the token utility will increase over
             time
           </Text>
