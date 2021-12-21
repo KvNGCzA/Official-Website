@@ -46,7 +46,7 @@ export const Introduction = () => (
 				</a>
 
 				<Spacing>
-					<OutlinedButton>
+					<OutlinedButton backgroundColor="transparent">
 						<PlayIcon style={{marginRight: 10}} />
 						Watch Demo
 					</OutlinedButton>

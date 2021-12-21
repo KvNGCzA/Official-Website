@@ -6,8 +6,10 @@ import "./index.scss";
 export const Home2 = () => {
 	return (
 		<div>
-			<Introduction />
-			<PhotoSlide />
+			<div className="stroked-background">
+				<Introduction />
+				<PhotoSlide />
+			</div>
 		</div>
 	);
 };

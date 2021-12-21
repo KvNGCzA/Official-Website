@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 interface Props {
+	backgroundColor?: string;
 	color?: string;
 	mb?: string;
 	ml?: string;
@@ -11,12 +12,11 @@ interface Props {
 
 const OutlinedButton = styled.button<Props>`
   height: ${({stretch}) => stretch && "100%"};
-  background: #151515;
+  background-color: ${({backgroundColor}) => backgroundColor ?? "#151515"};
   cursor: pointer;
   border-radius: 6px;
   border: 2px solid;
   border-image-slice: 1;
-  border-width: 2px;
   border-image-source: linear-gradient(to bottom, #fcd98d9e, #37f4fe83);
   font-size: 18px;
   font-family: "Space Grotesk";
