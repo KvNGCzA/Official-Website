@@ -40,9 +40,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.section-text {
+  &__title, &__description {
+    font-family: 'Space Grotesk';
+    font-weight: 500;
+    text-align:  center;
+  }
+
+  &__title {
+    color:     #FFFFFF;
+    font-size: 36px;
+
+    &--small {
+      color:          #FDDB92;
+      font-family:    'Space Grotesk';
+      font-size:      18px;
+      font-weight:    500;
+      text-align:     center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__description {
+    color:     #979EAF;
+    font-size: 18px;
+  }
+}
+
 @media all and (max-width: 768px) {
   .chain-label-icon {
     height: 28px !important;
     width:  28px !important;
+  }
+}
+
+@media only screen and (max-width: 1166px) {
+  .section-text {
+    &__title {
+      font-size: 24px;
+
+      &--small {
+        font-size: 14px;
+      }
+    }
+
+    &__description {
+      font-size: 16px;
+    }
   }
 }
