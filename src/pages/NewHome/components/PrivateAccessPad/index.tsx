@@ -30,13 +30,15 @@ const whatWeDoData = [
 ];
 
 const getWhatWeDoImage = (title: string): JSX.Element => {
+	const width = 72;
+
 	switch (title) {
 		case whatWeDoData[0].title:
-			return <Incubator height={72} width={72} />;
+			return <Incubator height={width} width={width} />;
 		case whatWeDoData[1].title:
-			return <Fund height={72} width={72} />;
+			return <Fund height={width} width={width} />;
 		default:
-			return <Invest height={72} width={72} />;
+			return <Invest height={width} width={width} />;
 	}
 };
 

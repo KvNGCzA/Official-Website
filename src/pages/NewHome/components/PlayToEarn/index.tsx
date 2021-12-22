@@ -17,7 +17,7 @@ export const PlayToEarn = () => {
 				color="#FDDB92"
 				fontFamily={"Furore"}
 				transform={"uppercase"}
-				fontWeight={500}
+				fontWeight={400}
 				textAlign={"center"}
 			>PLAY2EARn metaverse with a twist</Text>
 			<Text
@@ -26,7 +26,7 @@ export const PlayToEarn = () => {
 				fontFamily={"Furore"}
 				mb={"18px"}
 				mt={"18px"}
-				fontWeight={500}
+				fontWeight={400}
 				textAlign={"center"}
 			>Introducing Deftify’s MetaCurse</Text>
 			<Text

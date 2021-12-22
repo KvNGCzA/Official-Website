@@ -18,7 +18,7 @@ export const Aggregator = () => {
 				fontFamily={"Space Grotesk"}
 				mb={"18px"}
 				mt={"18px"}
-				fontWeight={500}
+				fontWeight={700}
 				textAlign={"center"}
 			>Deftify’s Market Data Aggregator</Text>
 			<Text
@@ -39,8 +39,8 @@ export const Aggregator = () => {
 				<img
 					src="./images/instant-watch-2.svg" style={{
 					marginRight: "44px"
-				}} />
-				<img src="./images/instant-watch.svg" />
+				}} alt={""} />
+				<img src="./images/instant-watch.svg" alt={""} />
 			</Spacing>
 		</Spacing>
 	);
