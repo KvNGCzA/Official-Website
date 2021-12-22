@@ -4,7 +4,7 @@ interface textTypes {
 	color?: string;
 	decoration?: string;
 	display?: string;
-	fontFamily?: "Gilroy" | "Euclid Circular A" | "SF Pro Display" | "Inter" | "Space Grotesk";
+	fontFamily?: "Gilroy" | "Euclid Circular A" | "SF Pro Display" | "Inter" | "Space Grotesk" | "Furore";
 	fontSize?: number;
 	fontWeight?: number;
 	lineHeight?: string;
