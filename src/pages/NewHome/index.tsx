@@ -1,6 +1,6 @@
-import React from "react";
 import {Introduction} from "./components/Introduction";
 import {PhotoSlide} from "./components/PhotoSlide";
+import {PrivateAccessPad} from "./components/PrivateAccessPad";
 import "./index.scss";
 
 export const Home2 = () => {
@@ -10,6 +10,8 @@ export const Home2 = () => {
 				<Introduction />
 				<PhotoSlide />
 			</div>
+
+			<PrivateAccessPad />
 		</div>
 	);
 };

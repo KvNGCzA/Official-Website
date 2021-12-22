@@ -1,5 +1,4 @@
-import React from "react";
-
+import {useState} from "react";
 import styled from "styled-components";
 import {PlayIcon} from "../../assets/Icons";
 import OutlinedButton from "../../components/Button/Outlined";
@@ -27,8 +26,8 @@ const FeaturesGrid = styled.div`
 `;
 
 export const Home = (props: Props) => {
-	const [email, setEmail] = React.useState<string>("");
-	const [companyName, setCompanyName] = React.useState<string>("");
+	const [email, setEmail]             = useState<string>("");
+	const [companyName, setCompanyName] = useState<string>("");
 
 	return (
 		<div>

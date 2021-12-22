@@ -1,4 +1,3 @@
-import React from "react";
 import {PlayIcon} from "../../../../assets/Icons";
 import OutlinedButton from "../../../../components/Button/Outlined";
 import RegularButton from "../../../../components/Button/Regular";
