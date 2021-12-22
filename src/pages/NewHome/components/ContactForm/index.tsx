@@ -13,7 +13,7 @@ export const ContactForm = () => {
 			<Flex itemsFlex={0.45} itemsFlexMd={1}>
 				<form>
 					<Text fontWeight={800} fontSize={48} mb="60px" color="#fff" textAlign="center" fontFamily={"Space Grotesk"}>
-						Get in touch with the Team
+						Get in touch with the<br />team
 					</Text>
 
 					<TextField

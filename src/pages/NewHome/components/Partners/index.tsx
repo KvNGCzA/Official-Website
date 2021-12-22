@@ -2,15 +2,22 @@ import Spacing from "../../../../components/Spacing";
 import Text from "../../../../components/Typography";
 import "./index.scss";
 
-const PARTNERS = [
-	"social-capital.svg",
-	"social-capital.svg",
-	"social-capital.svg",
-	"social-capital.svg",
-	"social-capital.svg",
-	"social-capital.svg",
-	"social-capital.svg",
-	"social-capital.svg"
+const uniqueRef = (): string => {
+	return `ref-${Math.ceil(Math.random() * 10e13)}`;
+};
+
+const PARTNERS: {
+	image: string;
+	key: string;
+}[] = [
+	{image: "social-capital.svg", key: uniqueRef()},
+	{image: "social-capital.svg", key: uniqueRef()},
+	{image: "social-capital.svg", key: uniqueRef()},
+	{image: "social-capital.svg", key: uniqueRef()},
+	{image: "social-capital.svg", key: uniqueRef()},
+	{image: "social-capital.svg", key: uniqueRef()},
+	{image: "social-capital.svg", key: uniqueRef()},
+	{image: "social-capital.svg", key: uniqueRef()}
 ];
 
 export const Partners = () => {
@@ -42,8 +49,8 @@ export const Partners = () => {
 				mt={"7px"}>List of our partners</Text>
 
 			<Spacing className={"partner-cont"}>
-				{PARTNERS.map(partner => <div className={"partner"}>
-					<img src={`./images/${partner}`} alt={""} />
+				{PARTNERS.map(partner => <div className={"partner"} key={partner.key}>
+					<img src={`./images/${partner.image}`} alt={""} />
 				</div>)}
 			</Spacing>
 		</Spacing>
