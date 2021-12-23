@@ -189,8 +189,8 @@ export const Home = (props: Props) => {
             </Text>
 
             <Text fontWeight={500}>
-              Deftify’s first platform is a metaverse game called MetaCurse. It is an exciting new metaverse world, where you can challenge friends and foes
-              in a battle arena that requires you to outsmart the opponent player and predict their moves.
+              Deftify’s first platform is a metaverse game called MetaCurse. It is an exciting new way to roam in a metaverse world, and challenge friends and foes
+              online in a battle arena that requires you to outsmart the opponent player and predict their moves.
             </Text>
 
             <Spacing marginVertical="21px">
@@ -202,6 +202,7 @@ export const Home = (props: Props) => {
               data={[
                 "In our MetaCurse's combat system, players can pit their NFT fighters not only against other players (PVP), but also against AI (PVE)",
                 "In-game assets will be owned by the community and players can mint and burn their NFT characters with DFTY (Deftify token) staking mechanism",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "You can also use the same NFT characters to roam around a virtual world and interact in many different ways",
               ]}
@@ -334,6 +335,9 @@ export const Home = (props: Props) => {
             incubator, advanced data aggregation tools with tradable index funds are all part of the same
 =======
                 "You can also use the same NFT characters to roam around a virtual world and interact in many different activities",
+=======
+                "You can also use the same NFT characters to roam around a virtual world and interact in many different ways",
+>>>>>>> parent of f07c452 (Merge pull request #10 from ru4871SG/master)
               ]}
             />
           </div>
@@ -447,8 +451,13 @@ export const Home = (props: Props) => {
 
         <Flex itemsFlex={0.6} itemsFlexMd={0.9}>
           <Text mt="16px" textAlign="center">
+<<<<<<< HEAD
             In Deftify, there are three platforms utilizing one same token (DFTY). Metaverse game, private access launchpad, and advanced data aggregation tools with tradable index funds are all part of the same
 >>>>>>> parent of efa9915 (- Introduction section done)
+=======
+            In Deftify, there are three platforms utilizing one same token (DFTY). Metaverse game, private access launchpad and project
+            incubator, advanced data aggregation tools with tradable index funds are all part of the same
+>>>>>>> parent of f07c452 (Merge pull request #10 from ru4871SG/master)
             Deftify ecosystem. With DFTY being needed for each platform in Deftify, the token utility will increase over
             time
           </Text>
