@@ -34,8 +34,8 @@ export const Introduction = () => (
 
 				<Spacing>
 					<OutlinedButton backgroundColor="transparent">
-						<PlayIcon style={{marginRight: 10}} />
-						Watch Demo
+						//<PlayIcon style={{marginRight: 10}} />
+						Pitch Deck
 					</OutlinedButton>
 				</Spacing>
 			</Flex>
