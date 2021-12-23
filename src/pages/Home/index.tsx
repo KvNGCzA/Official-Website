@@ -204,6 +204,7 @@ export const Home = (props: Props) => {
                 "In-game assets will be owned by the community and players can mint and burn their NFT characters with DFTY (Deftify token) staking mechanism",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "You can also use the same NFT characters to roam around a virtual world and interact in many different ways",
               ]}
             />
@@ -338,6 +339,9 @@ export const Home = (props: Props) => {
 =======
                 "You can also use the same NFT characters to roam around a virtual world and interact in many different ways",
 >>>>>>> parent of f07c452 (Merge pull request #10 from ru4871SG/master)
+=======
+                "You can also use the same NFT characters to roam around a virtual world and interact in many different ways",
+>>>>>>> parent of f07c452 (Merge pull request #10 from ru4871SG/master)
               ]}
             />
           </div>
@@ -452,8 +456,13 @@ export const Home = (props: Props) => {
         <Flex itemsFlex={0.6} itemsFlexMd={0.9}>
           <Text mt="16px" textAlign="center">
 <<<<<<< HEAD
+<<<<<<< HEAD
             In Deftify, there are three platforms utilizing one same token (DFTY). Metaverse game, private access launchpad, and advanced data aggregation tools with tradable index funds are all part of the same
 >>>>>>> parent of efa9915 (- Introduction section done)
+=======
+            In Deftify, there are three platforms utilizing one same token (DFTY). Metaverse game, private access launchpad and project
+            incubator, advanced data aggregation tools with tradable index funds are all part of the same
+>>>>>>> parent of f07c452 (Merge pull request #10 from ru4871SG/master)
 =======
             In Deftify, there are three platforms utilizing one same token (DFTY). Metaverse game, private access launchpad and project
             incubator, advanced data aggregation tools with tradable index funds are all part of the same
