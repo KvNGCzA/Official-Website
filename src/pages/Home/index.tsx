@@ -18,7 +18,7 @@ export const slides: Slide[] = [
 	},
 	{
 		caption: 'Introducing MetaCurse, Deftify incubated game bla bla',
-		image:   './images/slide-03.svg'
+		image:   './images/slider-03.svg'
 	}, {
 		caption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
 		image:   './images/slide-two.svg'
