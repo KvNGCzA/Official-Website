@@ -10,7 +10,7 @@ import './index.scss';
 
 export const slides: Slide[] = [
 	{
-		caption: 'Deftify’s Launchpad will grant access to untapped markets, especially in Africa',
+		caption: 'Deftify’s Launchpad will grant access to untapped markets, especially in Africa2',
 		image:   './images/slide-one.svg'
 	}, {
 		caption: 'Our game will launch in Q2 2022',
