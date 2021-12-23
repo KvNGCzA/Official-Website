@@ -1,50 +1,43 @@
 import styled from "styled-components";
 
 interface Props {
-	background?: string;
-	color?: string;
-	fullWidth?: boolean;
-	marginBottomSm?: string;
-	marginHorizontalSm?: string;
-	marginRightSm?: string;
-	marginVerticalSm?: string;
-	mb?: string;
-	ml?: string;
-	mr?: string;
-	mt?: string;
-	stretch?: boolean;
+  stretch?: boolean;
+  fullWidth?: boolean;
+  color?: string;
+  background?: string;
+  mt?: string;
+  mb?: string;
+  ml?: string;
+  mr?: string;
 }
 
 const RegularButton = styled.button<Props>`
-  height: ${({stretch}) => stretch && "100%"};
-  background: ${({background}) => background || "#FCD98D"};
+  height: ${({ stretch }) => stretch && "100%"};
+  background: ${({ background }) => background || "#fcd98d"};
   border-radius: 4px;
   cursor: pointer;
-  border: 2px solid ${({background}) => background || "#FCD98D"};
+  border: 2px solid ${({ background }) => background || "#fcd98d"};
   font-size: 18px;
-  font-family: "Space Grotesk";
-  font-weight: 500;
-  margin-left: ${({ml}) => ml};
-  margin-bottom: ${({mb}) => mb};
-  margin-right: ${({mr}) => mr};
-  margin-top: ${({mt}) => mt};
-  min-width: ${({fullWidth}) => (fullWidth ? "100%" : "240px")};
+  font-family: "Gilroy";
+  font-weight: 800;
+  margin-left: ${({ ml }) => ml};
+  margin-bottom: ${({ mb }) => mb};
+  margin-right: ${({ mr }) => mr};
+  margin-top: ${({ mt }) => mt};
+  min-width: ${({ fullWidth }) => (fullWidth ? "100%" : "240px")};
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${({color}) => color || "#151515"};
+  color: ${({ color }) => color || "#151515"};
   padding: 15px 20px;
-
-  ${({theme}) => theme.breakpoint.down("lg")} {
+  ${({ theme }) => theme.breakpoint.down("lg")} {
     font-size: 16px;
-    min-width: ${({fullWidth}) => (fullWidth ? "100%" : "200px")};
+    min-width: ${({ fullWidth }) => (fullWidth ? "100%" : "200px")};
   }
 
-  ${({theme}) => theme.breakpoint.down("sm")} {
+  ${({ theme }) => theme.breakpoint.down("sm")} {
     font-size: 14px;
-    min-width: ${({fullWidth}) => (fullWidth ? "100%" : "180px")};
-    margin-bottom: ${({marginBottomSm, marginVerticalSm}) => marginVerticalSm || marginBottomSm};
-    margin-right: ${({marginRightSm, marginHorizontalSm}) => marginHorizontalSm || marginRightSm};
+    min-width: ${({ fullWidth }) => (fullWidth ? "100%" : "180px")};
   }
 `;
 
