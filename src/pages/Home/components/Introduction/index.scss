@@ -1,0 +1,13 @@
+.intro-wrapper {
+  align-items:     center;
+  display:         flex;
+  flex-direction:  column;
+  justify-content: center;
+
+  .description {
+    color:       #FFFFFF;
+    font-family: 'Gilroy';
+    margin:      16px 0;
+    max-width:   819px;
+  }
+}

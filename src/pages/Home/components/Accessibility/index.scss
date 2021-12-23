@@ -1,0 +1,42 @@
+.accessibility-wrapper {
+  align-items:     center;
+  display:         flex;
+  flex-direction:  column;
+  justify-content: center;
+  padding:         75px 20px 0;
+
+  .powered-by-text {
+    align-items:     center;
+    color:           #FFFFFF;
+    display:         flex;
+    font-family:     'Gilroy';
+    font-weight:     500;
+    justify-content: center;
+    margin:          18px 0;
+    text-align:      center;
+
+    span {
+      font-size:    28px;
+      font-weight:  800;
+      margin-right: 8px;
+    }
+  }
+}
+
+.wave {
+  height:     auto;
+  margin-top: 29px;
+  max-width:  90%;
+}
+
+@media only screen and (max-width: 1166px) {
+  .accessibility-wrapper {
+    padding: 30px 20px 0;
+
+    .powered-by-text {
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+}

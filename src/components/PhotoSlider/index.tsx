@@ -1,10 +1,9 @@
-import {useCallback, useEffect, useRef, useState} from "react";
-import Spacing from "../Spacing";
-import Text from "../Typography";
-import "./index.scss";
+import {useCallback, useEffect, useRef, useState} from 'react';
+import Spacing from '../Spacing';
+import './index.scss';
 
 export interface Slide {
-	caption: string;
+	caption?: string;
 	image: string;
 }
 
@@ -20,11 +19,7 @@ export const PhotoSlider = ({slides}: Props) => {
 
 	const initSlider = useCallback(() => {
 		intervalRef.current = setInterval(() => {
-			setcurrentIndex(current => {
-				const newIndex = current === slides.length - 1 ? 0 : current + 1;
-
-				return newIndex;
-			});
+			setcurrentIndex(current => current === slides.length - 1 ? 0 : current + 1);
 		}, INTERVAL);
 	}, [slides.length]);
 
@@ -40,30 +35,19 @@ export const PhotoSlider = ({slides}: Props) => {
 	};
 
 	return (
-		<Spacing
-			style={{
-				padding: "75px 20px"
-			}}>
-			<div
-				className={"slider-images"}
-				style={{backgroundImage: `url("${slides[currentIndex].image}")`}}></div>
-			<Text
-				fontWeight={500}
-				fontSize={24}
-				color="#fff"
-				textAlign="center"
-				fontFamily="Space Grotesk"
-				mb={"18px"}
-				mt={"18px"}
-			>
+		<div className="slider-wrapper">
+			<img className="image" src={slides[currentIndex].image} alt={''} />
+
+			<p className="caption">
 				{slides[currentIndex].caption}
-			</Text>
-			<Spacing className={"dot-cont"}>
+			</p>
+
+			<Spacing className="dot-cont">
 				{slides.map((slide, index) => <div
-					className={`dot ${index === currentIndex ? "dot__active" : ""}`}
+					className={`dot ${index === currentIndex ? 'dot__active' : ''}`}
 					onClick={() => selectImage(index)}
 					key={index} />)}
 			</Spacing>
-		</Spacing>
+		</div>
 	);
 };

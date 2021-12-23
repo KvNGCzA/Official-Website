@@ -1,8 +1,8 @@
-import {useState} from "react";
-import {Link, withRouter} from "react-router-dom";
-import styled from "styled-components";
-import {LogoIcon} from "../assets/Icons";
-import routes from "../routes";
+import {useState} from 'react';
+import {Link, withRouter} from 'react-router-dom';
+import styled from 'styled-components';
+import {LogoIcon} from '../assets/Icons';
+import routes from '../routes';
 
 const Wrapper = styled.nav`
   display: flex;
@@ -10,7 +10,7 @@ const Wrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-  ${({theme}) => theme.breakpoint.down("xl")} {
+  ${({theme}) => theme.breakpoint.down('xl')} {
     padding: 30px;
   }
 `;
@@ -18,7 +18,7 @@ const Wrapper = styled.nav`
 const NavLink = styled(Link)`
   font-family: "Gilroy";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 18px;
   line-height: 130.8%;
   text-align: center;
@@ -30,12 +30,12 @@ const NavLink = styled(Link)`
     margin-right: 0;
   }
 
-  ${({theme}) => theme.breakpoint.down("xl")} {
+  ${({theme}) => theme.breakpoint.down('xl')} {
     font-size: 16px;
-    margin-right: 28px;
+    margin-right: 48px;
   }
 
-  ${({theme}) => theme.breakpoint.down("lg")} {
+  ${({theme}) => theme.breakpoint.down('lg')} {
     margin-right: 0;
     margin-top: 35px;
     text-align: left;
@@ -43,7 +43,7 @@ const NavLink = styled(Link)`
 `;
 
 const MenuBar = styled.button<{ open: boolean }>`
-  ${({theme}) => theme.breakpoint.up("lg")} {
+  ${({theme}) => theme.breakpoint.up('lg')} {
     display: none;
   }
 
@@ -56,27 +56,27 @@ const MenuBar = styled.button<{ open: boolean }>`
   border: 0;
 
   > span {
-    position: ${({open}) => open && "absolute"};
+    position: ${({open}) => open && 'absolute'};
     display: block;
     height: 4px;
     width: 35px;
     margin-bottom: 4px;
-    background: ${({open}) => (open ? "#fcd98d" : "#fff")};
+    background: ${({open}) => (open ? '#FCD98D' : '#FFFFFF')};
     border-radius: 6px;
     min-width: max-content;
 
     &:last-child {
-      display: ${({open}) => open && "none"};
+      display: ${({open}) => open && 'none'};
       margin-bottom: 0px;
     }
 
     &:first-child {
-      transform: ${({open}) => open && "rotate(140deg)"};
+      transform: ${({open}) => open && 'rotate(140deg)'};
       margin-bottom: ${({open}) => open && 0};
     }
 
     &:nth-child(2) {
-      transform: ${({open}) => open && "rotate(-140deg)"};
+      transform: ${({open}) => open && 'rotate(-140deg)'};
       margin-bottom: ${({open}) => open && 0};
     }
   }
@@ -87,12 +87,13 @@ const Logo = styled.div`
 `;
 
 const NavLinkWrapper = styled.div<{ open: boolean }>`
-  ${({theme}) => theme.breakpoint.down("lg")} {
+  display: flex;
+
+  ${({theme}) => theme.breakpoint.down('lg')} {
     position: fixed;
-    display: flex;
     flex-direction: column;
     top: 0;
-    left: ${({open}) => (open ? 0 : "-300px")};
+    left: ${({open}) => (open ? 0 : '-300px')};
     bottom: 0;
     z-index: 3000;
     background: #181a1ccc;
@@ -115,7 +116,7 @@ const Navbar = (props: any) => {
 					<span></span>
 				</MenuBar>
 
-				<NavLinkWrapper open={open}>
+				<NavLinkWrapper open={open} style={{display: 'flex'}}>
 					{routes.map((route, index) => (
 						<NavLink key={index.toString()} to={route.path}>
 							{route.name}
