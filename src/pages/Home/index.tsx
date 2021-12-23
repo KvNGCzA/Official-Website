@@ -10,11 +10,11 @@ import './index.scss';
 
 export const slides: Slide[] = [
 	{
-		caption: 'Deftify’s Launchpad will grant access to untapped markets, especially in Africa2',
+		caption: 'Deftify’s Private Access Pad will grant access to untapped markets, especially in Africa',
 		image:   './images/slide-one.svg'
 	}, {
-		caption: 'Our game will launch in Q2 2022',
-		image:   './images/slide-two.svg'
+		caption: 'Deftify’s Market Data Aggregator will help you to analyze and compare DeFi projects across different chains',
+		image:   './images/defiaggregator.svg'
 	},
 	{
 		caption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
