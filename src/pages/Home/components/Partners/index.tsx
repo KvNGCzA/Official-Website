@@ -9,7 +9,7 @@ const PARTNERS: {
 	image: string;
 	key: string;
 }[] = [
-	{image: 'social-capital.svg', key: uniqueRef()},
+	{image: 'lead-wallet.svg', key: uniqueRef()},
 	{image: 'race-capital.svg', key: uniqueRef()},
 	{image: 'jump-capital.svg', key: uniqueRef()},
 	{image: 'solana-foundation.svg', key: uniqueRef()},
