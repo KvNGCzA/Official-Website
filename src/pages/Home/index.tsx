@@ -14,7 +14,7 @@ export const slides: Slide[] = [
 		image:   './images/slide-one.svg'
 	}, {
 		caption: 'Deftify’s Market Data Aggregator will help you to analyze and compare DeFi projects across different chains',
-		image:   './images/slide-2.png'
+		image:   './images/slider-02.svg'
 	},
 	{
 		caption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
