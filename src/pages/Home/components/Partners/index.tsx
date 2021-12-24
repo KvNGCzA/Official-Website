@@ -11,7 +11,7 @@ const PARTNERS: {
 }[] = [
 	{image: 'lead-wallet.svg', key: uniqueRef()},
 	{image: 'unvest.svg', key: uniqueRef()},
-	{image: 'dec-ventures.svg', key: uniqueRef()},
+	//{image: 'dec-ventures.svg', key: uniqueRef()},
 	//{image: 'lead-wallet.svg', key: uniqueRef()},
 	//{image: 'lead-wallet.svg', key: uniqueRef()},
 	//{image: 'lead-wallet.svg', key: uniqueRef()},
