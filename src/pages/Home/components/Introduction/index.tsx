@@ -40,5 +40,5 @@ export const Introduction = () => (
 				</Spacing>
 			</Flex>
 		</Spacing>
-
+	</Spacing>
 );
