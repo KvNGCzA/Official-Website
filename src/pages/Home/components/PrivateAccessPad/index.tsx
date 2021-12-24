@@ -65,7 +65,7 @@ const SectionOne = () => <Spacing className="section-one">
 		<p className="section-text__description description">
 			Deftify’s Private Access Pad (PAP) focuses on incubating early-stage blockchain startups from emerging
 			economies, especially Africa. Our team has wide and direct connections to untapped potential. Through PAP,
-			Deftify is going to incubate promising blockchain projects that are not reachable by the usual launchpads.
+			Deftify is going to incubate promising blockchain projects that are not reachable by the usual launchpads
 		</p>
 	</Spacing>
 </Spacing>;
