@@ -5,6 +5,10 @@ interface routeType {
 
 const routes: Array<routeType> = [
 	{
+		name: 'Home',
+		path: '/' 
+	},
+	{
 		name: 'Instant Watch',
 		path: '/' //path: "/instant-watch" <= supposedly, will edit when the platform is ready
 	},
@@ -25,16 +29,8 @@ const routes: Array<routeType> = [
 		path: '/' //path: ""/staking" <= supposedly, will edit later
 	},
 	{
-		name: 'Docs',
-		path: '/' //path: ""/docs" <= supposedly, will edit later
-	},
-	{
 		name: 'Team',
 		path: '/team'
-	},
-	{
-		name: 'Contact Us',
-		path: '/' //path: ""/contact-us" <= supposedly, will edit later
 	}
 ];
 

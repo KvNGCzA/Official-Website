@@ -13,8 +13,8 @@ export const Introduction = () => (
 		</p>
 
 		<p className="section-text__description description">
-			The world’s first Africa-focused crypto <b>incubator</b> and <b>launchpad</b> offering investors <b>private round
-			                                                                                                    access</b> to
+			The world’s first Africa-focused crypto incubator and launchpad offering investors private round
+			                                                                                                    access to
 			cutting-edge African innovation. In addition, our diverse index funds and integrated portfolio management tools
 			give investors an edge not available on other launchpads.
 		</p>

@@ -10,11 +10,11 @@ export const Accessibility = () => {
 			<p className="section-text__title--small small">BUILT FOR ACCESSIBILITY</p>
 
 			<Text className="powered-by-text">
-				<span>Powered by</span> <Polygon />
+				<span>Powered by</span> <a href="https://polygon.technology/" target="_blank" rel="noreferrer"><Polygon /></a>
 			</Text>
 
 			<p className="section-text__description description">
-				Deftify is utilizing Polygon’s fast blockchain. Deftly will benefit from Polygon’s low cost transaction and
+				Deftify is utilizing Polygon’s fast blockchain. Deftify will benefit from Polygon’s low cost transaction and
 				ultra fast transaction speed.
 			</p>
 
