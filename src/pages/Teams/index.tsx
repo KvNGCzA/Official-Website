@@ -115,17 +115,12 @@ function Teams(props: Props): ReactElement {
             avatar="./images/profile/7.png"
           />
           <Profile
-            name="Micky Irons"
-            position="Marketing Advisor"
-            linkedIn="https://www.linkedin.com/feed/"
-            avatar="./images/profile/8.png"
-          />
-          <Profile
             name="CryptoEdit"
             position="Research & Content Lead"
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/9.png"
           />
+        
         </ProfileGrid>
       </Spacing>
       <Flex
