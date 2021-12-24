@@ -51,7 +51,7 @@ function Footer(props: Props): ReactElement {
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
           <a href ="https://discord.gg/pQhq8k8T" target="_blank" rel="noreferrer"><img src="./images/discord-24.png" alt="Discord" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
-          <a href ="https://deftify.medium.com" target="_blank" rel="noreferrer"><img src="./images/medium-24.png" alt="Medium" /></a>
+          <a href ="https://medium.com/deftify" target="_blank" rel="noreferrer"><img src="./images/medium-24.png" alt="Medium" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
           <a href ="https://www.reddit.com/r/Deftify" target="_blank" rel="noreferrer"><img src="./images/reddit-24.png" alt="Reddit" /></a>
           <Spacing marginHorizontal="20px" marginVerticalSm="5px" />
