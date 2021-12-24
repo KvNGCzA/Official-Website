@@ -15,15 +15,15 @@ const whatWeDoData = [
 	{
 		image: '../../../../assets/Icons/fund.svg',
 		title: 'Early-Stage Incubator',
-		body:  `Incubates promising crypto startups from around the world, with a focus on Africa, and connects projects with an experienced network of entrepreneurs and experts.`
+		body:  `Incubates promising crypto startups from around the world, with a focus on Africa`
 	}, {
 		image: '../../../../assets/Icons/incubator.svg',
 		title: 'Seed Fund Raising',
-		body:  `Raises early-stage capital for these projects by allowing Deftify token holders to invest in them before the public.`
+		body:  `Raises early-stage capital for these projects by allowing Deftify token holders to invest in them`
 	}, {
 		image: '../../../../assets/Icons/invest.svg',
 		title: 'Investment Opportunities',
-		body:  `Early-stage investment opportunities are available to users who are looking for the next hidden gems. We present the projects for our loyal token holders.`
+		body:  `Early-stage investment opportunities are available to users who are looking for the next hidden gems`
 	}
 ];
 
@@ -60,7 +60,7 @@ const SectionOne = () => <Spacing className="section-one">
 			coming soon
 		</p>
 		<p className="section-text__title title">
-			Deftify’s Private Access Pad (PAP)
+			Private Access Pad (PAP)
 		</p>
 		<p className="section-text__description description">
 			Deftify’s Private Access Pad (PAP) focuses on incubating early-stage blockchain startups from emerging

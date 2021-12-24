@@ -10,14 +10,14 @@ import './index.scss';
 
 export const slides: Slide[] = [
 	{
-		caption: 'Deftify’s Private Access Pad will grant access to untapped markets, especially in Africa',
+		caption: 'Deftify’s Private Access Pad grants access to untapped markets, especially in Africa',
 		image:   './images/slide-one.svg'
 	}, {
-		caption: 'Deftify’s Instant Watch will help you to analyze DeFi projects across different chains',
+		caption: 'Deftify’s Instant Watch helps traders to analyze DeFi projects across different networks',
 		image:   './images/slider-02.svg'
 	},
 	{
-		caption: 'Deftify Indexes present opportunities on altcoins from different chains',
+		caption: 'Deftify Indexes present opportunities on altcoins from alternative chains',
 		image:   './images/slider-04.svg'
 	}, {
 		caption: 'Introducing Metacurse, Deftify’s own metaverse P2E game that will utilize Deftify token (DFTY)',

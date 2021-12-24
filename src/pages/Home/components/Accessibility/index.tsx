@@ -14,7 +14,7 @@ export const Accessibility = () => {
 			</Text>
 
 			<p className="section-text__description description">
-				Deftify is utilizing Polygon’s fast blockchain. Deftly will benefit from Polygon’s low cost transaction and
+				Deftify is utilizing Polygon’s fast blockchain. Deftify will benefit from Polygon’s low cost transaction and
 				ultra fast transaction speed.
 			</p>
 
