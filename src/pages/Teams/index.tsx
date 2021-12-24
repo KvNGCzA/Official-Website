@@ -47,13 +47,13 @@ function Teams(props: Props): ReactElement {
           <Profile
             name="Victoria Haruna"
             position="CEO and Co-Founder"
-            linkedIn="https://www.linkedin.com/feed/"
+            linkedIn="https://www.linkedin.com/in/victoria-iko-ojo-ugbedeojo-7b35aa80/"
             avatar="./images/profile/1.png"
           />
           <Profile
             name="Ruddy Setiadi Gunawan"
             position="Chief Operating Officer & Co-founder"
-            linkedIn="https://www.linkedin.com/feed/"
+            linkedIn="https://www.linkedin.com/in/ruddy-setiadi-gunawan/"
             avatar="./images/profile/2.png"
           />
           <Profile
@@ -72,15 +72,15 @@ function Teams(props: Props): ReactElement {
           <Profile
             name="Henry Onyebuchi"
             position="Chief Technical Officer"
-            github="https://www.github.com"
-            linkedIn="https://www.linkedin.com/feed/"
+            github="https://github.com/Hendobox"
+            linkedIn="https://www.linkedin.com/in/henry-onyebuchi-116501123/"
             avatar="./images/profile/5.png"
           />
           <Profile
             name="Kingsley Victor"
             position="Technical Lead"
-            github="https://www.github.com"
-            linkedIn="https://www.linkedin.com/feed/"
+            github="https://github.com/kingsley-einstein"
+            linkedIn="https://www.linkedin.com/in/kingsley-victor-952550169/"
             avatar="./images/profile/6.png"
           />
         </ProfileGrid>

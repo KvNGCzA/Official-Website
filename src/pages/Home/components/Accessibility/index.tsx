@@ -10,7 +10,7 @@ export const Accessibility = () => {
 			<p className="section-text__title--small small">BUILT FOR ACCESSIBILITY</p>
 
 			<Text className="powered-by-text">
-				<span>Powered by</span> <a href="https://polygon.technology/"><Polygon /></a>
+				<span>Powered by</span> <a href="https://polygon.technology/" target="_blank" rel="noreferrer"><Polygon /></a>
 			</Text>
 
 			<p className="section-text__description description">
