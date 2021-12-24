@@ -6,7 +6,7 @@ interface routeType {
 const routes: Array<routeType> = [
 	{
 		name: 'Home',
-		path: 'https://deftify.io' 
+		path: '/' 
 	},
 	{
 		name: 'Instant Watch',
@@ -27,10 +27,6 @@ const routes: Array<routeType> = [
 	{
 		name: 'Staking',
 		path: '/' //path: ""/staking" <= supposedly, will edit later
-	},
-	{
-		name: 'Pitch Deck',
-		path: 'https://docsend.com/view/vex4z4hgqzsftzvi' //path: ""/docs" <= supposedly, will edit later
 	},
 	{
 		name: 'Team',
