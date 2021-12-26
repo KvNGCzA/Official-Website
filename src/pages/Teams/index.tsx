@@ -155,7 +155,7 @@ function Teams(props: Props): ReactElement {
                   <TextField
                     value={fullName}
                     onChange={({ target: { value } }) => setFullName(value)}
-                    label="Full Name"
+                    label="Message"
                   />
 
                   <RegularButton fullWidth>Contact Us</RegularButton>
