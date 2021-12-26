@@ -34,17 +34,16 @@ export const Introduction = () => (
 
 				<Spacing>
 				<a
-					href="https://docsend.com/view/pkxf3t4dy9bjyjt6"
+					href="https://docsend.com/view/vex4z4hgqzsftzvi"
 					target="_blank"
 					rel="noreferrer"
 				>
-				</a>
 
 					<OutlinedButton backgroundColor="transparent">
-						<PlayIcon style={{marginRight: 10}} />
-						Watch Demo
+						{/*<PlayIcon style={{marginRight: 10}} />*/}
+						Pitch Deck
 					</OutlinedButton>
-
+					</a>
 				</Spacing>
 			</Flex>
 		</Spacing>
