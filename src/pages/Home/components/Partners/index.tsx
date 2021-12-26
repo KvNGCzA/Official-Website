@@ -11,7 +11,7 @@ const PARTNERS: {
 }[] = [
 	{image: 'lead-wallet.svg', key: uniqueRef()},
 	{image: 'unvest.svg', key: uniqueRef()},
-	//{image: 'dec-ventures.svg', key: uniqueRef()},
+	{image: 'dec-ventures.svg', key: uniqueRef()},
 	//{image: 'lead-wallet.svg', key: uniqueRef()},
 	//{image: 'lead-wallet.svg', key: uniqueRef()},
 	//{image: 'lead-wallet.svg', key: uniqueRef()},
@@ -29,8 +29,6 @@ export const Partners = () => {
 				justifyContent: 'center'
 			}}>
 			<p className="section-text__title--small small">Our Partners</p>
-
-			<p className="section-text__description description">List of our partners</p>
 
 			<div className="partner-cont">
 				{PARTNERS.map(partner => <div
