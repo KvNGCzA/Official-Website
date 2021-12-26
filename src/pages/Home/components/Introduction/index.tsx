@@ -38,9 +38,10 @@ export const Introduction = () => (
 					target="_blank"
 					rel="noreferrer"
 				>
-					<RegularButton>
+					<OutlinedButton backgroundColor="transparent">
+						<PlayIcon style={{marginRight: 10}} />
 						Pitch Deck
-					</RegularButton>
+					</OutlinedButton>
 					</a>
 				</Spacing>
 			</Flex>
