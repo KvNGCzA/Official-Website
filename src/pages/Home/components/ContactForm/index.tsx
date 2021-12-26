@@ -27,7 +27,7 @@ export const ContactForm = () => {
 					<TextField
 						value={companyName}
 						onChange={({target: {value}}) => setCompanyName(value)}
-						label="Company Name"
+						label="Message"
 					/>
 
 					<RegularButton fullWidth>Submit</RegularButton>
