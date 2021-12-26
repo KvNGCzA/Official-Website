@@ -16,7 +16,7 @@ export const Introduction = () => (
 			The world’s first Africa-focused crypto incubator and launchpad offering investors private round
 			                                                                                                    access to
 			cutting-edge African innovation. In addition, our diverse index funds and integrated portfolio management tools
-			give investors an edge not available on other launchpads.
+			give investors an edge not available on other launchpads
 		</p>
 
 		{/*buttons*/}
