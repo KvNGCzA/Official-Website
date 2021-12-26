@@ -33,12 +33,24 @@ export const Introduction = () => (
 				</a>
 
 				<Spacing>
+				<a
+					href="https://docsend.com/view/pkxf3t4dy9bjyjt6"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<RegularButton stretch mr="40px" marginRightSm="0px" marginBottomSm="20px" backgroundColor="transparent">
+						Whitepaper
+					</RegularButton>
+				</a>
+					{/*
 					<OutlinedButton backgroundColor="transparent">
 						<PlayIcon style={{marginRight: 10}} />
 						Watch Demo
 					</OutlinedButton>
+					*/}
 				</Spacing>
 			</Flex>
 		</Spacing>
+		{/*end of buttons*/}
 	</Spacing>
 );
