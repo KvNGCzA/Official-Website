@@ -14,7 +14,7 @@ export const ContactForm = () => {
 			<Flex itemsFlex={0.45} itemsFlexMd={1}>
 				<form>
 					<Text className="title">
-						Get in touch with the team
+						Contact The Team
 					</Text>
 
 					<TextField
