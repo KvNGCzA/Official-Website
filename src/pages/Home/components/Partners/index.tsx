@@ -29,6 +29,7 @@ export const Partners = () => {
 				justifyContent: 'center'
 			}}>
 			<p className="section-text__title--small small">Our Partners</p>
+			&nbsp;
 
 			<div className="partner-cont">
 				{PARTNERS.map(partner => <div
