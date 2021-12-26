@@ -28,7 +28,7 @@ export const Aggregator = () => {
 			<p className="section-text__description description">
 				Deftify's Instant Watch is a powerful resource for traders who are looking for a deeper understanding of the
 				cryptocurrency market and want to analyze specific events. Deftify will provide huge resources under its Market
-				Data Aggregator platform called Instant Watch.
+				Data Aggregator platform
 			</p>
 
 			<Spacing
