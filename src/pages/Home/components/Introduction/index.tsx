@@ -38,10 +38,13 @@ export const Introduction = () => (
 					target="_blank"
 					rel="noreferrer"
 				>
-					<OutlinedButton backgroundColor="transparent">
+					<RegularButton stretch mr="40px" marginRightSm="0px" marginBottomSm="20px">
+						Pitch Deck
+					</RegularButton>
+					{/*<OutlinedButton backgroundColor="transparent">
 						<PlayIcon style={{marginRight: 10}} />
 						Pitch Deck
-					</OutlinedButton>
+					</OutlinedButton>*/}
 					</a>
 				</Spacing>
 			</Flex>
