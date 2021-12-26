@@ -38,9 +38,9 @@ export const Introduction = () => (
 					target="_blank"
 					rel="noreferrer"
 				>
-					<RegularButton stretch mr="40px" marginRightSm="0px" marginBottomSm="20px" backgroundColor="transparent">
+					<OutlinedButton backgroundColor="transparent">
 						Whitepaper
-					</RegularButton>
+					</OutlinedButton>
 				</a>
 					{/*
 					<OutlinedButton backgroundColor="transparent">
