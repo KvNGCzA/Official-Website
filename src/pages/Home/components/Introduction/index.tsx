@@ -40,7 +40,6 @@ export const Introduction = () => (
 				>
 
 					<OutlinedButton backgroundColor="transparent">
-						{/*<PlayIcon style={{marginRight: 10}} />*/}
 						Pitch Deck
 					</OutlinedButton>
 					</a>
