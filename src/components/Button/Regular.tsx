@@ -1,27 +1,27 @@
 import styled from 'styled-components';
 
 interface Props {
-	background?: string;
-	color?: string;
-	fontFamily?: string;
-	fontWeight?: number;
-	fullWidth?: boolean;
-	marginBottomSm?: string;
-	marginHorizontalSm?: string;
-	marginRightSm?: string;
-	marginVerticalSm?: string;
-	mb?: string;
-	ml?: string;
-	mr?: string;
-	mt?: string;
-	stretch?: boolean;
+  background?: string;
+  color?: string;
+  fontFamily?: string;
+  fontWeight?: number;
+  fullWidth?: boolean;
+  marginBottomSm?: string;
+  marginHorizontalSm?: string;
+  marginRightSm?: string;
+  marginVerticalSm?: string;
+  mb?: string;
+  ml?: string;
+  mr?: string;
+  mt?: string;
+  stretch?: boolean;
 }
 
 const RegularButton = styled.button<Props>`
   height: ${({stretch}) => stretch && '100%'};
   background: ${({background}) => background || '#FCD98D'};
   border-radius: 4px;
-  cursor: pointer;
+  cursor: ${({disabled}) => disabled ? 'not-allowed' : 'pointer'};
   border: 2px solid ${({background}) => background || '#FCD98D'};
   font-size: 18px;
   font-family: ${({fontFamily}) => fontFamily ?? 'Space Grotesk'};
@@ -36,6 +36,7 @@ const RegularButton = styled.button<Props>`
   justify-content: center;
   color: ${({color}) => color || '#151515'};
   padding: 15px 20px;
+  opacity: ${({disabled}) => disabled ? 0.2 : 1};
 
   ${({theme}) => theme.breakpoint.down('lg')} {
     font-size: 16px;
