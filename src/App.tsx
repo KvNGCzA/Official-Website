@@ -7,18 +7,18 @@ import {Home} from './pages/Home';
 import Teams from './pages/Teams';
 
 function App() {
-	return (
-		<ThemeProvider theme={theme}>
-			<BrowserRouter>
-				<Navbar />
-				<Switch>
-					<Route exact path="/" component={Home} />
-					<Route exact path="/team" component={Teams} />
-				</Switch>
-				<Footer />
-			</BrowserRouter>
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/team" component={Teams} />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
 
 export default App;
