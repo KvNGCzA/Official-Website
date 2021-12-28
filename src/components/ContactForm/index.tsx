@@ -1,4 +1,4 @@
-import {ChangeEvent, useState} from 'react';
+import {ChangeEvent, useEffect, useState} from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import {MAIL_REGEX} from './index.constants';
 import RegularButton from '../Button/Regular';
@@ -18,6 +18,7 @@ export const ContactForm = () => {
     message:       '',
     captchaPassed: false
   });
+  const [showCaptcha, setShowCaptcha] = useState<boolean>(false);
 
   const onCaptchaChange = (verified: any): void => {
     if (verified) {
@@ -30,7 +31,7 @@ export const ContactForm = () => {
 
   const setCaptchaPassed = (captchaPassed: boolean): void => {
     setFormDetails({...formDetails, captchaPassed});
-  }
+  };
 
   const handleCaptchaError = (): void => {
     setCaptchaPassed(false);
@@ -38,13 +39,22 @@ export const ContactForm = () => {
 
   const disableSubmitButton = (): boolean =>
     formDetails.message.trim() === '' ||
-    formDetails.email.trim() === '' ||
     !MAIL_REGEX.test(formDetails.email) ||
     !formDetails.captchaPassed;
 
   const onInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
     setFormDetails({...formDetails, [e.target.name]: e.target.value});
   };
+
+  useEffect(() => {
+    if (
+      !showCaptcha &&
+      MAIL_REGEX.test(formDetails.email) &&
+      formDetails.message.trim() !== ''
+    ) {
+      setShowCaptcha(true);
+    }
+  }, [formDetails, showCaptcha]);
 
   const handleSubmit = (e: any): void => {
     e.preventDefault();
@@ -73,7 +83,7 @@ export const ContactForm = () => {
             name="message"
           />
 
-          <Spacing marginBottom="48px">
+          <Spacing marginBottom="48px" display={showCaptcha ? 'initial' : 'none'}>
             <ReCAPTCHA
               sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY ?? ''}
               onChange={onCaptchaChange}
