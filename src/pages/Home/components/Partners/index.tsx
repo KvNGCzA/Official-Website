@@ -28,7 +28,7 @@ export const Partners = () => {
 				alignItems:     'center',
 				justifyContent: 'center'
 			}}>
-			<p className="section-text__title--small small">Partners & Investors</p>
+			<p className="section-text__title--small small">Partners</p>
 			&nbsp;
 
 			<div className="partner-cont">
