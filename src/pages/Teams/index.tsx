@@ -1,32 +1,28 @@
-import React, { ReactElement } from "react";
-import styled from "styled-components";
-import RegularButton from "../../components/Button/Regular";
-import Flex from "../../components/Flex";
-import Profile from "../../components/Profile";
-import Spacing from "../../components/Spacing";
-import TextField from "../../components/TextField";
-import Text from "../../components/Typography";
-
-interface Props {}
+import React, {ReactElement} from 'react';
+import {ContactForm} from '../../components/ContactForm';
+import styled from 'styled-components';
+import Flex from '../../components/Flex';
+import Profile from '../../components/Profile';
+import Spacing from '../../components/Spacing';
+import Text from '../../components/Typography';
 
 const ProfileGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   margin-top: 48px;
-  ${({ theme }) => theme.breakpoint.down("lg")} {
+
+  ${({theme}) => theme.breakpoint.down('lg')} {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-  ${({ theme }) => theme.breakpoint.down("sm")} {
+
+  ${({theme}) => theme.breakpoint.down('sm')} {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
 
-function Teams(props: Props): ReactElement {
-  const [email, setEmail] = React.useState<string>("");
-  const [fullName, setFullName] = React.useState<string>("");
-
+const Teams = (): ReactElement => {
   return (
     <div>
       <Spacing paddingTop="120px" paddingBottom="160px" paddingHorizontal="60px" paddingHorizontalSm="20px">
@@ -51,8 +47,8 @@ function Teams(props: Props): ReactElement {
             avatar="./images/profile/1.png"
           />
           <Profile
-            name="Ruddy S. Gunawan"
-            position="COO and Co-Founder"
+            name="Ruddy Setiadi Gunawan"
+            position="Chief Operating Officer & Co-founder"
             linkedIn="https://www.linkedin.com/in/ruddy-setiadi-gunawan/"
             avatar="./images/profile/2.png"
           />
@@ -76,13 +72,6 @@ function Teams(props: Props): ReactElement {
             linkedIn="https://www.linkedin.com/in/henry-onyebuchi-116501123/"
             avatar="./images/profile/5.png"
           />
-
-          <Profile
-            name="Olapade Samuel"
-            position="Chief Marketing Officer"
-            linkedIn="https://www.linkedin.com/feed/"
-            avatar="./images/profile/samuel.jpg"
-          />
           <Profile
             name="Kingsley Victor"
             position="Technical Lead"
@@ -90,15 +79,23 @@ function Teams(props: Props): ReactElement {
             linkedIn="https://www.linkedin.com/in/kingsley-victor-952550169/"
             avatar="./images/profile/6.png"
           />
+        </ProfileGrid>
 
-            <Profile
+        <Spacing marginTop="88px">
+          <Flex flexDirectionMd="column-reverse" justifyContent="space-between" alignItems="stretch">
+            <Flex flex={0.3} flexLg={0.45} flexSm={1}>
+              <Spacing fullWidth marginTopMd="50px">
+                <Profile
                   name="Jay Wang"
                   position="Business Development Manager"
                   linkedIn="https://www.linkedin.com/feed/"
                   avatar="./images/profile/avatar.png"
                 />
-        </ProfileGrid>
+              </Spacing>
+            </Flex>
 
+          </Flex>
+        </Spacing>
       </Spacing>
 
       <Spacing paddingHorizontal="60px" paddingHorizontalSm="20px" marginBottom="120px">
@@ -119,13 +116,15 @@ function Teams(props: Props): ReactElement {
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/9.png"
           />
-        
+
         </ProfileGrid>
       </Spacing>
+
       <Spacing
         background="#181A1C"
         style={{borderRadius: 20}}
       >
+        <ContactForm />
       </Spacing>
     </div>
   );
