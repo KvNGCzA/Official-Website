@@ -126,7 +126,6 @@ function Teams(props: Props): ReactElement {
         background="#181A1C"
         style={{borderRadius: 20}}
       >
-        <ContactForm />
       </Spacing>
     </div>
   );
