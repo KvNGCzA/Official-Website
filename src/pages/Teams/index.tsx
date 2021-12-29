@@ -122,47 +122,14 @@ function Teams(props: Props): ReactElement {
         
         </ProfileGrid>
       </Spacing>
-      <Flex
-              itemsFlex={0.85}
-              itemsFlexLg={1}
-              justifyContent="flex-start"
-              background="#181A1C"
-              style={{ borderRadius: 20 }}
-              flex={0.6}
-              flexLg={0.45}
-              flexSm={1}
-            >
-              <form>
-                <Spacing
-                  fullWidth
-                  paddingTop="68px"
-                  paddingBottom="79px"
-                  paddingHorizontal="55px"
-                  paddingHorizontalLg="35px"
-                >
-                  <Text fontWeight={700} fontSize={36} mb="48px" color="#fff">
-                    Contact the Team
-                  </Text>
-
-                  <TextField
-                    type="email"
-                    onChange={({ target: { value } }) => setEmail(value)}
-                    value={email}
-                    label="Email Address"
-                  />
-
-                  <TextField
-                    value={fullName}
-                    onChange={({ target: { value } }) => setFullName(value)}
-                    label="Message"
-                  />
-
-                  <RegularButton fullWidth>Contact Us</RegularButton>
-                </Spacing>
-              </form>
-            </Flex>
+      <Spacing
+        background="#181A1C"
+        style={{borderRadius: 20}}
+      >
+        <ContactForm />
+      </Spacing>
     </div>
   );
-}
+};
 
 export default Teams;
