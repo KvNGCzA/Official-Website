@@ -6,9 +6,14 @@
 @import url('./assets/fonts/sf-pro-display-cufonfonts-webfont/style.css');
 @import url('./assets/fonts/furore-cufonfonts-webfont/style.css');
 
-/*
-*Font Styles
-**/
+:root {
+  --toastify-color-progress-success: rgba(37, 44, 54, 0.43);
+  --toastify-color-success:          #000000;
+}
+
+.Toastify__toast--success {
+  background: #FCD98D;
+}
 
 * {
   box-sizing: border-box;

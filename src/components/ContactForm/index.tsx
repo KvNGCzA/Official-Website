@@ -1,24 +1,37 @@
-import {ChangeEvent, useEffect, useState} from 'react';
+import {ChangeEvent, MutableRefObject, useEffect, useRef, useState} from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import {MAIL_REGEX} from './index.constants';
+import {FormDetails} from '../../config/interfaces/form-details.interface';
+import {initialState, MAIL_REGEX} from './index.constants';
 import RegularButton from '../Button/Regular';
+import {send} from 'emailjs-com';
 import Flex from '../Flex';
 import Spacing from '../Spacing';
 import TextField from '../TextField';
 import Text from '../Typography';
 import './index.scss';
+import {toast} from 'react-toastify';
+
+const {
+        REACT_APP_RECAPTCHA_SITE_KEY,
+        REACT_APP_EMAILJS_SERVICE_ID,
+        REACT_APP_EMAILJS_TEMPLATE_ID
+      } = process.env;
 
 export const ContactForm = () => {
-  const [formDetails, setFormDetails] = useState<{
-    email: string;
-    message: string;
-    captchaPassed: boolean;
-  }>({
-    email:         '',
-    message:       '',
-    captchaPassed: false
-  });
+  const [formDetails, setFormDetails] = useState<FormDetails>(initialState);
   const [showCaptcha, setShowCaptcha] = useState<boolean>(false);
+  const [loading, setLoading]         = useState<boolean>(false);
+  const captchaRef                    = useRef() as MutableRefObject<ReCAPTCHA>;
+
+  useEffect(() => {
+    if (
+      !showCaptcha &&
+      MAIL_REGEX.test(formDetails.email) &&
+      formDetails.message.trim() !== ''
+    ) {
+      setShowCaptcha(true);
+    }
+  }, [formDetails, showCaptcha]);
 
   const onCaptchaChange = (verified: any): void => {
     if (verified) {
@@ -40,24 +53,30 @@ export const ContactForm = () => {
   const disableSubmitButton = (): boolean =>
     formDetails.message.trim() === '' ||
     !MAIL_REGEX.test(formDetails.email) ||
-    !formDetails.captchaPassed;
+    !formDetails.captchaPassed ||
+    loading;
 
   const onInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
     setFormDetails({...formDetails, [e.target.name]: e.target.value});
   };
 
-  useEffect(() => {
-    if (
-      !showCaptcha &&
-      MAIL_REGEX.test(formDetails.email) &&
-      formDetails.message.trim() !== ''
-    ) {
-      setShowCaptcha(true);
-    }
-  }, [formDetails, showCaptcha]);
-
-  const handleSubmit = (e: any): void => {
+  const handleSubmit = async (e: any): Promise<void> => {
     e.preventDefault();
+    setLoading(true);
+    try {
+      await send(
+        REACT_APP_EMAILJS_SERVICE_ID || '',
+        REACT_APP_EMAILJS_TEMPLATE_ID || '',
+        formDetails as any
+      );
+      setFormDetails(initialState);
+      setShowCaptcha(false);
+      captchaRef.current.reset();
+      toast('Message sent!!!', {type: 'success'});
+    } catch (_error) {
+      toast('An error has occurred! Please try again', {type: 'error'});
+    }
+    setLoading(false);
   };
 
   return (
@@ -85,10 +104,11 @@ export const ContactForm = () => {
 
           <Spacing marginBottom="48px" display={showCaptcha ? 'initial' : 'none'}>
             <ReCAPTCHA
-              sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY ?? ''}
+              sitekey={REACT_APP_RECAPTCHA_SITE_KEY ?? ''}
               onChange={onCaptchaChange}
               onErrored={handleCaptchaError}
               onExpired={handleCaptchaError}
+              ref={captchaRef}
             />
           </Spacing>
 
