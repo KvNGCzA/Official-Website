@@ -47,10 +47,16 @@ const Teams = (): ReactElement => {
             avatar="./images/profile/1.png"
           />
           <Profile
-            name="Ruddy Setiadi Gunawan"
-            position="Chief Operating Officer & Co-founder"
+            name="Ruddy S. Gunawan"
+            position="COO and Co-Founder"
             linkedIn="https://www.linkedin.com/in/ruddy-setiadi-gunawan/"
             avatar="./images/profile/2.png"
+          />
+          <Profile
+            name="Olapade Samuel"
+            position="Chief Marketing Officer"
+            linkedIn="https://www.linkedin.com/feed/"
+            avatar="./images/profile/samuel.jpg"
           />
           <Profile
             name="Neil Mani"
