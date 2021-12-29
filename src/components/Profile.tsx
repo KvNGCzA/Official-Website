@@ -30,7 +30,7 @@ function Profile({ name, position, linkedIn, avatar, github }: Props): ReactElem
       <Spacing marginTop="32px">
         <Flex justifyContent="space-between">
           <div>
-            <Text fontSize={24} fontWeight={500} color="#FFFFFF">
+            <Text fontSize={21} fontWeight={500} color="#FFFFFF">
               {name}
             </Text>
             <Text color=" rgba(255, 255, 255, 0.6);">{position}</Text>
