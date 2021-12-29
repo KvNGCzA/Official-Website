@@ -1,0 +1,31 @@
+.social-wrapper {
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+
+  .social-btns {
+    display:         flex;
+    flex-wrap:       wrap;
+    row-gap:         14px;
+    width:           100%;
+    justify-content: space-between;
+    align-items:     center;
+    max-width:       482px;
+
+    .social-btn {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .social-wrapper {
+    .social-btns {
+      justify-content: flex-start;
+    }
+  }
+}

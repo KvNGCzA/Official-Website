@@ -1,32 +1,28 @@
-import React, { ReactElement } from "react";
-import styled from "styled-components";
-import RegularButton from "../../components/Button/Regular";
-import Flex from "../../components/Flex";
-import Profile from "../../components/Profile";
-import Spacing from "../../components/Spacing";
-import TextField from "../../components/TextField";
-import Text from "../../components/Typography";
-
-interface Props {}
+import React, {ReactElement} from 'react';
+import {ContactForm} from '../../components/ContactForm';
+import styled from 'styled-components';
+import Flex from '../../components/Flex';
+import Profile from '../../components/Profile';
+import Spacing from '../../components/Spacing';
+import Text from '../../components/Typography';
 
 const ProfileGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   margin-top: 48px;
-  ${({ theme }) => theme.breakpoint.down("lg")} {
+
+  ${({theme}) => theme.breakpoint.down('lg')} {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-  ${({ theme }) => theme.breakpoint.down("sm")} {
+
+  ${({theme}) => theme.breakpoint.down('sm')} {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
 
-function Teams(props: Props): ReactElement {
-  const [email, setEmail] = React.useState<string>("");
-  const [fullName, setFullName] = React.useState<string>("");
-
+const Teams = (): ReactElement => {
   return (
     <div>
       <Spacing paddingTop="120px" paddingBottom="160px" paddingHorizontal="60px" paddingHorizontalSm="20px">
@@ -97,7 +93,7 @@ function Teams(props: Props): ReactElement {
                 />
               </Spacing>
             </Flex>
-            
+
           </Flex>
         </Spacing>
       </Spacing>
@@ -120,50 +116,18 @@ function Teams(props: Props): ReactElement {
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/9.png"
           />
-        
+
         </ProfileGrid>
       </Spacing>
-      <Flex
-              itemsFlex={0.85}
-              itemsFlexLg={1}
-              justifyContent="flex-start"
-              background="#181A1C"
-              style={{ borderRadius: 20 }}
-              flex={0.6}
-              flexLg={0.45}
-              flexSm={1}
-            >
-              <form>
-                <Spacing
-                  fullWidth
-                  paddingTop="68px"
-                  paddingBottom="79px"
-                  paddingHorizontal="55px"
-                  paddingHorizontalLg="35px"
-                >
-                  <Text fontWeight={700} fontSize={36} mb="48px" color="#fff">
-                    Contact the Team
-                  </Text>
 
-                  <TextField
-                    type="email"
-                    onChange={({ target: { value } }) => setEmail(value)}
-                    value={email}
-                    label="Email Address"
-                  />
-
-                  <TextField
-                    value={fullName}
-                    onChange={({ target: { value } }) => setFullName(value)}
-                    label="Message"
-                  />
-
-                  <RegularButton fullWidth>Contact Us</RegularButton>
-                </Spacing>
-              </form>
-            </Flex>
+      <Spacing
+        background="#181A1C"
+        style={{borderRadius: 20}}
+      >
+        <ContactForm />
+      </Spacing>
     </div>
   );
-}
+};
 
 export default Teams;
