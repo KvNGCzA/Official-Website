@@ -1,28 +1,32 @@
-import React, {ReactElement} from 'react';
-import {ContactForm} from '../../components/ContactForm';
-import styled from 'styled-components';
-import Flex from '../../components/Flex';
-import Profile from '../../components/Profile';
-import Spacing from '../../components/Spacing';
-import Text from '../../components/Typography';
+import React, { ReactElement } from "react";
+import styled from "styled-components";
+import RegularButton from "../../components/Button/Regular";
+import Flex from "../../components/Flex";
+import Profile from "../../components/Profile";
+import Spacing from "../../components/Spacing";
+import TextField from "../../components/TextField";
+import Text from "../../components/Typography";
+
+interface Props {}
 
 const ProfileGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   margin-top: 48px;
-
-  ${({theme}) => theme.breakpoint.down('lg')} {
+  ${({ theme }) => theme.breakpoint.down("lg")} {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-
-  ${({theme}) => theme.breakpoint.down('sm')} {
+  ${({ theme }) => theme.breakpoint.down("sm")} {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
 
-const Teams = (): ReactElement => {
+function Teams(props: Props): ReactElement {
+  const [email, setEmail] = React.useState<string>("");
+  const [fullName, setFullName] = React.useState<string>("");
+
   return (
     <div>
       <Spacing paddingTop="120px" paddingBottom="160px" paddingHorizontal="60px" paddingHorizontalSm="20px">
@@ -47,8 +51,8 @@ const Teams = (): ReactElement => {
             avatar="./images/profile/1.png"
           />
           <Profile
-            name="Ruddy Setiadi Gunawan"
-            position="Chief Operating Officer & Co-founder"
+            name="Ruddy S. Gunawan"
+            position="COO and Co-Founder"
             linkedIn="https://www.linkedin.com/in/ruddy-setiadi-gunawan/"
             avatar="./images/profile/2.png"
           />
@@ -72,6 +76,13 @@ const Teams = (): ReactElement => {
             linkedIn="https://www.linkedin.com/in/henry-onyebuchi-116501123/"
             avatar="./images/profile/5.png"
           />
+
+          <Profile
+            name="Olapade Samuel"
+            position="Chief Marketing Officer"
+            linkedIn="https://www.linkedin.com/feed/"
+            avatar="./images/profile/samuel.jpg"
+          />
           <Profile
             name="Kingsley Victor"
             position="Technical Lead"
@@ -79,23 +90,15 @@ const Teams = (): ReactElement => {
             linkedIn="https://www.linkedin.com/in/kingsley-victor-952550169/"
             avatar="./images/profile/6.png"
           />
-        </ProfileGrid>
 
-        <Spacing marginTop="88px">
-          <Flex flexDirectionMd="column-reverse" justifyContent="space-between" alignItems="stretch">
-            <Flex flex={0.3} flexLg={0.45} flexSm={1}>
-              <Spacing fullWidth marginTopMd="50px">
-                <Profile
+            <Profile
                   name="Jay Wang"
                   position="Business Development Manager"
                   linkedIn="https://www.linkedin.com/feed/"
                   avatar="./images/profile/avatar.png"
                 />
-              </Spacing>
-            </Flex>
+        </ProfileGrid>
 
-          </Flex>
-        </Spacing>
       </Spacing>
 
       <Spacing paddingHorizontal="60px" paddingHorizontalSm="20px" marginBottom="120px">
@@ -116,18 +119,50 @@ const Teams = (): ReactElement => {
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/9.png"
           />
-
+        
         </ProfileGrid>
       </Spacing>
+      <Flex
+              itemsFlex={0.85}
+              itemsFlexLg={1}
+              justifyContent="flex-start"
+              background="#181A1C"
+              style={{ borderRadius: 20 }}
+              flex={0.6}
+              flexLg={0.45}
+              flexSm={1}
+            >
+              <form>
+                <Spacing
+                  fullWidth
+                  paddingTop="68px"
+                  paddingBottom="79px"
+                  paddingHorizontal="55px"
+                  paddingHorizontalLg="35px"
+                >
+                  <Text fontWeight={700} fontSize={36} mb="48px" color="#fff">
+                    Contact the Team
+                  </Text>
 
-      <Spacing
-        background="#181A1C"
-        style={{borderRadius: 20}}
-      >
-        <ContactForm />
-      </Spacing>
+                  <TextField
+                    type="email"
+                    onChange={({ target: { value } }) => setEmail(value)}
+                    value={email}
+                    label="Email Address"
+                  />
+
+                  <TextField
+                    value={fullName}
+                    onChange={({ target: { value } }) => setFullName(value)}
+                    label="Message"
+                  />
+
+                  <RegularButton fullWidth>Contact Us</RegularButton>
+                </Spacing>
+              </form>
+            </Flex>
     </div>
   );
-};
+}
 
 export default Teams;
