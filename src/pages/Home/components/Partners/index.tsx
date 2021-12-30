@@ -14,8 +14,8 @@ const PARTNERS: {
 	{image: 'despace.svg', key: uniqueRef()},
 	{image: 'dec-ventures.svg', key: uniqueRef()},
 	{image: 'oasis-capital.svg', key: uniqueRef()},
-	//{image: 'lead-wallet.svg', key: uniqueRef()},
-	//{image: 'lead-wallet.svg', key: uniqueRef()},
+	{image: 'polygon-partner.svg', key: uniqueRef()},
+	{image: 'gotbit-svg.svg', key: uniqueRef()},
 	//{image: 'lead-wallet.svg', key: uniqueRef()}
 ];
 
@@ -28,7 +28,7 @@ export const Partners = () => {
 				alignItems:     'center',
 				justifyContent: 'center'
 			}}>
-			<p className="section-text__title--small small">Our Partners</p>
+			<p className="section-text__title--small small">Our Partners & Investors</p>
 			&nbsp;
 
 			<div className="partner-cont">
