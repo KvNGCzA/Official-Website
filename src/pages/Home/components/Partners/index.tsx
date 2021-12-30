@@ -11,8 +11,8 @@ const PARTNERS: {
 }[] = [
 	{image: 'lead-wallet.svg', key: uniqueRef()},
 	{image: 'unvest.svg', key: uniqueRef()},
-	{image: 'polygon-partner.svg', key: uniqueRef()},
 	{image: 'gotbit-svg.svg', key: uniqueRef()},
+	{image: 'polygon-partner.svg', key: uniqueRef()},
 	{image: 'despace.svg', key: uniqueRef()},
 	{image: 'dec-ventures.svg', key: uniqueRef()},
 	{image: 'oasis-capital.svg', key: uniqueRef()},
