@@ -24,6 +24,12 @@ export const ContactForm = () => {
   const captchaRef                    = useRef() as MutableRefObject<ReCAPTCHA>;
 
   useEffect(() => {
+    if (!REACT_APP_RECAPTCHA_SITE_KEY) {
+      toast('ReCaptcha siteKey missing, Please contact admin', {type: 'error'});
+    }
+  }, [])
+
+  useEffect(() => {
     if (
       !showCaptcha &&
       MAIL_REGEX.test(formDetails.email) &&
@@ -53,7 +59,7 @@ export const ContactForm = () => {
   const disableSubmitButton = (): boolean =>
     formDetails.message.trim() === '' ||
     !MAIL_REGEX.test(formDetails.email) ||
-    !formDetails.captchaPassed ||
+    (!formDetails.captchaPassed && Boolean(REACT_APP_RECAPTCHA_SITE_KEY)) ||
     loading;
 
   const onInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -102,7 +108,7 @@ export const ContactForm = () => {
             name="message"
           />
 
-          <Spacing marginBottom="48px" display={showCaptcha ? 'initial' : 'none'}>
+          {REACT_APP_RECAPTCHA_SITE_KEY ? <Spacing marginBottom="48px" display={showCaptcha ? 'initial' : 'none'}>
             <ReCAPTCHA
               sitekey={REACT_APP_RECAPTCHA_SITE_KEY ?? ''}
               onChange={onCaptchaChange}
@@ -110,7 +116,7 @@ export const ContactForm = () => {
               onExpired={handleCaptchaError}
               ref={captchaRef}
             />
-          </Spacing>
+          </Spacing> : null}
 
           <RegularButton
             fullWidth
