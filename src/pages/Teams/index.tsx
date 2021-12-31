@@ -87,7 +87,7 @@ const Teams = (): ReactElement => {
           />
            <Profile
                   name="Jay Wang"
-                  position="Business Development Manager"
+                  position="BDM"
                   linkedIn="https://www.linkedin.com/feed/"
                   avatar="./images/profile/avatar.png"
           />
