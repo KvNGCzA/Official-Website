@@ -106,7 +106,7 @@ const Teams = (): ReactElement => {
 
       <Spacing paddingHorizontal="60px" paddingHorizontalSm="20px" marginBottom="120px">
         <Text fontWeight={800} fontSize={48} color="#fff" textAlign="center" mb="48px">
-          Partners & Advisors
+          Advisors
         </Text>
 
         <ProfileGrid>
