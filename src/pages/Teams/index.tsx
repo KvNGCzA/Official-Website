@@ -85,28 +85,18 @@ const Teams = (): ReactElement => {
             linkedIn="https://www.linkedin.com/in/kingsley-victor-952550169/"
             avatar="./images/profile/6.png"
           />
-        </ProfileGrid>
-
-        <Spacing marginTop="88px">
-          <Flex flexDirectionMd="column-reverse" justifyContent="space-between" alignItems="stretch">
-            <Flex flex={0.3} flexLg={0.45} flexSm={1}>
-              <Spacing fullWidth marginTopMd="50px">
-                <Profile
+           <Profile
                   name="Jay Wang"
                   position="Business Development Manager"
                   linkedIn="https://www.linkedin.com/feed/"
                   avatar="./images/profile/avatar.png"
-                />
-              </Spacing>
-            </Flex>
-
-          </Flex>
-        </Spacing>
+          />
+        </ProfileGrid>
       </Spacing>
 
       <Spacing paddingHorizontal="60px" paddingHorizontalSm="20px" marginBottom="120px">
         <Text fontWeight={800} fontSize={48} color="#fff" textAlign="center" mb="48px">
-          Partners & Advisors
+          Advisors
         </Text>
 
         <ProfileGrid>
