@@ -28,7 +28,7 @@ const Footer = (): ReactElement => {
           <a href="/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Indexes
           </Text></a>
-          <a href="/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+          <a href="https://metacurse.gg/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             MetaCurse
           </Text></a>
           <a href="/"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">

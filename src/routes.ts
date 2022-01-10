@@ -18,7 +18,7 @@ const routes: Array<routeType> = [
 	},
 	{
 		name: 'MetaCurse',
-		path: '/' //path: "/play-n-earn" <= supposedly, will edit when the platform is ready
+		path: 'https://metacurse.gg/' 
 	},
 	{
 		name: 'Private  Access Pad',
