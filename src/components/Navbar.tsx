@@ -3,6 +3,7 @@ import {Link, withRouter} from 'react-router-dom';
 import styled from 'styled-components';
 import {LogoIcon} from '../assets/Icons';
 import routes from '../routes';
+import {css} from 'styled-components'
 
 const Wrapper = styled.nav`
   display: flex;
@@ -15,7 +16,7 @@ const Wrapper = styled.nav`
   }
 `;
 
-const NavLink = styled(Link)`
+const sharedLinkStyles = css`
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
@@ -41,31 +42,13 @@ const NavLink = styled(Link)`
     text-align: left;
   }
 `;
+
+const NavLink = styled(Link)`
+  ${sharedLinkStyles}
+`;
+
 const StyledLink = styled.a`
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 130.8%;
-  text-align: center;
-  color: #ffffff;
-  margin-right: 48px;
-  text-decoration: none;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  ${({theme}) => theme.breakpoint.down('xl')} {
-    font-size: 16px;
-    margin-right: 48px;
-  }
-
-  ${({theme}) => theme.breakpoint.down('lg')} {
-    margin-right: 0;
-    margin-top: 35px;
-    text-align: left;
-  }
+  ${sharedLinkStyles}
 `;
 
 const MenuBar = styled.button<{ open: boolean }>`
