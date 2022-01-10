@@ -41,6 +41,32 @@ const NavLink = styled(Link)`
     text-align: left;
   }
 `;
+const StyledLink = styled.a`
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130.8%;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 48px;
+  text-decoration: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  ${({theme}) => theme.breakpoint.down('xl')} {
+    font-size: 16px;
+    margin-right: 48px;
+  }
+
+  ${({theme}) => theme.breakpoint.down('lg')} {
+    margin-right: 0;
+    margin-top: 35px;
+    text-align: left;
+  }
+`;
 
 const MenuBar = styled.button<{ open: boolean }>`
   ${({theme}) => theme.breakpoint.up('lg')} {
@@ -118,7 +144,7 @@ const Navbar = (props: any) => {
 
 				<NavLinkWrapper open={open} style={{display: 'flex'}}>
 					{routes.map((route, index) => route.type === 'external' ?
-            <a href={route.path} target='_blank'>{route.name}</a> :
+            <StyledLink href={route.path} target='_blank'>{route.name}</StyledLink> :
             <NavLink key={index.toString()} to={route.path}>
               {route.name}
             </NavLink>
