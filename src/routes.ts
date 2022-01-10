@@ -1,12 +1,13 @@
 interface routeType {
 	name: string;
 	path: string;
+  type?: 'external';
 }
 
-const routes: Array<routeType> = [
+const routes: routeType[]  = [
 	{
 		name: 'Home',
-		path: '/' 
+		path: '/'
 	},
 	{
 		name: 'Instant Watch',
@@ -17,8 +18,9 @@ const routes: Array<routeType> = [
 		path: '/' //path: "/deftify-indexes" <= supposedly, will edit when the platform is ready
 	},
 	{
+    type: 'external',
 		name: 'MetaCurse',
-		path: '/' //path: "/play-n-earn" <= supposedly, will edit when the platform is ready
+		path: 'https://metacurse.gg/' //path: "/play-n-earn" <= supposedly, will edit when the platform is ready
 	},
 	{
 		name: 'Private  Access Pad',

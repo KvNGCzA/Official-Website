@@ -3,6 +3,7 @@ import {Link, withRouter} from 'react-router-dom';
 import styled from 'styled-components';
 import {LogoIcon} from '../assets/Icons';
 import routes from '../routes';
+import {css} from 'styled-components'
 
 const Wrapper = styled.nav`
   display: flex;
@@ -15,7 +16,7 @@ const Wrapper = styled.nav`
   }
 `;
 
-const NavLink = styled(Link)`
+const sharedLinkStyles = css`
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
@@ -40,6 +41,14 @@ const NavLink = styled(Link)`
     margin-top: 35px;
     text-align: left;
   }
+`;
+
+const NavLink = styled(Link)`
+  ${sharedLinkStyles}
+`;
+
+const StyledLink = styled.a`
+  ${sharedLinkStyles}
 `;
 
 const MenuBar = styled.button<{ open: boolean }>`
@@ -117,11 +126,12 @@ const Navbar = (props: any) => {
 				</MenuBar>
 
 				<NavLinkWrapper open={open} style={{display: 'flex'}}>
-					{routes.map((route, index) => (
-						<NavLink key={index.toString()} to={route.path}>
-							{route.name}
-						</NavLink>
-					))}
+					{routes.map((route, index) => route.type === 'external' ?
+            <StyledLink href={route.path} target='_blank'>{route.name}</StyledLink> :
+            <NavLink key={index.toString()} to={route.path}>
+              {route.name}
+            </NavLink>
+          )}
 				</NavLinkWrapper>
 			</div>
 		</Wrapper>
