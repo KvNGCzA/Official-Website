@@ -15,12 +15,12 @@ export const PlayToEarn = () => {
 				Deftify’s first incubated project is its own gaming project, MetaCurse - this is a P2E metaverse where you
 				will need to stake Deftify token (DFTY) to use the NFT characters. You will then be able to earn in-game rewards by playing the NFT characters.
 			</p>
-			<RegularButton
+			<a href="https://metacurse.gg/" target="_blank" rel="noopener noreferrer"><RegularButton
 				background={'rgba(25, 28, 30, 1)'}
 				color={'#FFFFFF'}
 				fontFamily="Gilroy"
 				fontWeight={800}
-			>Coming Soon</RegularButton>
+			>Check MetaCurse Website</RegularButton></a>
 		</Spacing>
 	);
 };
