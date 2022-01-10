@@ -117,11 +117,12 @@ const Navbar = (props: any) => {
 				</MenuBar>
 
 				<NavLinkWrapper open={open} style={{display: 'flex'}}>
-					{routes.map((route, index) => (
-						<NavLink key={index.toString()} to={route.path}>
-							{route.name}
-						</NavLink>
-					))}
+					{routes.map((route, index) => route.type === 'external' ?
+            <a href={route.path} target='_blank'>{route.name}</a> :
+            <NavLink key={index.toString()} to={route.path}>
+              {route.name}
+            </NavLink>
+          )}
 				</NavLinkWrapper>
 			</div>
 		</Wrapper>
