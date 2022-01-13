@@ -46,6 +46,11 @@ export const Partners = () => {
 			&nbsp;
 			<p className="section-text__title--small small">Deftify On The Media</p>
 			&nbsp;
+			<p className="section-text__description description">
+				Deftify is utilizing Polygon’s fast blockchain. Deftify will benefit from Polygon’s low cost transaction and
+				ultra fast transaction speed.
+			</p>
+
 			<div>
 			
 			<p>Deftify Lorem Ipsum</p>
