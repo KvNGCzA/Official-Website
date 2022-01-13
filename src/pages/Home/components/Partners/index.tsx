@@ -46,8 +46,8 @@ export const Partners = () => {
 			&nbsp;
 			<p className="section-text__title--small small">Deftify On The Media</p>
 			&nbsp;
-			<img src="marketwatch.png" alt="marketwatch"></img><a href="https://google.com" target="_blank" rel="noreferrer"><p className="section-text__description description">
-				Deftify is utilizing Polygon’s fast blockchain. Deftify will benefit from Polygon’s low cost transaction and
+			<a href="https://google.com" target="_blank" rel="noreferrer"><p className="section-text__description description">
+			<img src="images/marketwatch.png" alt="marketwatch"></img><img src="images/marketwatch.png" alt="marketwatch"></img>Deftify is utilizing Polygon’s fast blockchain. Deftify will benefit from Polygon’s low cost transaction and
 				ultra fast transaction speed.
 			</p></a>
 			
