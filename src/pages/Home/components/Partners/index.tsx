@@ -51,7 +51,6 @@ export const Partners = () => {
 				ultra fast transaction speed.
 			</p></a>
 			
-			</div>
 		</Spacing>
 	);
 };
