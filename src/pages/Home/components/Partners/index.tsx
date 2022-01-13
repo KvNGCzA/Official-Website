@@ -42,6 +42,9 @@ export const Partners = () => {
 				>
 				</div>)}
 			</div>
+			&nbsp;
+			<p className="section-text__title--small small">Test23</p>
+			&nbsp;
 		</Spacing>
 	);
 };
