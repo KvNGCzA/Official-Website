@@ -48,8 +48,10 @@ export const Partners = () => {
 			&nbsp;
 			<div className="row">
 			<div className="column">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+			<a href="https://www.marketwatch.com/press-release/deftify-builds-the-first-africa-focused-crypto-incubator-and-launchpad-2022-01-04" target="_blank" rel="noreferrer">
+			<img src="images/marketwatch.png" alt="marketwatch">Deftify Builds the First Africa-Focused Crypto Incubator and Launchpad</img>
+			<p className="section-text__description description"></p>
+			</a>
   </div>
   <div className="column">
     <h2>Column 2</h2>
@@ -64,10 +66,6 @@ export const Partners = () => {
     <p>Some text..</p>
   </div>
   </div>
-			<a href="https://google.com" target="_blank" rel="noreferrer"><p className="section-text__description description">
-			<img src="images/marketwatch.png" alt="marketwatch"></img><img src="images/marketwatch.png" alt="marketwatch"></img>Deftify is utilizing Polygon’s fast blockchain. Deftify will benefit from Polygon’s low cost transaction and
-				ultra fast transaction speed.
-			</p></a>
 			
 		</Spacing>
 	);
