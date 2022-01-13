@@ -4,6 +4,7 @@ import {Aggregator} from './components/Aggregator';
 import {ContactForm} from '../../components/ContactForm';
 import {Introduction} from './components/Introduction';
 import {Partners} from './components/Partners';
+import {PressReleases} from './components/PressReleases';
 import {PlayToEarn} from './components/PlayToEarn';
 import {PrivateAccessPad} from './components/PrivateAccessPad';
 import './index.scss';
@@ -41,6 +42,7 @@ export const Home = () => {
 
       <Aggregator />
       <Partners />
+      <PressReleases/>
       <Accessibility />
 
       <div
