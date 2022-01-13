@@ -46,6 +46,7 @@ export const Partners = () => {
 			&nbsp;
 			<p className="section-text__title--small small">Deftify On The Media</p>
 			&nbsp;
+			<div className="row">
 			<div className="column">
     <h2>Column 1</h2>
     <p>Some text..</p>
@@ -61,6 +62,7 @@ export const Partners = () => {
   <div className="column">
     <h2>Column 4</h2>
     <p>Some text..</p>
+  </div>
   </div>
 			<a href="https://google.com" target="_blank" rel="noreferrer"><p className="section-text__description description">
 			<img src="images/marketwatch.png" alt="marketwatch"></img><img src="images/marketwatch.png" alt="marketwatch"></img>Deftify is utilizing Polygon’s fast blockchain. Deftify will benefit from Polygon’s low cost transaction and
