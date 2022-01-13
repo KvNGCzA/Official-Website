@@ -50,15 +50,15 @@ export const Partners = () => {
     <h2>Column 1</h2>
     <p>Some text..</p>
   </div>
-  <div className="column" style="background-color:#bbb;">
+  <div className="column">
     <h2>Column 2</h2>
     <p>Some text..</p>
   </div>
-  <div className="column" style="background-color:#ccc;">
+  <div className="column">
     <h2>Column 3</h2>
     <p>Some text..</p>
   </div>
-  <div className="column" style="background-color:#ddd;">
+  <div className="column">
     <h2>Column 4</h2>
     <p>Some text..</p>
   </div>
