@@ -49,8 +49,8 @@ export const Partners = () => {
 			<div className="row">
 			<div className="column">
 			<a href="https://www.marketwatch.com/press-release/deftify-builds-the-first-africa-focused-crypto-incubator-and-launchpad-2022-01-04" target="_blank" rel="noreferrer">
-			<img src="images/marketwatch.png" alt="marketwatch">Deftify Builds the First Africa-Focused Crypto Incubator and Launchpad</img>
-			<p className="section-text__description description"></p>
+			<img src="images/marketwatch.png" alt="marketwatch"></img>
+			<p className="section-text__description description">Deftify Builds the First Africa-Focused Crypto Incubator and Launchpad</p>
 			</a>
   </div>
   <div className="column">
