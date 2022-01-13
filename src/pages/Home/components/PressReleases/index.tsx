@@ -1,11 +1,11 @@
 import Spacing from '../../../../components/Spacing';
 import './index.scss';
 
-const uniqueRef = (): string => {
+const uniqueRef2 = (): string => {
 	return `ref-${Math.ceil(Math.random() * 10e13)}`;
 };
 
-const PARTNERS: {
+const PARTNERS2: {
 	image: string;
 	key: string;
 }[] = [
@@ -19,7 +19,7 @@ const PARTNERS: {
 	{image: 'averagemenvc-svg.svg', key: uniqueRef()}
 ];
 
-export const Partners = () => {
+export const Partners2 = () => {
 	return (
 		<Spacing
 			style={{
@@ -32,7 +32,7 @@ export const Partners = () => {
 			&nbsp;
 
 			<div className="partner-cont">
-				{PARTNERS.map(partner => <div
+				{PARTNERS2.map(partner => <div
 					className="partner"
 					key={partner.key}
 					style={{
