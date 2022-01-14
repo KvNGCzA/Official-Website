@@ -63,7 +63,7 @@ export const Partners = () => {
   			<div className="column">
   			<a href="https://www.digitaljournal.com/pr/deftify-builds-the-first-africa-focused-crypto-incubator-and-launchpad" target="_blank" rel="noreferrer">
 			<img src="images/digitaljournal.png" alt="marketwatch"></img>
-			<p className="section-text____pressrelease pressrelease">Deftify was built specifically to help blockchain projects from Africa</p>
+			<p className="section-text____pressrelease pressrelease"> The Deftify team has integrated an incubator into the launchpad to...</p>
 			</a>
   			</div>
   			<div className="column">
