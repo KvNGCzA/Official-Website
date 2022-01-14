@@ -45,7 +45,7 @@ export const Partners = () => {
 			</div>
 			<span>&nbsp;</span>
 			<span>&nbsp;</span>
-			<p className="section-text__title--small small">Deftify On The Media</p>
+			<p className="section-text__title--small small">Deftify On The Media2</p>
 			&nbsp;
 			<div className="row">
 			<div className="column">
