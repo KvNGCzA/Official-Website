@@ -44,6 +44,7 @@ export const Partners = () => {
 				</div>)}
 			</div>
 			{' '}
+			{' '}
 			<p className="section-text__title--small small">Deftify On The Media</p>
 			&nbsp;
 			<div className="row">
@@ -56,19 +57,19 @@ export const Partners = () => {
   			<div className="column">
   			<a href="https://markets.financialcontent.com/ibtimes/news/read/42098274" target="_blank" rel="noreferrer">
 			<img src="images/ibtimes.png" alt="marketwatch"></img>
-			<p className="section-text__description description">Deftify Crypto Incubator Gives Investors Private Round Access</p>
+			<p className="section-text____pressrelease pressrelease">Deftify Crypto Incubator Gives Investors Private Round Access</p>
 			</a>
   			</div>
   			<div className="column">
   			<a href="https://www.digitaljournal.com/pr/deftify-builds-the-first-africa-focused-crypto-incubator-and-launchpad" target="_blank" rel="noreferrer">
 			<img src="images/digitaljournal.png" alt="marketwatch"></img>
-			<p className="section-text__description description">Deftify was built specifically to help blockchain projects from Africa</p>
+			<p className="section-text____pressrelease pressrelease">Deftify was built specifically to help blockchain projects from Africa</p>
 			</a>
   			</div>
   			<div className="column">
  			<a href="https://markets.financialcontent.com/bostonherald/news/read/42098274" target="_blank" rel="noreferrer">
 			<img src="images/bostonherald.png" alt="marketwatch"></img>
-			<p className="section-text__description description">Deftify has built a one-of-a kind ecosystem in one place</p>
+			<p className="section-text____pressrelease pressrelease">Deftify has built a one-of-a kind ecosystem in one place</p>
 			</a>
   			</div>
   			</div>
