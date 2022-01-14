@@ -43,9 +43,8 @@ export const Partners = () => {
 				>
 				</div>)}
 			</div>
-			&nbsp;
-			&nbsp;
-			<p></p>
+			<span> </span>
+			<span> </span>
 			<p className="section-text__title--small small">Deftify On The Media</p>
 			&nbsp;
 			<div className="row">
