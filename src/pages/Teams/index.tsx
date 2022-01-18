@@ -52,24 +52,28 @@ const Teams = (): ReactElement => {
             position="COO and Co-Founder"
             linkedIn="https://www.linkedin.com/in/ruddy-setiadi-gunawan/"
             avatar="./images/profile/2.png"
+            achievement="test test"
           />
           <Profile
             name="Olapade Samuel"
             position="Chief Marketing Officer"
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/samuel.jpg"
+            achievement="test test"
           />
           <Profile
             name="Neil Mani"
             position="Chief Design Officer"
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/3.png"
+            achievement="test test"
           />
           <Profile
             name="Andrew Fennell"
             position="Chief Business Development Officer"
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/4.png"
+            achievement="test test"
           />
 
           <Profile
@@ -78,6 +82,7 @@ const Teams = (): ReactElement => {
             github="https://github.com/Hendobox"
             linkedIn="https://www.linkedin.com/in/henry-onyebuchi-116501123/"
             avatar="./images/profile/5.png"
+            achievement="test test"
           />
           <Profile
             name="Kingsley Victor"
@@ -85,12 +90,14 @@ const Teams = (): ReactElement => {
             github="https://github.com/kingsley-einstein"
             linkedIn="https://www.linkedin.com/in/kingsley-victor-952550169/"
             avatar="./images/profile/6.png"
+            achievement="test test"
           />
            <Profile
                   name="Jay Wang"
                   position="Business Development Manager"
                   linkedIn="https://www.linkedin.com/feed/"
                   avatar="./images/profile/avatar.png"
+                  achievement="test test"
           />
         </ProfileGrid>
       </Spacing>
@@ -106,12 +113,14 @@ const Teams = (): ReactElement => {
             position="Strategic Advisor"
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/7.png"
+            achievement="test test"
           />
           <Profile
             name="CryptoEdit"
             position="Research & Content Lead"
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/9.png"
+            achievement="test test"
           />
 
         </ProfileGrid>
