@@ -45,7 +45,10 @@ const Teams = (): ReactElement => {
             position="CEO and Co-Founder"
             linkedIn="https://www.linkedin.com/in/victoria-iko-ojo-ugbedeojo-7b35aa80/"
             avatar="./images/profile/1.png"
-            achievement="test test"
+            achievement="Experienced growth manager and crypto entrepreneur
+            Founded crypto education business BeCryptoWiz with a 10k+ community
+            Grew significant crypto communities, including 100k+ Corestarter and 50k+ Lead Wallet
+            Proficient networker since 2018, with extensive contacts in the African crypto ecosystem"
           />
           <Profile
             name="Ruddy S. Gunawan"
