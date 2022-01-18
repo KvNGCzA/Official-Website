@@ -45,11 +45,8 @@ const Teams = (): ReactElement => {
             position="CEO and Co-Founder"
             linkedIn="https://www.linkedin.com/in/victoria-iko-ojo-ugbedeojo-7b35aa80/"
             avatar="./images/profile/1.png"
+            achievement="test test"
           />
-          <Text fontWeight={500} textAlign="center">
-              Deftify team members come from diverse backgrounds but all share proven track records in the
-              cryptocurrency space.
-            </Text>
           <Profile
             name="Ruddy S. Gunawan"
             position="COO and Co-Founder"
