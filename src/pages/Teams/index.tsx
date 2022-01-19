@@ -25,7 +25,7 @@ const ProfileGrid = styled.div`
 const Teams = (): ReactElement => {
   return (
     <div>
-      <Spacing paddingTop="120px" paddingBottom="60px" paddingHorizontal="60px" paddingHorizontalSm="20px">
+      <Spacing paddingTop="120px" paddingBottom="75px" paddingHorizontal="60px" paddingHorizontalSm="20px">
         <Flex itemsFlex={0.6} itemsFlexLg={1}>
           <div>
             <Text fontWeight={800} fontSize={48} color="#fff" textAlign="center">
@@ -61,7 +61,7 @@ const Teams = (): ReactElement => {
             position="Chief Marketing Officer"
             linkedIn="https://www.linkedin.com/in/engrsamest/"
             avatar="./images/profile/samuel.jpg"
-            achievement="Diversified experience in crypto, real estate and project management. Samuel is a passionate blockchain educator with deep connections to the African crypto industry. Previously with MantraDAO, Strongnode, Edgeware, Presistenceone, NANO, Darwinia, Sentinel, and others"
+            achievement="Diversified experience in crypto and project management. Samuel is a blockchain educator with deep connections to the African crypto industry. Previously with MantraDAO, Strongnode, Orion Protocol, NANO, Darwinia, Sentinel, and others"
           />
           <Profile
             name="Neil Mani"
@@ -72,7 +72,7 @@ const Teams = (): ReactElement => {
           />
           <Profile
             name="Andrew Fennell"
-            position="Chief Business Development Officer"
+            position="Chief Business Development"
             linkedIn="https://www.linkedin.com/in/andrewfennellbdm/"
             avatar="./images/profile/4.png"
             achievement="Andrew is an experienced sales professional who comes with over 12 years of experience in sales methodologies, relationship building, and account management. Most notably, Andrew played a vital role in DeSpace Protocol’s launch in late 2021"
