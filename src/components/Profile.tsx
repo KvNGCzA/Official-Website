@@ -11,6 +11,7 @@ interface Props {
   linkedIn: string;
   avatar: string;
   github?: string;
+  achievement: string;
 }
 
 const Wrapper = styled.div`
@@ -23,7 +24,7 @@ const Avatar = styled.img`
   width: 100%;
 `;
 
-function Profile({ name, position, linkedIn, avatar, github }: Props): ReactElement {
+function Profile({ name, position, linkedIn, avatar, github, achievement }: Props): ReactElement {
   return (
     <Wrapper>
       <Avatar src={avatar} />
@@ -33,7 +34,7 @@ function Profile({ name, position, linkedIn, avatar, github }: Props): ReactElem
             <Text fontSize={21} fontWeight={500} color="#FFFFFF">
               {name}
             </Text>
-            <Text color=" rgba(255, 255, 255, 0.6);">{position}</Text>
+            <Text fontSize={15} color=" rgba(255, 255, 255, 0.6);">{position}</Text>
           </div>
 
           <Spacing marginLeft="15px">
@@ -52,6 +53,7 @@ function Profile({ name, position, linkedIn, avatar, github }: Props): ReactElem
           </Spacing>
         </Flex>
       </Spacing>
+      <Text fontSize={14} color="#FFFFFF">{achievement}</Text>
     </Wrapper>
   );
 }
