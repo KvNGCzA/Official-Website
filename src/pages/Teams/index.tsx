@@ -42,17 +42,16 @@ const Teams = (): ReactElement => {
         <ProfileGrid>
           <Profile
             name="Victoria Haruna"
-            position="CEO and Co-Founder"
+            position="Chief Executive Officer"
             linkedIn="https://www.linkedin.com/in/victoria-iko-ojo-ugbedeojo-7b35aa80/"
             avatar="./images/profile/1.png"
-            achievement="Experienced growth manager and crypto entrepreneur
-            Founded crypto education business BeCryptoWiz with a 10k+ community
-            Grew significant crypto communities, including 100k+ Corestarter and 50k+ Lead Wallet
-            Proficient networker since 2018, with extensive contacts in the African crypto ecosystem"
+            achievement="Vicky is an experienced growth manager and crypto entrepreneur.
+            She founded BeCryptoWiz and she grew significant crypto communities, including Corestarter
+            and Lead. She's a proficient networker with extensive contacts in the African crypto ecosystem"
           />
           <Profile
             name="Ruddy S. Gunawan"
-            position="COO and Co-Founder"
+            position="Chief Operating Officer"
             linkedIn="https://www.linkedin.com/in/ruddy-setiadi-gunawan/"
             avatar="./images/profile/2.png"
             achievement="test test"
