@@ -53,7 +53,7 @@ function Profile({ name, position, linkedIn, avatar, github, achievement }: Prop
           </Spacing>
         </Flex>
       </Spacing>
-      <Text fontSize={13} color="#FFFFFF">{achievement}</Text>
+      <Text fontSize={14} color="#FFFFFF">{achievement}</Text>
     </Wrapper>
   );
 }

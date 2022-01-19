@@ -46,22 +46,22 @@ const Teams = (): ReactElement => {
             linkedIn="https://www.linkedin.com/in/victoria-iko-ojo-ugbedeojo-7b35aa80/"
             avatar="./images/profile/1.png"
             achievement="Vicky is an experienced growth manager and crypto entrepreneur.
-            She founded BeCryptoWiz and she grew significant crypto communities, including Corestarter
-            and Lead. She's a proficient networker with extensive contacts in the African crypto ecosystem"
+            She founded BeCryptoWiz and she grew significant crypto communities of Corestarter. 
+            She's a proficient networker with extensive contacts in the African crypto ecosystem"
           />
           <Profile
             name="Ruddy S. Gunawan"
             position="Chief Operating Officer"
             linkedIn="https://www.linkedin.com/in/ruddy-setiadi-gunawan/"
             avatar="./images/profile/2.png"
-            achievement="test test"
+            achievement="Ruddy worked with various crypto projects since 2018, including Publish0x, Origin Protocol, Remitano, and a CMO role for Lead Wallet. He’s tech savvy and has good knowledge of backend development, can manage technical teams efficiently"
           />
           <Profile
             name="Olapade Samuel"
             position="Chief Marketing Officer"
             linkedIn="https://www.linkedin.com/feed/"
             avatar="./images/profile/samuel.jpg"
-            achievement="test test"
+            achievement="Diversified experience in crypto, real estate and project management. Samuel is a passionate blockchain educator with deep connections to the African crypto industry. Previously with MantraDAO, Strongnode, Edgeware, Presistenceone, NANO, Darwinia, Sentinel and many others"
           />
           <Profile
             name="Neil Mani"
