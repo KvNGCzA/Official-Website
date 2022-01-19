@@ -34,7 +34,7 @@ function Profile({ name, position, linkedIn, avatar, github, achievement }: Prop
             <Text fontSize={21} fontWeight={500} color="#FFFFFF">
               {name}
             </Text>
-            <Text fontSize={14} color=" rgba(255, 255, 255, 0.6);">{position}</Text>
+            <Text fontSize={15} color=" rgba(255, 255, 255, 0.6);">{position}</Text>
           </div>
 
           <Spacing marginLeft="15px">
@@ -53,7 +53,7 @@ function Profile({ name, position, linkedIn, avatar, github, achievement }: Prop
           </Spacing>
         </Flex>
       </Spacing>
-      <Text fontSize={12} color="#FFFFFF">{achievement}</Text>
+      <Text fontSize={13} color="#FFFFFF">{achievement}</Text>
     </Wrapper>
   );
 }
