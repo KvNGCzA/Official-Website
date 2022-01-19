@@ -25,7 +25,7 @@ const ProfileGrid = styled.div`
 const Teams = (): ReactElement => {
   return (
     <div>
-      <Spacing paddingTop="120px" paddingBottom="160px" paddingHorizontal="60px" paddingHorizontalSm="20px">
+      <Spacing paddingTop="120px" paddingBottom="60px" paddingHorizontal="60px" paddingHorizontalSm="20px">
         <Flex itemsFlex={0.6} itemsFlexLg={1}>
           <div>
             <Text fontWeight={800} fontSize={48} color="#fff" textAlign="center">
