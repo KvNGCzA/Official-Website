@@ -23,7 +23,7 @@ export const Introduction = () => (
 		<Spacing>
 			<Flex flexDirectionSm="column">
 				<a
-					href="https://docsend.com/view/pkxf3t4dy9bjyjt6"
+					href="./docs/deftify_whitepaper.pdf"
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -34,7 +34,7 @@ export const Introduction = () => (
 
 				<Spacing>
 				<a
-					href="https://docsend.com/view/vex4z4hgqzsftzvi"
+					href="./docs/deftify_pitchdeck.pdf"
 					target="_blank"
 					rel="noreferrer"
 				>
