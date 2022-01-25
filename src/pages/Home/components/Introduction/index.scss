@@ -7,7 +7,20 @@
   .description {
     color:       #FFFFFF;
     font-family: 'Gilroy';
-    margin:      16px 0;
+    margin-bottom:      16px;
     max-width:   819px;
+  }
+
+  .section-text {
+    &__title-wrapper {
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__title {
+      text-align: center;
+      margin: 0;
+    }
   }
 }

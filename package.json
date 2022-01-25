@@ -27,6 +27,7 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-toastify": "^8.1.0",
+    "react-typist": "^2.0.5",
     "sass": "^1.45.1",
     "sass-loader": "^12.4.0",
     "styled-components": "^5.3.1",
@@ -62,6 +63,7 @@
   "devDependencies": {
     "@types/react-google-recaptcha": "^2.1.2",
     "@types/react-router-dom": "^5.3.1",
+    "@types/react-typist": "^2.0.3",
     "@types/styled-components": "^5.1.14"
   }
 }
