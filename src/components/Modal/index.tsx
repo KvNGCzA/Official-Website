@@ -9,6 +9,7 @@ interface ModalProps {
 
 export const Modal = ({children, show, onClose}: ModalProps) => {
   const bodyRef = useRef() as MutableRefObject<any>;
+  const scrollTop = useRef<number>(0);
   const handleClickOutside = useCallback((event: any) => {
     const {target} = event;
     if (!bodyRef.current.contains(target)) {
@@ -19,8 +20,12 @@ export const Modal = ({children, show, onClose}: ModalProps) => {
   useEffect(() => {
     if (show) {
       window.addEventListener('click', handleClickOutside)
+      scrollTop.current = window.scrollY;
+      document.body.style.position = 'fixed';
     } else {
       window.removeEventListener('click', handleClickOutside);
+      document.body.style.position = '';
+      window.scrollTo(0, scrollTop.current);
     }
 
     return () => {
