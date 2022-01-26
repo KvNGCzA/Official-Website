@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgb(#000, 0.4);
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  &__overlay {
+  }
+
+  &__body {
+    padding: 36px 9px 9px;
+    background-color: rgba(#191A1D, 0.9);
+    max-width: 950px;
+    width: 100%;
+    border-radius: 6px;
+    position: relative;
+    margin: auto 20px;
+
+    .close-btn {
+      position: absolute;
+      color: white;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      border: 0;
+      font-family: "Space Grotesk";
+
+      &:hover {
+        color: orangered;
+        cursor: pointer;
+      }
+    }
+  }
+}
