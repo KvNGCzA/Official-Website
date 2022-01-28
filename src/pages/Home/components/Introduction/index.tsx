@@ -4,26 +4,15 @@ import OutlinedButton from '../../../../components/Button/Outlined';
 import RegularButton from '../../../../components/Button/Regular';
 import Flex from '../../../../components/Flex';
 import Spacing from '../../../../components/Spacing';
-import Typist from "react-typist";
 import './index.scss';
 import {Modal} from '../../../../components/Modal';
-
-const SECTION_TITLES = [
-  'metaverse gaming platform (Metacurse)',
-  'Private Access Pad for founders and investors',
-  'market data aggregator built for crypto traders, investors, enthusiasts and researchers'
-]
 
 const YOUTUBE_SRC = "https://www.youtube.com/embed/v6dwaofaFD8?autoplay=1";
 
 export const Introduction = () => {
   const iframeRef = useRef() as MutableRefObject<any>;
-  const [count, setCount] = useState<number>(1);
-  const [showYoutubeModal, setShowYoutubeModal] = useState<boolean>(false);
 
-  useEffect(() => {
-    setCount(1);
-  }, [count]);
+  const [showYoutubeModal, setShowYoutubeModal] = useState<boolean>(false);
 
   useEffect(() => {
     if (showYoutubeModal) {
@@ -55,21 +44,7 @@ export const Introduction = () => {
           ></iframe>
         </div>
       </Modal>
-      <Spacing margin="auto" padding="0 20px 20px" className="intro-wrapper">
-        <div className="section-text__title-wrapper">
-          {count ?
-            <Typist avgTypingDelay={50} onTypingDone={() => setCount(0)}>
-              <p className="section-text__title">
-                Deftify is a {SECTION_TITLES[0]}
-                <Typist.Backspace count={SECTION_TITLES[0].length} delay={800} />
-                {SECTION_TITLES[1]}
-                <Typist.Backspace count={SECTION_TITLES[1].length} delay={800} />
-                {SECTION_TITLES[2]}
-                <Typist.Backspace count={SECTION_TITLES[2].length} delay={800} />
-              </p>
-            </Typist> : null
-          }
-        </div>
+      <Spacing margin="auto" padding="0 20px 20px" className="intro-wrapper sec-one">
 
         <p className="section-text__description description">
           The world’s first Africa-focused crypto incubator and launchpad offering investors private round

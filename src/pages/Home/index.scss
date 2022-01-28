@@ -1,4 +1,41 @@
 .stroked-background {
   background:      url('../../assets/images/intro-bckgd.svg') no-repeat center 95px;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .sec-one {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+.section-text {
+  &__title-wrapper {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 920px;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  .stroked-background {
+    flex-direction: column;
+
+    .sec-one {
+
+      width: 100%;
+      max-width: 100%;
+    }
+  }
 }

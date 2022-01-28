@@ -35,7 +35,7 @@ export const PhotoSlider = ({slides}: Props) => {
 	};
 
 	return (
-		<div className="slider-wrapper">
+		<div className="slider-wrapper sec-one">
 			<img className="image" src={slides[currentIndex].image} alt={''} />
 
 			<p className="caption">
