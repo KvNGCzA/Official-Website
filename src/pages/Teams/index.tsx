@@ -8,8 +8,8 @@ import Text from '../../components/Typography';
 
 const ProfileGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px 0px;
   margin-top: 48px;
 
   ${({theme}) => theme.breakpoint.down('lg')} {
@@ -46,7 +46,7 @@ const Teams = (): ReactElement => {
             linkedIn="https://www.linkedin.com/in/victoria-iko-ojo-ugbedeojo-7b35aa80/"
             avatar="./images/profile/1.png"
             achievement="Vicky is an experienced growth manager and crypto entrepreneur.
-            She founded BeCryptoWiz and she grew significant crypto communities of Corestarter. 
+            She founded BeCryptoWiz and she grew significant crypto communities of Corestarter.
             She's a proficient networker with extensive contacts in the African crypto ecosystem"
           />
           <Profile
