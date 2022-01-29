@@ -28,10 +28,10 @@ export const slides: Slide[] = [
 ];
 
 const SECTION_TITLES = [
-  'an Africa-focused crypto incubator and launchpad',
-  'a market data aggregator built for crypto traders, investors, enthusiasts and researchers',
+  'an Africa-focused crypto incubator and launchpad, connecting African innovation to the world',
+  'a market data aggregator built for crypto traders, researchers, and investors',
   'index funds provide exposure to alternative chains that are not available elsewhere',
-  'a metaverse gaming platform (Metacurse)',
+  'incubating a metaverse game called Metacurse which will use Deftify token staking mechanism',
 ];
 
 export const Home = () => {

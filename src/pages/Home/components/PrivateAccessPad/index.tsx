@@ -56,9 +56,7 @@ const SectionOne = () => <Spacing className="section-one">
 			alignItems:     'center',
 			justifyContent: 'center'
 		}}>
-		<p className="section-text__title--small">
-			coming soon
-		</p>
+		
 		<p className="section-text__title title">
 			Private Access Pad (PAP)
 		</p>
