@@ -47,7 +47,7 @@ export const Introduction = () => {
       <Spacing margin="auto" padding="0 20px 20px" className="intro-wrapper sec-one">
 
         <p className="section-text__description description">
-          The world’s first Africa-focused crypto incubator and launchpad offering investors private round
+          As the world’s first Africa-focused crypto incubator and launchpad, Deftify offers private round
           access to
           cutting-edge African innovation. In addition, our diverse index funds and integrated portfolio management tools
           give investors an edge not available on other launchpads
@@ -69,7 +69,7 @@ export const Introduction = () => {
             <Spacing>
               <OutlinedButton backgroundColor="transparent" onClick={toggleYoutubeModal}>
                 <PlayIcon style={{marginRight: 10}} />
-                Watch Video
+                Intro Video
               </OutlinedButton>
             </Spacing>
           </Flex>

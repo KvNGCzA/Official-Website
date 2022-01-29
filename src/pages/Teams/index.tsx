@@ -79,7 +79,7 @@ const Teams = (): ReactElement => {
           />
 
           <Profile
-            name="Henry Onyebuchi"
+            name="Henry O."
             position="Chief Technical Officer"
             github="https://github.com/Hendobox"
             linkedIn="https://www.linkedin.com/in/henry-onyebuchi-116501123/"
