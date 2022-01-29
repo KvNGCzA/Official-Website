@@ -79,7 +79,7 @@ const Teams = (): ReactElement => {
           />
 
           <Profile
-            name="Henry Onyebuchi"
+            name="Henry O."
             position="Chief Technical Officer"
             github="https://github.com/Hendobox"
             linkedIn="https://www.linkedin.com/in/henry-onyebuchi-116501123/"
@@ -87,7 +87,7 @@ const Teams = (): ReactElement => {
             achievement="Henry is a smart-contract developer with over two years of experience in building decentralized applications in the blockchain industry. Work experience include Rarecandy3D, Lead Wallet, and DeSpace protocol. Has a master’s degree in Mechanical Engineering"
           />
           <Profile
-            name="Kingsley Victor"
+            name="Kingsley V."
             position="Technical Lead"
             github="https://github.com/kingsley-einstein"
             linkedIn="https://www.linkedin.com/in/kingsley-victor-952550169/"
