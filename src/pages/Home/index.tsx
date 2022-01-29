@@ -5,10 +5,10 @@ import {ContactForm} from '../../components/ContactForm';
 import {Introduction} from './components/Introduction';
 import {Partners} from './components/Partners';
 import {PlayToEarn} from './components/PlayToEarn';
-import Typist from "react-typist";
 import {PrivateAccessPad} from './components/PrivateAccessPad';
 import './index.scss';
 import {useEffect, useState} from 'react';
+import Typewriter from 'typewriter-effect';
 
 export const slides: Slide[] = [
   {
@@ -30,8 +30,8 @@ export const slides: Slide[] = [
 const SECTION_TITLES = [
   'an Africa-focused crypto incubator and launchpad',
   'a market data aggregator built for crypto traders, investors, enthusiasts and researchers',
-  ' index funds provide exposure to alternative chains that are not available elsewhere',
-  'is a metaverse gaming platform (Metacurse)',
+  'index funds provide exposure to alternative chains that are not available elsewhere',
+  'a metaverse gaming platform (Metacurse)',
 ];
 
 export const Home = () => {
@@ -44,21 +44,35 @@ export const Home = () => {
   return (
     <div>
       <div className="section-text__title-wrapper">
-        {count ?
-          <Typist cursor={{show: false}} avgTypingDelay={50} onTypingDone={() => setCount(0)}>
-            <p className="section-text__title">
-              Deftify is <span className='section-text__title--main'>{SECTION_TITLES[0]}
-              <Typist.Backspace count={SECTION_TITLES[0].length} delay={800} />
-              {SECTION_TITLES[1]}
-              <Typist.Backspace count={SECTION_TITLES[1].length + 3} delay={800} />
-              {SECTION_TITLES[2]}
-              <Typist.Backspace count={SECTION_TITLES[2].length} delay={800} />
-              {SECTION_TITLES[3]}
-              <Typist.Backspace count={SECTION_TITLES[3].length} delay={800} />
-              </span>
-            </p>
-          </Typist> : null
-        }
+        <div className="section-text__title">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .changeDelay(20)
+                .changeDeleteSpeed(5)
+                .typeString('<span class="big-text">Deftify is </span>')
+                .typeString(SECTION_TITLES[0])
+                .pauseFor(2000)
+                .deleteChars(SECTION_TITLES[0].length)
+                .typeString(SECTION_TITLES[1])
+                .pauseFor(2000)
+                .deleteChars(SECTION_TITLES[1].length + 3)
+                .typeString(SECTION_TITLES[2])
+                .pauseFor(2000)
+                .deleteChars(SECTION_TITLES[2].length)
+                .typeString('<span class="big-text">is </span>')
+                .typeString(SECTION_TITLES[3])
+                .pauseFor(2000)
+                .deleteAll()
+                .start();
+            }}
+            options={{
+              autoStart: true,
+              loop: true,
+              wrapperClassName: 'smaller-title-text'
+            }}
+          />
+        </div>
       </div>
 
       <div className="stroked-background">
