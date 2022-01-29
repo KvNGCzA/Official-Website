@@ -25,10 +25,15 @@
     text-align: center;
     margin: 0 auto;
     max-width: 920px;
+  }
+}
 
-    &--main {
-      font-size: 20px;
-    }
+.smaller-title-text {
+  font-size: 20px;
+  margin-left: 6px;
+
+  .big-text {
+    font-size: 36px;
   }
 }
 
@@ -37,9 +42,14 @@
     flex-direction: column;
 
     .sec-one {
-
       width: 100%;
       max-width: 100%;
+    }
+  }
+
+  .smaller-title-text {
+    .big-text {
+      font-size: 24px;
     }
   }
 }
