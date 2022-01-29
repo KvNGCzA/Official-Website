@@ -127,8 +127,8 @@ const Navbar = (props: any) => {
 
 				<NavLinkWrapper open={open} style={{display: 'flex'}}>
 					{routes.map((route, index) => route.type === 'external' ?
-            <StyledLink href={route.path} target='_blank'>{route.name}</StyledLink> :
-            <NavLink key={index.toString()} to={route.path}>
+            <StyledLink href={route.path} target='_blank' key={route.name} >{route.name}</StyledLink> :
+            <NavLink key={route.name} to={route.path}>
               {route.name}
             </NavLink>
           )}

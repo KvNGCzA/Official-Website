@@ -7,7 +7,38 @@
   .description {
     color:       #FFFFFF;
     font-family: 'Gilroy';
-    margin:      16px 0;
+    margin-bottom:      16px;
     max-width:   819px;
   }
+
+  .section-text {
+    &__title-wrapper {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 920px;
+    }
+  }
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
 }

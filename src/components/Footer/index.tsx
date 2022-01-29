@@ -8,7 +8,7 @@ import './index.scss';
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 30px;
 
   ${({theme}) => theme.breakpoint.down('md')} {
@@ -36,6 +36,9 @@ const Footer = (): ReactElement => {
           </Text></a>
           <a href="./team"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Team
+          </Text></a>
+          <a href="https://www.deftify.io/docs/deftify_pitchdeck.pdf" target="_blank" rel="noopener noreferrer"><Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
+            Pitch Deck
           </Text></a>
           {/* <Text fontWeight={800} textAlign="center" textAlignSm="left" color="#fff">
             Contact Us
